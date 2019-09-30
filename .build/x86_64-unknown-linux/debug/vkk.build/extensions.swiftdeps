@@ -1,0 +1,330 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So17VkApplicationInfoV", ""]
+- ["So24VkPhysicalDeviceFeaturesV", ""]
+- ["So18VkFormatPropertiesV", ""]
+- ["So10VkExtent3DV", ""]
+- ["So23VkImageFormatPropertiesV", ""]
+- ["So22VkPhysicalDeviceLimitsV", ""]
+- ["So17VkApplicationInfoV", "init"]
+- ["So17VkApplicationInfoV", "type"]
+- ["So17VkApplicationInfoV", "type"]
+- ["So17VkApplicationInfoV", "next"]
+- ["So17VkApplicationInfoV", "next"]
+- ["So17VkApplicationInfoV", "applicationName"]
+- ["So17VkApplicationInfoV", "applicationName"]
+- ["So17VkApplicationInfoV", "applicationVersion"]
+- ["So17VkApplicationInfoV", "applicationVersion"]
+- ["So17VkApplicationInfoV", "engineName"]
+- ["So17VkApplicationInfoV", "engineName"]
+- ["So17VkApplicationInfoV", "engineVersion"]
+- ["So17VkApplicationInfoV", "engineVersion"]
+- ["So17VkApplicationInfoV", "apiVersion"]
+- ["So17VkApplicationInfoV", "apiVersion"]
+- ["So24VkPhysicalDeviceFeaturesV", "init"]
+- ["So18VkFormatPropertiesV", "init"]
+- ["So10VkExtent3DV", "init"]
+- ["So10VkExtent3DV", "init"]
+- ["So10VkExtent3DV", "init"]
+- ["So23VkImageFormatPropertiesV", "init"]
+- ["So22VkPhysicalDeviceLimitsV", "init"]
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "Float"
+- "FloatLiteralType"
+- "FormatFeature"
+- "Int"
+- "Int32"
+- "Int8"
+- "IntegerLiteralType"
+- "SampleCount"
+- "String"
+- "StructureType"
+- "UInt32"
+- "UnsafePointer"
+- "UnsafeRawPointer"
+- !private "VK_STRUCTURE_TYPE_APPLICATION_INFO"
+- "VkApplicationInfo"
+- "VkDeviceSize"
+- "VkExtent3D"
+- "VkFormatProperties"
+- "VkImageFormatProperties"
+- "VkInstanceCreateInfo"
+- "VkPhysicalDeviceFeatures"
+- "VkPhysicalDeviceLimits"
+- "VkSampleCountFlags"
+- !private "VkStructureType"
+- "uvec2"
+- "uvec3"
+- "vec2"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "ptr"]
+- !private ["Sz", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "ptr"]
+- !private ["SL", "init"]
+- !private ["SL", "ptr"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "ptr"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s28CustomDebugStringConvertibleP", "z"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "ptr"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "ptr"]
+- !private ["s23CustomStringConvertibleP", "x"]
+- !private ["s23CustomStringConvertibleP", "y"]
+- !private ["s23CustomStringConvertibleP", "z"]
+- !private ["Se", "init"]
+- !private ["Se", "ptr"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
+- !private ["Se", "z"]
+- !private ["SE", "init"]
+- !private ["SE", "ptr"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- !private ["SE", "z"]
+- !private ["SQ", "init"]
+- !private ["SQ", "ptr"]
+- !private ["SQ", "rawValue"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- !private ["SQ", "z"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "rawValue"]
+- !private ["s25ExpressibleByArrayLiteralP", "x"]
+- !private ["s25ExpressibleByArrayLiteralP", "y"]
+- !private ["s25ExpressibleByArrayLiteralP", "z"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "ptr"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "ptr"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "ptr"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "ptr"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["3vkk13FormatFeatureV", "deinit"]
+- !private ["3vkk13FormatFeatureV", "rawValue"]
+- !private ["SH", "init"]
+- !private ["SH", "ptr"]
+- !private ["SH", "rawValue"]
+- !private ["SH", "x"]
+- !private ["SH", "y"]
+- !private ["SH", "z"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "ptr"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "ptr"]
+- !private ["10Foundation8NSCodingP", "ptr"]
+- !private ["10Foundation9NSCopyingP", "ptr"]
+- !private ["10Foundation16NSMutableCopyingP", "ptr"]
+- !private ["10Foundation8NSObjectC", "ptr"]
+- !private ["10Foundation16NSObjectProtocolP", "ptr"]
+- !private ["10Foundation14NSSecureCodingP", "ptr"]
+- !private ["10Foundation8NSStringC", "ptr"]
+- !private ["Sj", "init"]
+- !private ["s9OptionSetP", "rawValue"]
+- !private ["Sm", "init"]
+- !private ["Sm", "ptr"]
+- !private ["SY", "init"]
+- !private ["SY", "rawValue"]
+- !private ["s4SIMDP", "init"]
+- !private ["s4SIMDP", "x"]
+- !private ["s4SIMDP", "y"]
+- !private ["s4SIMDP", "z"]
+- !private ["s5SIMD2V", "init"]
+- !private ["s5SIMD2V", "x"]
+- !private ["s5SIMD2V", "y"]
+- !private ["s5SIMD3V", "init"]
+- !private ["s5SIMD3V", "x"]
+- !private ["s5SIMD3V", "y"]
+- !private ["s5SIMD3V", "z"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["s11SIMDStorageP", "init"]
+- !private ["s11SIMDStorageP", "x"]
+- !private ["s11SIMDStorageP", "y"]
+- !private ["s11SIMDStorageP", "z"]
+- !private ["3vkk11SampleCountV", "deinit"]
+- !private ["ST", "init"]
+- !private ["ST", "ptr"]
+- !private ["s10SetAlgebraP", "rawValue"]
+- !private ["Sx", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "ptr"]
+- !private ["Sy", "init"]
+- !private ["Sy", "ptr"]
+- !private ["3vkk13StructureTypeO", "deinit"]
+- !private ["3vkk13StructureTypeO", "init"]
+- !private ["3vkk13StructureTypeO", "rawValue"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "ptr"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "ptr"]
+- !private ["s6UInt32V", "init"]
+- !private ["SP", "init"]
+- !private ["SU", "init"]
+- ["So17VkApplicationInfoV", "Int8"]
+- ["So17VkApplicationInfoV", "String"]
+- ["So17VkApplicationInfoV", "StructureType"]
+- ["So17VkApplicationInfoV", "UInt32"]
+- ["So17VkApplicationInfoV", "UnsafePointer"]
+- ["So17VkApplicationInfoV", "UnsafeRawPointer"]
+- !private ["So17VkApplicationInfoV", "VK_STRUCTURE_TYPE_APPLICATION_INFO"]
+- ["So17VkApplicationInfoV", "VkApplicationInfo"]
+- !private ["So17VkApplicationInfoV", "VkStructureType"]
+- ["So17VkApplicationInfoV", "apiVersion"]
+- ["So17VkApplicationInfoV", "applicationName"]
+- ["So17VkApplicationInfoV", "applicationVersion"]
+- ["So17VkApplicationInfoV", "engineName"]
+- ["So17VkApplicationInfoV", "engineVersion"]
+- ["So17VkApplicationInfoV", "init"]
+- ["So17VkApplicationInfoV", "next"]
+- !private ["So17VkApplicationInfoV", "pApplicationName"]
+- !private ["So17VkApplicationInfoV", "pEngineName"]
+- !private ["So17VkApplicationInfoV", "pNext"]
+- !private ["So17VkApplicationInfoV", "sType"]
+- ["So17VkApplicationInfoV", "type"]
+- ["So10VkExtent3DV", "UInt32"]
+- ["So10VkExtent3DV", "init"]
+- ["So10VkExtent3DV", "uvec2"]
+- ["So10VkExtent3DV", "uvec3"]
+- ["So18VkFormatPropertiesV", "FormatFeature"]
+- ["So18VkFormatPropertiesV", "init"]
+- ["So23VkImageFormatPropertiesV", "UInt32"]
+- ["So23VkImageFormatPropertiesV", "VkDeviceSize"]
+- ["So23VkImageFormatPropertiesV", "VkExtent3D"]
+- ["So23VkImageFormatPropertiesV", "VkSampleCountFlags"]
+- ["So23VkImageFormatPropertiesV", "init"]
+- ["So24VkPhysicalDeviceFeaturesV", "Bool"]
+- !private ["So24VkPhysicalDeviceFeaturesV", "UInt32"]
+- ["So24VkPhysicalDeviceFeaturesV", "init"]
+- ["So22VkPhysicalDeviceLimitsV", "Bool"]
+- ["So22VkPhysicalDeviceLimitsV", "Float"]
+- ["So22VkPhysicalDeviceLimitsV", "Int"]
+- ["So22VkPhysicalDeviceLimitsV", "Int32"]
+- ["So22VkPhysicalDeviceLimitsV", "SampleCount"]
+- ["So22VkPhysicalDeviceLimitsV", "UInt32"]
+- ["So22VkPhysicalDeviceLimitsV", "VkDeviceSize"]
+- ["So22VkPhysicalDeviceLimitsV", "init"]
+- ["So22VkPhysicalDeviceLimitsV", "uvec2"]
+- ["So22VkPhysicalDeviceLimitsV", "uvec3"]
+- ["So22VkPhysicalDeviceLimitsV", "vec2"]
+- !private ["So15VkStructureTypeV", "init"]
+- !private ["So15VkStructureTypeV", "rawValue"]
+- !private ["10Foundation13_CFBridgeableP", "init"]
+- !private ["10Foundation13_CFBridgeableP", "ptr"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "ptr"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "ptr"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "ptr"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "ptr"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "ptr"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation13_NSBridgeableP", "init"]
+- !private ["10Foundation13_NSBridgeableP", "ptr"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "ptr"]
+- !private ["s8_PointerP", "init"]
+- !private ["10Foundation17_StructBridgeableP", "ptr"]
+- !private ["10Foundation21_StructTypeBridgeableP", "ptr"]
+- !private ["10Foundation16_SwiftBridgeableP", "ptr"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "SK"
+- !private "Sz"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "3vkk13FormatFeatureV"
+- !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "10Foundation8NSCodingP"
+- !private "10Foundation9NSCopyingP"
+- !private "10Foundation16NSMutableCopyingP"
+- !private "10Foundation8NSObjectC"
+- !private "10Foundation16NSObjectProtocolP"
+- !private "10Foundation14NSSecureCodingP"
+- !private "10Foundation8NSStringC"
+- !private "Sj"
+- !private "s9OptionSetP"
+- !private "Sm"
+- !private "SY"
+- !private "s4SIMDP"
+- !private "s5SIMD2V"
+- !private "s5SIMD3V"
+- !private "s10SIMDScalarP"
+- !private "s11SIMDStorageP"
+- !private "3vkk11SampleCountV"
+- !private "ST"
+- !private "s10SetAlgebraP"
+- !private "Sx"
+- !private "SS"
+- !private "Sy"
+- !private "3vkk13StructureTypeO"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s6UInt32V"
+- !private "SP"
+- !private "SU"
+- "So17VkApplicationInfoV"
+- "So10VkExtent3DV"
+- "So18VkFormatPropertiesV"
+- "So23VkImageFormatPropertiesV"
+- "So24VkPhysicalDeviceFeaturesV"
+- "So22VkPhysicalDeviceLimitsV"
+- !private "So15VkStructureTypeV"
+- !private "10Foundation13_CFBridgeableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation13_NSBridgeableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s8_PointerP"
+- !private "10Foundation17_StructBridgeableP"
+- !private "10Foundation21_StructTypeBridgeableP"
+- !private "10Foundation16_SwiftBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.swiftmodule"
+- "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/home/elect/SwiftProjects/vkk/Sources/vulkan/module.modulemap"
+interface-hash: "e5aed1a4530d9f1095e657c4e275b03e"

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a906b46-3ef0-4106-9c86-8f3e5c90c418" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Sources/vkk/extensions.swift" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1RVXQ9bgsa8e31I9auXQvB0moVD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="vkkTests" type="SwiftPackageManagerTestRunConfiguration" factoryName="Swift Package Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="vkk" TARGET_NAME="vkkTests" CONFIG_NAME="vkkTests" RUN_TARGET_PROJECT_NAME="vkk" RUN_TARGET_NAME="vkkTests" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="SPM.BUILD_TASK_PROVIDER" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a906b46-3ef0-4106-9c86-8f3e5c90c418" name="Default Changelist" comment="" />
+      <created>1569753217775</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569753217775</updated>
+      <workItem from="1569753218872" duration="1882000" />
+      <workItem from="1569755108962" duration="31213000" />
+      <workItem from="1569856121203" duration="195000" />
+      <workItem from="1569856365875" duration="4137000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="479" y="571" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction" timestamp="1569833229011">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state x="479" y="571" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction/70.27.2490.1413@70.27.2490.1413" timestamp="1569833229011" />
+    <state width="1199" height="394" key="GridCell.Tab.0.bottom" timestamp="1569872908550">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state width="1199" height="394" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1569872908550" />
+    <state width="1199" height="394" key="GridCell.Tab.0.center" timestamp="1569872908549">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state width="1199" height="394" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1569872908549" />
+    <state width="1199" height="394" key="GridCell.Tab.0.left" timestamp="1569872908549">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state width="1199" height="394" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1569872908549" />
+    <state width="1199" height="394" key="GridCell.Tab.0.right" timestamp="1569872908550">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state width="1199" height="394" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1569872908550" />
+    <state x="165" y="368" width="1054" height="737" key="SettingsEditor" timestamp="1569809337905">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state x="165" y="368" width="1054" height="737" key="SettingsEditor/70.27.2490.1413@70.27.2490.1413" timestamp="1569809337905" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1569761776865">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/70.27.2490.1413@70.27.2490.1413" timestamp="1569761776865" />
+    <state x="348" y="561" key="com.intellij.ide.util.TipDialog" timestamp="1569856365673">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state x="348" y="561" key="com.intellij.ide.util.TipDialog/70.27.2490.1413@70.27.2490.1413" timestamp="1569856365673" />
+    <state x="339" y="499" width="707" height="468" key="find.popup" timestamp="1569872601352">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state x="339" y="499" width="707" height="468" key="find.popup/70.27.2490.1413@70.27.2490.1413" timestamp="1569872601352" />
+  </component>
+</project>

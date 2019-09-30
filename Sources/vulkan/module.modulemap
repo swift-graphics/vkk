@@ -1,0 +1,4 @@
+module vulkan [system] {
+	umbrella header "shim.h"
+	link "vulkan"
+}

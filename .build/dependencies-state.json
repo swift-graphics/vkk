@@ -1,0 +1,1 @@
+{"object": {"dependencies": [{"basedOn": null, "packageRef": {"identity": "glm", "isLocal": false, "name": "glm", "path": "/home/elect/SwiftProjects/glm"}, "state": {"checkoutState": {"branch": null, "revision": "5ac69dac659e15a8936b7afd401b793ba272dc59", "version": null}, "name": "checkout"}, "subpath": "glm"}]}, "version": 2}

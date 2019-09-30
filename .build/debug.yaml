@@ -1,0 +1,109 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "main": ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.swiftmodule","<vkk-debug.module>"]
+  "test": ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.swiftmodule","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.xctest","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.swiftmodule","<vkk-debug.module>","<vkkPackageTests-debug.test>","<vkkTests-debug.module>"]
+  "glm-debug.module": ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.swiftmodule","<glm-debug.module>"]
+  "vkk-debug.module": ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.swiftmodule","<vkk-debug.module>"]
+  "vkkPackageTests-debug.module": ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.swiftmodule","<vkkPackageTests-debug.module>"]
+  "vkkPackageTests-debug.test": ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.xctest","<vkkPackageTests-debug.test>"]
+  "vkkTests-debug.module": ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.swiftmodule","<vkkTests-debug.module>"]
+default: "main"
+commands: 
+  "<C.glm-debug.module>":
+    tool: phony
+    inputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.swiftmodule"]
+    outputs: ["<glm-debug.module>"]
+
+  "<C.vkk-debug.module>":
+    tool: phony
+    inputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.swiftmodule"]
+    outputs: ["<vkk-debug.module>"]
+
+  "<C.vkkPackageTests-debug.module>":
+    tool: phony
+    inputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.swiftmodule"]
+    outputs: ["<vkkPackageTests-debug.module>"]
+
+  "<C.vkkPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.xctest"]
+    outputs: ["<vkkPackageTests-debug.test>"]
+
+  "<C.vkkTests-debug.module>":
+    tool: phony
+    inputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.swiftmodule"]
+    outputs: ["<vkkTests-debug.module>"]
+
+  "C.glm-debug.module":
+    tool: swift-compiler
+    executable: "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/bin/swiftc"
+    module-name: "glm"
+    module-output-path: "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.swiftmodule"
+    inputs: ["/home/elect/SwiftProjects/vkk/.build/checkouts/glm/Sources/glm/ivec4.swift","/home/elect/SwiftProjects/vkk/.build/checkouts/glm/Sources/glm/typealias.swift"]
+    outputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/ivec4.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/typealias.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.swiftmodule"]
+    import-paths: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug"]
+    temps-path: "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build"
+    objects: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/ivec4.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/typealias.swift.o"]
+    other-args: ["-target","x86_64-unknown-linux","-swift-version","5","-enable-batch-mode","-index-store-path","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/index/store","-sdk","/","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/ModuleCache","-parseable-output"]
+    sources: ["/home/elect/SwiftProjects/vkk/.build/checkouts/glm/Sources/glm/ivec4.swift","/home/elect/SwiftProjects/vkk/.build/checkouts/glm/Sources/glm/typealias.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "C.vkk-debug.module":
+    tool: swift-compiler
+    executable: "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/bin/swiftc"
+    module-name: "vkk"
+    module-output-path: "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.swiftmodule"
+    inputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.swiftmodule","/home/elect/SwiftProjects/vkk/Sources/vkk/enums.swift","/home/elect/SwiftProjects/vkk/Sources/vkk/extensions.swift","/home/elect/SwiftProjects/vkk/Sources/vkk/utils.swift","/home/elect/SwiftProjects/vkk/Sources/vkk/vk.swift"]
+    outputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/enums.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/extensions.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/utils.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.swiftmodule"]
+    import-paths: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug"]
+    temps-path: "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build"
+    objects: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/enums.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/extensions.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/utils.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk.swift.o"]
+    other-args: ["-target","x86_64-unknown-linux","-swift-version","5","-enable-batch-mode","-index-store-path","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/index/store","-sdk","/","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-Xcc","-fmodule-map-file=/home/elect/SwiftProjects/vkk/Sources/vulkan/module.modulemap","-module-cache-path","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/ModuleCache","-parseable-output"]
+    sources: ["/home/elect/SwiftProjects/vkk/Sources/vkk/enums.swift","/home/elect/SwiftProjects/vkk/Sources/vkk/extensions.swift","/home/elect/SwiftProjects/vkk/Sources/vkk/utils.swift","/home/elect/SwiftProjects/vkk/Sources/vkk/vk.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "C.vkkPackageTests-debug.module":
+    tool: swift-compiler
+    executable: "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/bin/swiftc"
+    module-name: "vkkPackageTests"
+    module-output-path: "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.swiftmodule"
+    inputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.swiftmodule","/home/elect/SwiftProjects/vkk/Tests/LinuxMain.swift"]
+    outputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.build/LinuxMain.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.swiftmodule"]
+    import-paths: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug"]
+    temps-path: "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.build"
+    objects: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.build/LinuxMain.swift.o"]
+    other-args: ["-target","x86_64-unknown-linux","-swift-version","5","-enable-batch-mode","-index-store-path","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/index/store","-sdk","/","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-Xcc","-fmodule-map-file=/home/elect/SwiftProjects/vkk/Sources/vulkan/module.modulemap","-module-cache-path","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/ModuleCache","-parseable-output"]
+    sources: ["/home/elect/SwiftProjects/vkk/Tests/LinuxMain.swift"]
+    is-library: false
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "C.vkkPackageTests-debug.test":
+    tool: shell
+    description: "Linking ./.build/x86_64-unknown-linux/debug/vkkPackageTests.xctest"
+    inputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/ivec4.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/typealias.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/enums.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/extensions.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/utils.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.build/LinuxMain.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.swift.o"]
+    outputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.xctest"]
+    args: ["/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/bin/swiftc","-sdk","/","-L/usr/lib/x86_64-linux-gnu","-lvulkan","-g","-L","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug","-o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.xctest","-module-name","vkkPackageTests","-emit-executable","-Xlinker","-rpath=$ORIGIN","@/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkPackageTests.product/Objects.LinkFileList","-target","x86_64-unknown-linux","-L","/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib"]
+
+  "C.vkkTests-debug.module":
+    tool: swift-compiler
+    executable: "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/bin/swiftc"
+    module-name: "vkkTests"
+    module-output-path: "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.swiftmodule"
+    inputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.swiftmodule","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.swiftmodule","/home/elect/SwiftProjects/vkk/Tests/vkkTests/XCTestManifests.swift","/home/elect/SwiftProjects/vkk/Tests/vkkTests/vkkTests.swift"]
+    outputs: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.swiftmodule"]
+    import-paths: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug"]
+    temps-path: "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build"
+    objects: ["/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.swift.o","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.swift.o"]
+    other-args: ["-target","x86_64-unknown-linux","-swift-version","5","-enable-batch-mode","-index-store-path","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/index/store","-sdk","/","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-Xcc","-fmodule-map-file=/home/elect/SwiftProjects/vkk/Sources/vulkan/module.modulemap","-module-cache-path","/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/ModuleCache","-parseable-output"]
+    sources: ["/home/elect/SwiftProjects/vkk/Tests/vkkTests/XCTestManifests.swift","/home/elect/SwiftProjects/vkk/Tests/vkkTests/vkkTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "glm",
+        "repositoryURL": "/home/elect/SwiftProjects/glm",
+        "state": {
+          "branch": null,
+          "revision": "5ac69dac659e15a8936b7afd401b793ba272dc59",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

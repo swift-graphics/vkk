@@ -1,0 +1,6 @@
+version: "Swift version 5.1 (swift-5.1-RELEASE)"
+options: "1dcdc43e038da455e98442101f0f1991"
+build_time: [1569856989, 247424166]
+inputs:
+  "/home/elect/SwiftProjects/vkk/Tests/vkkTests/XCTestManifests.swift": [1569753202, 40313037]
+  "/home/elect/SwiftProjects/vkk/Tests/vkkTests/vkkTests.swift": [1569812245, 760432762]

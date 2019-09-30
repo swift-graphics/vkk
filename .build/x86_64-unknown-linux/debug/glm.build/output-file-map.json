@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps"
+  },
+  "/home/elect/SwiftProjects/vkk/.build/checkouts/glm/Sources/glm/ivec4.swift": {
+    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/ivec4.d",
+    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/ivec4.swift.o",
+    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/ivec4~partial.swiftmodule",
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/ivec4.swiftdeps"
+  },
+  "/home/elect/SwiftProjects/vkk/.build/checkouts/glm/Sources/glm/typealias.swift": {
+    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/typealias.d",
+    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/typealias.swift.o",
+    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/typealias~partial.swiftmodule",
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/glm.build/typealias.swiftdeps"
+  }
+}

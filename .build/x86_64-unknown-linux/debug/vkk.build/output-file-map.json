@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/master.swiftdeps"
+  },
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/enums.swift": {
+    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/enums.d",
+    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/enums.swift.o",
+    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/enums~partial.swiftmodule",
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/enums.swiftdeps"
+  },
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/extensions.swift": {
+    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/extensions.d",
+    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/extensions.swift.o",
+    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/extensions~partial.swiftmodule",
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/extensions.swiftdeps"
+  },
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/utils.swift": {
+    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/utils.d",
+    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/utils.swift.o",
+    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/utils~partial.swiftmodule",
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/utils.swiftdeps"
+  },
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/vk.swift": {
+    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk.d",
+    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk.swift.o",
+    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk~partial.swiftmodule",
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk.swiftdeps"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/master.swiftdeps"
+  },
+  "/home/elect/SwiftProjects/vkk/Tests/vkkTests/XCTestManifests.swift": {
+    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.d",
+    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.swift.o",
+    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests~partial.swiftmodule",
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.swiftdeps"
+  },
+  "/home/elect/SwiftProjects/vkk/Tests/vkkTests/vkkTests.swift": {
+    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.d",
+    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.swift.o",
+    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests~partial.swiftmodule",
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.swiftdeps"
+  }
+}

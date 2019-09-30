@@ -1,0 +1,8 @@
+version: "Swift version 5.1 (swift-5.1-RELEASE)"
+options: "b2e6e79d4d9a8a323a54f07bb93ba08a"
+build_time: [1569884773, 750595808]
+inputs:
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/enums.swift": [1569840197, 517822314]
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/extensions.swift": !dirty [1569884772, 908331198]
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/utils.swift": [1569856988, 725781641]
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/vk.swift": [1569800031, 430850058]
