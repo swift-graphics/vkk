@@ -6,209 +6,124 @@ import Foundation
 import vulkan
 import glm
 
-extension VkApplicationInfo {
+struct ApplicationInfo {
 
-    init(next: UnsafeRawPointer? = nil,
-         applicationName: String? = nil,
-         applicationVersion: UInt32 = 0,
-         engineName: String? = nil,
-         engineVersion: UInt32 = 0,
-         apiVersion: UInt32 = 0) {
+    let type = StructureType.applicationInfo
+    var next: UnsafeRawPointer?
+    var applicationName: String?
+    var applicationVersion = 0
+    var engineName: String?
+    var engineVersion = 0
+    var apiVersion = 0
 
-        self.init(
-                sType: VK_STRUCTURE_TYPE_APPLICATION_INFO,
-                pNext: nil,
-                pApplicationName: applicationName?.ptr,
-                applicationVersion: applicationVersion,
-                pEngineName: engineName?.ptr,
-                engineVersion: engineVersion,
-                apiVersion: apiVersion)
-    }
-
-    mutating func type(_ v: StructureType) -> VkApplicationInfo {
-        sType = VkStructureType(v.rawValue)
-        return self
-    }
-
-    func type() -> StructureType {
-        StructureType(rawValue: sType.rawValue)!
-    }
-
-    func next(_ v: UnsafeRawPointer?) -> VkApplicationInfo {
-        var s = self
-        s.pNext = v
-        return s
-    }
-
-    func next() -> UnsafeRawPointer? {
-        pNext
-    }
-
-    func applicationName(_ v: String?) -> VkApplicationInfo {
-        var s = self
-        s.pApplicationName = UnsafePointer<Int8>(v)
-        return s
-    }
-
-    func applicationName() -> String? {
-        String(cString: pApplicationName)
-    }
-
-    func applicationVersion(_ v: UInt32) -> VkApplicationInfo {
-        var s = self
-        s.applicationVersion = v
-        return s
-    }
-
-    func applicationVersion() -> UInt32 {
-        applicationVersion
-    }
-
-    func engineName(_ v: UnsafePointer<Int8>) -> VkApplicationInfo {
-        var s = self
-        s.pEngineName = UnsafePointer<Int8>(v)
-        return s
-    }
-
-    func engineName() -> String? {
-        String(cString: pEngineName)
-    }
-
-    func engineVersion(_ v: UInt32) -> VkApplicationInfo {
-        var s = self
-        s.engineVersion = v
-        return s
-    }
-
-    func engineVersion() -> UInt32 {
-        engineVersion
-    }
-
-    func apiVersion(_ v: UInt32) -> VkApplicationInfo {
-        var s = self
-        s.apiVersion = v
-        return s
-    }
-
-    func apiVersion() -> UInt32 {
-        apiVersion
+    func native<R>(_ block: (VkApplicationInfo) -> R) -> R {
+        applicationName.withPtr { pApp in
+            engineName.withPtr { pEng in
+                block(VkApplicationInfo(
+                        sType: type.value,
+                        pNext: next,
+                        pApplicationName: pApp,
+                        applicationVersion: UInt32(applicationVersion),
+                        pEngineName: pEng,
+                        engineVersion: UInt32(engineVersion),
+                        apiVersion: UInt32(apiVersion)))
+            }
+        }
     }
 }
 
-extension VkInstanceCreateInfo {
+struct InstanceCreateInfo {
 
-//    init(next: UnsafeRawPointer? = nil,
-//         flags: InstanceCreateFlags = 0,
-//         applicationInfo: VkApplicationInfo,
-//         enabledLayerNames: [String],
-//         enabledExtensionNames: [String]) {
-//
-//        withArrayOfCStrings(enabledLayerNames) { layers in
-//            withArrayOfCStrings(enabledExtensionNames) { extensions in
-//                var app = applicationInfo
-//                self.init(
-//                        sType: VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO,
-//                        pNext: next,
-//                        flags: flags,
-//                        pApplicationInfo: &app,
-//                        enabledLayerCount: UInt32(enabledLayerNames.count),
-//                        ppEnabledLayerNames: layers,
-//                        enabledExtensionCount: UInt32(enabledExtensionNames.count),
-//                        ppEnabledExtensionNames: extensions)
-//            }
+    let type = StructureType.instanceCreateInfo
+    var next: UnsafeRawPointer?
+    var flags: InstanceCreateFlags = 0
+    var applicationInfo: ApplicationInfo
+    var enabledLayerNames = [String]()
+    var enabledExtensionNames = [String]()
+
+//    func native<R>(_ block: (VkInstanceCreateInfo) -> R) -> R {
+//        var pLayers = enabledExtensionNames.map {
+//            strdup($0)
+//        }
+//        var pExtension = enabledExtensionNames.map {
+//            strdup($0)
+//        }
+//        return applicationInfo.native { app in
+//            var app = app
+//            var layers = pLayers
+//            block(VkInstanceCreateInfo(
+//                    sType: type.value,
+//                    pNext: next,
+//                    flags: flags,
+//                    pApplicationInfo: &app,
+//                    enabledLayerCount: UInt32(enabledLayerNames.count),
+//                    ppEnabledLayerNames: &layers,
+//                    enabledExtensionCount: UInt32(enabledExtensionNames.count),
+//                    ppEnabledExtensionNames: &pExtension))
 //        }
 //    }
-
-//    func type(_ v: StructureType) -> VkInstanceCreateInfo {
-//        var s = self
-//        s.sType = VkStructureType(v.rawValue)
-//        return s
-//    }
-//
-//    func type() -> StructureType {
-//        StructureType(rawValue: sType.rawValue)!
-//    }
-//
-//    func next(_ v: UnsafeRawPointer?) -> VkInstanceCreateInfo {
-//        var s = self
-//        s.pNext = v
-//        return s
-//    }
-//
-//    func next() -> UnsafeRawPointer? {
-//        pNext
-//    }
-//
-//    func flags(_ v: UnsafeRawPointer?) -> VkInstanceCreateInfo {
-//        var s = self
-//        s.pNext = v
-//        return s
-//    }
-//
-//    func next() -> UnsafeRawPointer? {
-//        pNext
-//    }
 }
 
-extension VkPhysicalDeviceFeatures {
+struct PhysicalDeviceFeatures {
 
-    init(robustBufferAccess: Bool = false,
-         fullDrawIndexUint32: Bool = false,
-         imageCubeArray: Bool = false,
-         independentBlend: Bool = false,
-         geometryShader: Bool = false,
-         tessellationShader: Bool = false,
-         sampleRateShading: Bool = false,
-         dualSrcBlend: Bool = false,
-         logicOp: Bool = false,
-         multiDrawIndirect: Bool = false,
-         drawIndirectFirstInstance: Bool = false,
-         depthClamp: Bool = false,
-         depthBiasClamp: Bool = false,
-         fillModeNonSolid: Bool = false,
-         depthBounds: Bool = false,
-         wideLines: Bool = false,
-         largePoints: Bool = false,
-         alphaToOne: Bool = false,
-         multiViewport: Bool = false,
-         samplerAnisotropy: Bool = false,
-         textureCompressionETC2: Bool = false,
-         textureCompressionASTC_LDR: Bool = false,
-         textureCompressionBC: Bool = false,
-         occlusionQueryPrecise: Bool = false,
-         pipelineStatisticsQuery: Bool = false,
-         vertexPipelineStoresAndAtomics: Bool = false,
-         fragmentStoresAndAtomics: Bool = false,
-         shaderTessellationAndGeometryPointSize: Bool = false,
-         shaderImageGatherExtended: Bool = false,
-         shaderStorageImageExtendedFormats: Bool = false,
-         shaderStorageImageMultisample: Bool = false,
-         shaderStorageImageReadWithoutFormat: Bool = false,
-         shaderStorageImageWriteWithoutFormat: Bool = false,
-         shaderUniformBufferArrayDynamicIndexing: Bool = false,
-         shaderSampledImageArrayDynamicIndexing: Bool = false,
-         shaderStorageBufferArrayDynamicIndexing: Bool = false,
-         shaderStorageImageArrayDynamicIndexing: Bool = false,
-         shaderClipDistance: Bool = false,
-         shaderCullDistance: Bool = false,
-         shaderFloat64: Bool = false,
-         shaderInt64: Bool = false,
-         shaderInt16: Bool = false,
-         shaderResourceResidency: Bool = false,
-         shaderResourceMinLod: Bool = false,
-         sparseBinding: Bool = false,
-         sparseResidencyBuffer: Bool = false,
-         sparseResidencyImage2D: Bool = false,
-         sparseResidencyImage3D: Bool = false,
-         sparseResidency2Samples: Bool = false,
-         sparseResidency4Samples: Bool = false,
-         sparseResidency8Samples: Bool = false,
-         sparseResidency16Samples: Bool = false,
-         sparseResidencyAliased: Bool = false,
-         variableMultisampleRate: Bool = false,
-         inheritedQueries: Bool = false) {
+    var robustBufferAccess = false
+    var fullDrawIndexUint32 = false
+    var imageCubeArray = false
+    var independentBlend = false
+    var geometryShader = false
+    var tessellationShader = false
+    var sampleRateShading = false
+    var dualSrcBlend = false
+    var logicOp = false
+    var multiDrawIndirect = false
+    var drawIndirectFirstInstance = false
+    var depthClamp = false
+    var depthBiasClamp = false
+    var fillModeNonSolid = false
+    var depthBounds = false
+    var wideLines = false
+    var largePoints = false
+    var alphaToOne = false
+    var multiViewport = false
+    var samplerAnisotropy = false
+    var textureCompressionETC2 = false
+    var textureCompressionASTC_LDR = false
+    var textureCompressionBC = false
+    var occlusionQueryPrecise = false
+    var pipelineStatisticsQuery = false
+    var vertexPipelineStoresAndAtomics = false
+    var fragmentStoresAndAtomics = false
+    var shaderTessellationAndGeometryPointSize = false
+    var shaderImageGatherExtended = false
+    var shaderStorageImageExtendedFormats = false
+    var shaderStorageImageMultisample = false
+    var shaderStorageImageReadWithoutFormat = false
+    var shaderStorageImageWriteWithoutFormat = false
+    var shaderUniformBufferArrayDynamicIndexing = false
+    var shaderSampledImageArrayDynamicIndexing = false
+    var shaderStorageBufferArrayDynamicIndexing = false
+    var shaderStorageImageArrayDynamicIndexing = false
+    var shaderClipDistance = false
+    var shaderCullDistance = false
+    var shaderFloat64 = false
+    var shaderInt64 = false
+    var shaderInt16 = false
+    var shaderResourceResidency = false
+    var shaderResourceMinLod = false
+    var sparseBinding = false
+    var sparseResidencyBuffer = false
+    var sparseResidencyImage2D = false
+    var sparseResidencyImage3D = false
+    var sparseResidency2Samples = false
+    var sparseResidency4Samples = false
+    var sparseResidency8Samples = false
+    var sparseResidency16Samples = false
+    var sparseResidencyAliased = false
+    var variableMultisampleRate = false
+    var inheritedQueries = false
 
-        self.init(
+    func native<R>(_ block: (VkPhysicalDeviceFeatures) -> R) -> R {
+        block(VkPhysicalDeviceFeatures(
                 robustBufferAccess: UInt32(robustBufferAccess),
                 fullDrawIndexUint32: UInt32(fullDrawIndexUint32),
                 imageCubeArray: UInt32(imageCubeArray),
@@ -263,50 +178,33 @@ extension VkPhysicalDeviceFeatures {
                 sparseResidency16Samples: UInt32(sparseResidency16Samples),
                 sparseResidencyAliased: UInt32(sparseResidencyAliased),
                 variableMultisampleRate: UInt32(variableMultisampleRate),
-                inheritedQueries: UInt32(inheritedQueries))
+                inheritedQueries: UInt32(inheritedQueries)))
     }
 }
 
-extension VkFormatProperties {
+struct FormatProperties {
 
-    init(linearTilingFeatures: FormatFeature = [],
-         optimalTilingFeatures: FormatFeature = [],
-         bufferFeatures: FormatFeature = []) {
+    var linearTilingFeatures = FormatFeature()
+    var optimalTilingFeatures = FormatFeature()
+    var bufferFeatures = FormatFeature()
 
-        self.init(
+    func native<R>(_ block: (VkFormatProperties) -> R) -> R {
+        block(VkFormatProperties(
                 linearTilingFeatures: linearTilingFeatures.rawValue,
                 optimalTilingFeatures: optimalTilingFeatures.rawValue,
-                bufferFeatures: bufferFeatures.rawValue)
+                bufferFeatures: bufferFeatures.rawValue))
     }
 }
 
-extension VkExtent3D {
+struct Extent3D {
 
-    init(width: UInt32 = 0,
-         height: UInt32 = 0,
-         depth: UInt32 = 0) {
+    var size = uvec3(0)
 
-        self.init(
-                width: width,
-                height: height,
-                depth: depth)
-    }
-
-    init(size: uvec2,
-         depth: UInt32 = 0) {
-
-        self.init(
+    func native<R>(_ block: (VkExtent3D) -> R) -> R {
+        block(VkExtent3D(
                 width: size.x,
                 height: size.y,
-                depth: depth)
-    }
-
-    init(size: uvec3) {
-
-        self.init(
-                width: size.x,
-                height: size.y,
-                depth: size.z)
+                depth: size.z))
     }
 }
 

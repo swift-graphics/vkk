@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import vulkan
 
 typealias Flags = UInt32
 
@@ -432,6 +433,10 @@ enum StructureType: UInt32 {
             bindImageMemoryInfoKhr = bindImageMemoryInfo,
             physicalDeviceMaintenance3PropertiesKhr = physicalDeviceMaintenance3Properties,
             descriptorSetLayoutSupportKhr = descriptorSetLayoutSupport
+
+    var value: VkStructureType {
+        VkStructureType(rawValue)
+    }
 }
 
 enum SystemAllocationScope: Int32 {
@@ -1084,7 +1089,7 @@ typealias InstanceCreateFlags = Flags
 
 struct FormatFeature: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkFormatFeatureFlags
 
     static let
             sampledImageBit = FormatFeature(rawValue: 0x00000001),
@@ -1126,7 +1131,7 @@ struct FormatFeature: OptionSet {
 
 struct ImageUsage: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkImageUsageFlags
 
     static let
             transferSrcBit = ImageUsage(rawValue: 0x00000001),
@@ -1143,7 +1148,7 @@ struct ImageUsage: OptionSet {
 
 struct ImageCreate: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkImageCreateFlags
 
     static let
             sparseBindingBit = ImageCreate(rawValue: 0x00000001),
@@ -1171,7 +1176,7 @@ struct ImageCreate: OptionSet {
 
 struct SampleCount: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkSampleCountFlags
 
     static let
             _1_BIT = SampleCount(rawValue: 0x00000001),
@@ -1185,7 +1190,7 @@ struct SampleCount: OptionSet {
 
 struct QueueBit: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkQueueFlags
 
     static let
             graphicsBit = QueueBit(rawValue: 0x00000001),
@@ -1197,7 +1202,7 @@ struct QueueBit: OptionSet {
 
 struct MemoryProperty: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkMemoryPropertyFlags
 
     static let
             deviceLocalBit = MemoryProperty(rawValue: 0x00000001),
@@ -1210,7 +1215,7 @@ struct MemoryProperty: OptionSet {
 
 struct MemoryHeap: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkMemoryHeapFlags
 
     static let
             deviceLocalBit = MemoryHeap(rawValue: 0x00000001),
@@ -1222,7 +1227,7 @@ typealias DeviceCreateFlags = Flags
 
 struct DeviceQueueCreate: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkDeviceQueueCreateFlags
 
     static let
             protectedBit = DeviceQueueCreate(rawValue: 0x00000001)
@@ -1230,7 +1235,7 @@ struct DeviceQueueCreate: OptionSet {
 
 struct PipelineStage: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkPipelineStageFlags
 
     static let
             topOfPipeBit = PipelineStage(rawValue: 0x00000001),
@@ -1265,7 +1270,7 @@ typealias MemoryMapFlags = Flags
 
 struct ImageAspect: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkImageAspectFlags
 
     static let
             colorBit = ImageAspect(rawValue: 0x00000001),
@@ -1286,7 +1291,7 @@ struct ImageAspect: OptionSet {
 
 struct SparseImageFormat: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkSparseImageFormatFlags
 
     static let
             SINGLE_MIPTAIL_BIT = SparseImageFormat(rawValue: 0x00000001),
@@ -1296,7 +1301,7 @@ struct SparseImageFormat: OptionSet {
 
 struct SparseMemoryBind: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkSparseMemoryBindFlags
 
     static let
             metadataBit = SparseMemoryBind(rawValue: 0x00000001)
@@ -1304,7 +1309,7 @@ struct SparseMemoryBind: OptionSet {
 
 struct FenceCreate: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkFenceCreateFlags
 
     static let
             signaledBit = FenceCreate(rawValue: 0x00000001)
@@ -1316,7 +1321,7 @@ typealias QueryPoolCreateFlags = Flags
 
 struct QueryPipelineStatistic: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkQueryPipelineStatisticFlags
 
     static let
             inputAssemblyVerticesBit = QueryPipelineStatistic(rawValue: 0x00000001),
@@ -1334,7 +1339,7 @@ struct QueryPipelineStatistic: OptionSet {
 
 struct QueryResult: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkQueryResultFlags
 
     static let
             _64Bit = QueryResult(rawValue: 0x00000001),
@@ -1345,7 +1350,7 @@ struct QueryResult: OptionSet {
 
 struct BufferCreate: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkBufferCreateFlags
 
     static let
             sparseBindingBit = BufferCreate(rawValue: 0x00000001),
@@ -1357,7 +1362,7 @@ struct BufferCreate: OptionSet {
 
 struct BufferUsage: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkBufferUsageFlags
 
     static let
             transferSrcBit = BufferUsage(rawValue: 0x00000001),
@@ -1380,7 +1385,7 @@ typealias BufferViewCreateFlags = Flags
 
 struct ImageViewCreate: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkImageViewCreateFlags
 
     static let
             fragmentDensityMapDynamicBitExt = ImageViewCreate(rawValue: 0x00000001)
@@ -1391,7 +1396,7 @@ typealias PipelineCacheCreate = Flags
 
 struct PipelineCreate: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkPipelineCreateFlags
 
     static let
             disableOptimizationBit = PipelineCreate(rawValue: 0x00000001),
@@ -1437,7 +1442,7 @@ typealias PipelineRasterizationStateCreate = Flags
 
 struct CullMode: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkCullModeFlags
 
     static let
             none = CullMode(rawValue: 0),
@@ -1452,7 +1457,7 @@ typealias PipelineColorBlendStateCreate = Flags
 
 struct ColorComponent: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkColorComponentFlags
 
     static let
             rBit = ColorComponent(rawValue: 0x00000001),
@@ -1466,7 +1471,7 @@ typealias PipelineLayoutCreate = Flags
 
 struct SamplerCreate: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkSamplerCreateFlags
 
     static let
             subsampledBitExt = SamplerCreate(rawValue: 0x00000001),
@@ -1475,7 +1480,7 @@ struct SamplerCreate: OptionSet {
 
 struct DescriptorSetLayoutCreate: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkDescriptorSetLayoutCreateFlags
 
     static let
             pushDescriptorBitKhr = DescriptorSetLayoutCreate(rawValue: 0x00000001),
@@ -1484,7 +1489,7 @@ struct DescriptorSetLayoutCreate: OptionSet {
 
 struct DescriptorPoolCreate: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkDescriptorPoolCreateFlags
 
     static let
             freeDescriptorSetBit = DescriptorPoolCreate(rawValue: 0x00000001),
@@ -1497,7 +1502,7 @@ typealias RenderPassCreate = Flags
 
 struct AttachmentDescription: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkAttachmentDescriptionFlags
 
     static let
             mayAliasBit = AttachmentDescription(rawValue: 0x00000001)
@@ -1505,7 +1510,7 @@ struct AttachmentDescription: OptionSet {
 
 struct SubpassDescription: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkSubpassDescriptionFlags
 
     static let
             perViewAttributesBitNvx = SubpassDescription(rawValue: 0x00000001),
@@ -1514,7 +1519,7 @@ struct SubpassDescription: OptionSet {
 
 struct Access: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkAccessFlags
 
     static let
             indirectCommandReadBit = Access(rawValue: 0x00000001),
@@ -1549,7 +1554,7 @@ struct Access: OptionSet {
 
 struct Dependency: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkDependencyFlags
 
     static let
             byRegionBit = Dependency(rawValue: 0x00000001),
@@ -1561,7 +1566,7 @@ struct Dependency: OptionSet {
 
 struct CommandPoolCreate: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkCommandPoolCreateFlags
 
     static let
             transientBit = CommandPoolCreate(rawValue: 0x00000001),
@@ -1571,7 +1576,7 @@ struct CommandPoolCreate: OptionSet {
 
 struct CommandPoolReset: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkCommandPoolResetFlags
 
     static let
             releaseResourcesBit = CommandPoolReset(rawValue: 0x00000001)
@@ -1579,7 +1584,7 @@ struct CommandPoolReset: OptionSet {
 
 struct CommandBufferUsage: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkCommandBufferUsageFlags
 
     static let
             oneTimeSubmitBit = CommandBufferUsage(rawValue: 0x00000001),
@@ -1589,7 +1594,7 @@ struct CommandBufferUsage: OptionSet {
 
 struct QueryControl: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkQueryControlFlags
 
     static let
             preciseBit = QueryControl(rawValue: 0x00000001)
@@ -1597,7 +1602,7 @@ struct QueryControl: OptionSet {
 
 struct CommandBufferReset: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkCommandBufferResetFlags
 
     static let
             releaseResourcesBit = CommandBufferReset(rawValue: 0x00000001)
@@ -1605,7 +1610,7 @@ struct CommandBufferReset: OptionSet {
 
 struct StencilFace: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkStencilFaceFlags
 
     static let
             faceFrontBit = StencilFace(rawValue: 0x00000001),

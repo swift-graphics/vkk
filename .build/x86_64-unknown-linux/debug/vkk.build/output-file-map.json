@@ -8,11 +8,11 @@
     "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/enums~partial.swiftmodule",
     "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/enums.swiftdeps"
   },
-  "/home/elect/SwiftProjects/vkk/Sources/vkk/extensions.swift": {
-    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/extensions.d",
-    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/extensions.swift.o",
-    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/extensions~partial.swiftmodule",
-    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/extensions.swiftdeps"
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/structs.swift": {
+    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/structs.d",
+    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/structs.swift.o",
+    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/structs~partial.swiftmodule",
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/structs.swiftdeps"
   },
   "/home/elect/SwiftProjects/vkk/Sources/vkk/utils.swift": {
     "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/utils.d",

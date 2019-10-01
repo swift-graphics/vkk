@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import SwiftShims
 
 public extension String {
 
@@ -11,6 +12,16 @@ public extension String {
         let result: UnsafeMutableBufferPointer<Int8> = UnsafeMutableBufferPointer<Int8>.allocate(capacity: count)
         result.initialize(from: utf8CString)
         return UnsafePointer<Int8>(result.baseAddress!)
+    }
+}
+
+public extension Optional where Wrapped == String {
+
+    func withPtr<R>(_ block: (UnsafePointer<Int8>?) -> R) -> R {
+        if let val = self {
+            return val.withCString(block)
+        }
+        return block(nil)
     }
 }
 
