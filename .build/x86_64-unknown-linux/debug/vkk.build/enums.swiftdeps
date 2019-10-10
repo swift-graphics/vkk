@@ -38,14 +38,13 @@ provides-top-level:
 - "SubpassContents"
 - "ObjectType"
 - "VendorId"
-- "InstanceCreateFlags"
 - "FormatFeature"
 - "ImageUsage"
 - "ImageCreate"
 - "SampleCount"
-- "QueueBit"
+- "QueueFlags"
 - "MemoryProperty"
-- "MemoryHeap"
+- "MemoryHeapFlags"
 - "DeviceCreateFlags"
 - "DeviceQueueCreate"
 - "PipelineStage"
@@ -84,7 +83,6 @@ provides-top-level:
 - "DescriptorSetLayoutCreate"
 - "DescriptorPoolCreate"
 - "DescriptorPoolReset"
-- "FramebufferCreate"
 - "RenderPassCreate"
 - "AttachmentDescription"
 - "SubpassDescription"
@@ -96,6 +94,7 @@ provides-top-level:
 - "QueryControl"
 - "CommandBufferReset"
 - "StencilFace"
+- "FramebufferCreate"
 provides-nominal:
 - "3vkk26PipelineCacheHeaderVersionO"
 - "3vkk6ResultO"
@@ -138,9 +137,9 @@ provides-nominal:
 - "3vkk10ImageUsageV"
 - "3vkk11ImageCreateV"
 - "3vkk11SampleCountV"
-- "3vkk8QueueBitV"
+- "3vkk10QueueFlagsV"
 - "3vkk14MemoryPropertyV"
-- "3vkk10MemoryHeapV"
+- "3vkk15MemoryHeapFlagsV"
 - "3vkk17DeviceQueueCreateV"
 - "3vkk13PipelineStageV"
 - "3vkk11ImageAspectV"
@@ -154,7 +153,7 @@ provides-nominal:
 - "3vkk15ImageViewCreateV"
 - "3vkk14PipelineCreateV"
 - "3vkk11ShaderStageV"
-- "3vkk8CullModeV"
+- "3vkk8CullModeO"
 - "3vkk14ColorComponentV"
 - "3vkk13SamplerCreateV"
 - "3vkk25DescriptorSetLayoutCreateV"
@@ -169,6 +168,7 @@ provides-nominal:
 - "3vkk12QueryControlV"
 - "3vkk18CommandBufferResetV"
 - "3vkk11StencilFaceV"
+- "3vkk17FramebufferCreateV"
 provides-member:
 - ["3vkk26PipelineCacheHeaderVersionO", ""]
 - ["3vkk6ResultO", ""]
@@ -211,9 +211,9 @@ provides-member:
 - ["3vkk10ImageUsageV", ""]
 - ["3vkk11ImageCreateV", ""]
 - ["3vkk11SampleCountV", ""]
-- ["3vkk8QueueBitV", ""]
+- ["3vkk10QueueFlagsV", ""]
 - ["3vkk14MemoryPropertyV", ""]
-- ["3vkk10MemoryHeapV", ""]
+- ["3vkk15MemoryHeapFlagsV", ""]
 - ["3vkk17DeviceQueueCreateV", ""]
 - ["3vkk13PipelineStageV", ""]
 - ["3vkk11ImageAspectV", ""]
@@ -227,7 +227,7 @@ provides-member:
 - ["3vkk15ImageViewCreateV", ""]
 - ["3vkk14PipelineCreateV", ""]
 - ["3vkk11ShaderStageV", ""]
-- ["3vkk8CullModeV", ""]
+- ["3vkk8CullModeO", ""]
 - ["3vkk14ColorComponentV", ""]
 - ["3vkk13SamplerCreateV", ""]
 - ["3vkk25DescriptorSetLayoutCreateV", ""]
@@ -242,6 +242,7 @@ provides-member:
 - ["3vkk12QueryControlV", ""]
 - ["3vkk18CommandBufferResetV", ""]
 - ["3vkk11StencilFaceV", ""]
+- ["3vkk17FramebufferCreateV", ""]
 depends-top-level:
 - "=="
 - "Access"
@@ -271,6 +272,7 @@ depends-top-level:
 - "DeviceCreateFlags"
 - "DeviceQueueCreate"
 - "DynamicState"
+- "Error"
 - "EventCreateFlags"
 - "FenceCreate"
 - "Filter"
@@ -289,12 +291,11 @@ depends-top-level:
 - "ImageViewCreate"
 - "ImageViewType"
 - "IndexType"
-- "InstanceCreateFlags"
 - "Int32"
 - "IntegerLiteralType"
 - "InternalAllocationType"
 - "LogicOp"
-- "MemoryHeap"
+- "MemoryHeapFlags"
 - "MemoryMapFlags"
 - "MemoryProperty"
 - "ObjectType"
@@ -323,7 +324,7 @@ depends-top-level:
 - "QueryPoolCreateFlags"
 - "QueryResult"
 - "QueryType"
-- "QueueBit"
+- "QueueFlags"
 - "RenderPassCreate"
 - "Result"
 - "SampleCount"
@@ -345,17 +346,76 @@ depends-top-level:
 - "UInt32"
 - "VendorId"
 - "VertexInputRate"
+- "VkAccessFlags"
+- "VkAttachmentDescriptionFlags"
+- "VkAttachmentLoadOp"
+- "VkAttachmentStoreOp"
+- "VkBlendFactor"
+- "VkBlendOp"
+- "VkBorderColor"
+- "VkBufferCreateFlags"
+- "VkBufferUsageFlags"
+- "VkColorComponentFlags"
+- "VkCommandBufferLevel"
+- "VkCommandBufferResetFlags"
+- "VkCommandBufferUsageFlags"
+- "VkCommandPoolCreateFlags"
+- "VkCommandPoolResetFlags"
+- "VkCompareOp"
+- "VkComponentSwizzle"
+- "VkCullModeFlags"
+- "VkDependencyFlags"
+- "VkDescriptorPoolCreateFlags"
+- "VkDescriptorSetLayoutCreateFlags"
+- "VkDescriptorType"
+- "VkDeviceQueueCreateFlags"
+- "VkFenceCreateFlags"
+- "VkFilter"
+- "VkFormat"
 - "VkFormatFeatureFlags"
+- "VkFrontFace"
+- "VkImageAspectFlags"
+- "VkImageCreateFlags"
+- "VkImageLayout"
+- "VkImageTiling"
+- "VkImageType"
 - "VkImageUsageFlags"
+- "VkImageViewCreateFlags"
+- "VkLogicOp"
+- "VkMemoryHeapFlags"
+- "VkMemoryPropertyFlags"
+- "VkPhysicalDeviceType"
+- "VkPipelineBindPoint"
+- "VkPipelineCreateFlags"
+- "VkPipelineStageFlags"
+- "VkPolygonMode"
+- "VkPrimitiveTopology"
+- "VkQueryControlFlags"
+- "VkQueryPipelineStatisticFlags"
+- "VkQueryResultFlags"
+- "VkQueryType"
+- "VkQueueFlags"
+- "VkSampleCountFlags"
+- "VkSamplerAddressMode"
+- "VkSamplerCreateFlags"
+- "VkSamplerMipmapMode"
+- "VkShaderStageFlags"
+- "VkSharingMode"
+- "VkSparseImageFormatFlags"
+- "VkSparseMemoryBindFlags"
+- "VkStencilFaceFlags"
+- "VkStencilOp"
 - "VkStructureType"
+- "VkSubpassDescriptionFlags"
+- "VkVertexInputRate"
 - !private "~="
 depends-member:
 - ["3vkk6AccessV", "=="]
 - ["3vkk6AccessV", "Access"]
 - ["3vkk6AccessV", "ArrayLiteralElement"]
 - ["3vkk6AccessV", "Element"]
-- ["3vkk6AccessV", "Int32"]
 - ["3vkk6AccessV", "RawValue"]
+- ["3vkk6AccessV", "VkAccessFlags"]
 - ["3vkk6AccessV", "_Default_ArrayLiteralElement"]
 - ["3vkk6AccessV", "_Default_Element"]
 - ["3vkk6AccessV", "_Default_RawValue"]
@@ -410,8 +470,8 @@ depends-member:
 - ["3vkk21AttachmentDescriptionV", "ArrayLiteralElement"]
 - ["3vkk21AttachmentDescriptionV", "AttachmentDescription"]
 - ["3vkk21AttachmentDescriptionV", "Element"]
-- ["3vkk21AttachmentDescriptionV", "Int32"]
 - ["3vkk21AttachmentDescriptionV", "RawValue"]
+- ["3vkk21AttachmentDescriptionV", "VkAttachmentDescriptionFlags"]
 - ["3vkk21AttachmentDescriptionV", "_Default_ArrayLiteralElement"]
 - ["3vkk21AttachmentDescriptionV", "_Default_Element"]
 - ["3vkk21AttachmentDescriptionV", "_Default_RawValue"]
@@ -437,6 +497,7 @@ depends-member:
 - ["3vkk21AttachmentDescriptionV", "update"]
 - ["3vkk16AttachmentLoadOpO", "=="]
 - ["3vkk16AttachmentLoadOpO", "RawValue"]
+- ["3vkk16AttachmentLoadOpO", "VkAttachmentLoadOp"]
 - ["3vkk16AttachmentLoadOpO", "_Default_RawValue"]
 - ["3vkk16AttachmentLoadOpO", "_rawHashValue"]
 - ["3vkk16AttachmentLoadOpO", "clear"]
@@ -447,8 +508,10 @@ depends-member:
 - ["3vkk16AttachmentLoadOpO", "init"]
 - ["3vkk16AttachmentLoadOpO", "load"]
 - ["3vkk16AttachmentLoadOpO", "rawValue"]
+- ["3vkk16AttachmentLoadOpO", "value"]
 - ["3vkk17AttachmentStoreOpO", "=="]
 - ["3vkk17AttachmentStoreOpO", "RawValue"]
+- ["3vkk17AttachmentStoreOpO", "VkAttachmentStoreOp"]
 - ["3vkk17AttachmentStoreOpO", "_Default_RawValue"]
 - ["3vkk17AttachmentStoreOpO", "_rawHashValue"]
 - ["3vkk17AttachmentStoreOpO", "deinit"]
@@ -458,8 +521,10 @@ depends-member:
 - ["3vkk17AttachmentStoreOpO", "init"]
 - ["3vkk17AttachmentStoreOpO", "rawValue"]
 - ["3vkk17AttachmentStoreOpO", "store"]
+- ["3vkk17AttachmentStoreOpO", "value"]
 - ["3vkk11BlendFactorO", "=="]
 - ["3vkk11BlendFactorO", "RawValue"]
+- ["3vkk11BlendFactorO", "VkBlendFactor"]
 - ["3vkk11BlendFactorO", "_Default_RawValue"]
 - ["3vkk11BlendFactorO", "_rawHashValue"]
 - ["3vkk11BlendFactorO", "constantAlpha"]
@@ -485,9 +550,11 @@ depends-member:
 - ["3vkk11BlendFactorO", "srcAlpha"]
 - ["3vkk11BlendFactorO", "srcAlphaSaturate"]
 - ["3vkk11BlendFactorO", "srcColor"]
+- ["3vkk11BlendFactorO", "value"]
 - ["3vkk11BlendFactorO", "zero"]
 - ["3vkk7BlendOpO", "=="]
 - ["3vkk7BlendOpO", "RawValue"]
+- ["3vkk7BlendOpO", "VkBlendOp"]
 - ["3vkk7BlendOpO", "_Default_RawValue"]
 - ["3vkk7BlendOpO", "_rawHashValue"]
 - ["3vkk7BlendOpO", "add"]
@@ -543,11 +610,13 @@ depends-member:
 - ["3vkk7BlendOpO", "srcOutExt"]
 - ["3vkk7BlendOpO", "srcOverExt"]
 - ["3vkk7BlendOpO", "subtract"]
+- ["3vkk7BlendOpO", "value"]
 - ["3vkk7BlendOpO", "vividlightExt"]
 - ["3vkk7BlendOpO", "xorExt"]
 - ["3vkk7BlendOpO", "zeroExt"]
 - ["3vkk11BorderColorO", "=="]
 - ["3vkk11BorderColorO", "RawValue"]
+- ["3vkk11BorderColorO", "VkBorderColor"]
 - ["3vkk11BorderColorO", "_Default_RawValue"]
 - ["3vkk11BorderColorO", "_rawHashValue"]
 - ["3vkk11BorderColorO", "deinit"]
@@ -561,12 +630,13 @@ depends-member:
 - ["3vkk11BorderColorO", "intOpaqueWhite"]
 - ["3vkk11BorderColorO", "intTransparentBlack"]
 - ["3vkk11BorderColorO", "rawValue"]
+- ["3vkk11BorderColorO", "value"]
 - ["3vkk12BufferCreateV", "=="]
 - ["3vkk12BufferCreateV", "ArrayLiteralElement"]
 - ["3vkk12BufferCreateV", "BufferCreate"]
 - ["3vkk12BufferCreateV", "Element"]
-- ["3vkk12BufferCreateV", "Int32"]
 - ["3vkk12BufferCreateV", "RawValue"]
+- ["3vkk12BufferCreateV", "VkBufferCreateFlags"]
 - ["3vkk12BufferCreateV", "_Default_ArrayLiteralElement"]
 - ["3vkk12BufferCreateV", "_Default_Element"]
 - ["3vkk12BufferCreateV", "_Default_RawValue"]
@@ -598,8 +668,8 @@ depends-member:
 - ["3vkk11BufferUsageV", "ArrayLiteralElement"]
 - ["3vkk11BufferUsageV", "BufferUsage"]
 - ["3vkk11BufferUsageV", "Element"]
-- ["3vkk11BufferUsageV", "Int32"]
 - ["3vkk11BufferUsageV", "RawValue"]
+- ["3vkk11BufferUsageV", "VkBufferUsageFlags"]
 - ["3vkk11BufferUsageV", "_Default_ArrayLiteralElement"]
 - ["3vkk11BufferUsageV", "_Default_Element"]
 - ["3vkk11BufferUsageV", "_Default_RawValue"]
@@ -640,8 +710,8 @@ depends-member:
 - ["3vkk14ColorComponentV", "ArrayLiteralElement"]
 - ["3vkk14ColorComponentV", "ColorComponent"]
 - ["3vkk14ColorComponentV", "Element"]
-- ["3vkk14ColorComponentV", "Int32"]
 - ["3vkk14ColorComponentV", "RawValue"]
+- ["3vkk14ColorComponentV", "VkColorComponentFlags"]
 - ["3vkk14ColorComponentV", "_Default_ArrayLiteralElement"]
 - ["3vkk14ColorComponentV", "_Default_Element"]
 - ["3vkk14ColorComponentV", "_Default_RawValue"]
@@ -670,6 +740,7 @@ depends-member:
 - ["3vkk14ColorComponentV", "update"]
 - ["3vkk18CommandBufferLevelO", "=="]
 - ["3vkk18CommandBufferLevelO", "RawValue"]
+- ["3vkk18CommandBufferLevelO", "VkCommandBufferLevel"]
 - ["3vkk18CommandBufferLevelO", "_Default_RawValue"]
 - ["3vkk18CommandBufferLevelO", "_rawHashValue"]
 - ["3vkk18CommandBufferLevelO", "deinit"]
@@ -679,12 +750,13 @@ depends-member:
 - ["3vkk18CommandBufferLevelO", "primary"]
 - ["3vkk18CommandBufferLevelO", "rawValue"]
 - ["3vkk18CommandBufferLevelO", "secondary"]
+- ["3vkk18CommandBufferLevelO", "value"]
 - ["3vkk18CommandBufferResetV", "=="]
 - ["3vkk18CommandBufferResetV", "ArrayLiteralElement"]
 - ["3vkk18CommandBufferResetV", "CommandBufferReset"]
 - ["3vkk18CommandBufferResetV", "Element"]
-- ["3vkk18CommandBufferResetV", "Int32"]
 - ["3vkk18CommandBufferResetV", "RawValue"]
+- ["3vkk18CommandBufferResetV", "VkCommandBufferResetFlags"]
 - ["3vkk18CommandBufferResetV", "_Default_ArrayLiteralElement"]
 - ["3vkk18CommandBufferResetV", "_Default_Element"]
 - ["3vkk18CommandBufferResetV", "_Default_RawValue"]
@@ -712,8 +784,8 @@ depends-member:
 - ["3vkk18CommandBufferUsageV", "ArrayLiteralElement"]
 - ["3vkk18CommandBufferUsageV", "CommandBufferUsage"]
 - ["3vkk18CommandBufferUsageV", "Element"]
-- ["3vkk18CommandBufferUsageV", "Int32"]
 - ["3vkk18CommandBufferUsageV", "RawValue"]
+- ["3vkk18CommandBufferUsageV", "VkCommandBufferUsageFlags"]
 - ["3vkk18CommandBufferUsageV", "_Default_ArrayLiteralElement"]
 - ["3vkk18CommandBufferUsageV", "_Default_Element"]
 - ["3vkk18CommandBufferUsageV", "_Default_RawValue"]
@@ -743,8 +815,8 @@ depends-member:
 - ["3vkk17CommandPoolCreateV", "ArrayLiteralElement"]
 - ["3vkk17CommandPoolCreateV", "CommandPoolCreate"]
 - ["3vkk17CommandPoolCreateV", "Element"]
-- ["3vkk17CommandPoolCreateV", "Int32"]
 - ["3vkk17CommandPoolCreateV", "RawValue"]
+- ["3vkk17CommandPoolCreateV", "VkCommandPoolCreateFlags"]
 - ["3vkk17CommandPoolCreateV", "_Default_ArrayLiteralElement"]
 - ["3vkk17CommandPoolCreateV", "_Default_Element"]
 - ["3vkk17CommandPoolCreateV", "_Default_RawValue"]
@@ -774,8 +846,8 @@ depends-member:
 - ["3vkk16CommandPoolResetV", "ArrayLiteralElement"]
 - ["3vkk16CommandPoolResetV", "CommandPoolReset"]
 - ["3vkk16CommandPoolResetV", "Element"]
-- ["3vkk16CommandPoolResetV", "Int32"]
 - ["3vkk16CommandPoolResetV", "RawValue"]
+- ["3vkk16CommandPoolResetV", "VkCommandPoolResetFlags"]
 - ["3vkk16CommandPoolResetV", "_Default_ArrayLiteralElement"]
 - ["3vkk16CommandPoolResetV", "_Default_Element"]
 - ["3vkk16CommandPoolResetV", "_Default_RawValue"]
@@ -801,6 +873,7 @@ depends-member:
 - ["3vkk16CommandPoolResetV", "update"]
 - ["3vkk9CompareOpO", "=="]
 - ["3vkk9CompareOpO", "RawValue"]
+- ["3vkk9CompareOpO", "VkCompareOp"]
 - ["3vkk9CompareOpO", "_Default_RawValue"]
 - ["3vkk9CompareOpO", "_rawHashValue"]
 - ["3vkk9CompareOpO", "always"]
@@ -816,8 +889,10 @@ depends-member:
 - ["3vkk9CompareOpO", "never"]
 - ["3vkk9CompareOpO", "notEqual"]
 - ["3vkk9CompareOpO", "rawValue"]
+- ["3vkk9CompareOpO", "value"]
 - ["3vkk16ComponentSwizzleO", "=="]
 - ["3vkk16ComponentSwizzleO", "RawValue"]
+- ["3vkk16ComponentSwizzleO", "VkComponentSwizzle"]
 - ["3vkk16ComponentSwizzleO", "_Default_RawValue"]
 - ["3vkk16ComponentSwizzleO", "_rawHashValue"]
 - ["3vkk16ComponentSwizzleO", "a"]
@@ -831,46 +906,28 @@ depends-member:
 - ["3vkk16ComponentSwizzleO", "one"]
 - ["3vkk16ComponentSwizzleO", "r"]
 - ["3vkk16ComponentSwizzleO", "rawValue"]
+- ["3vkk16ComponentSwizzleO", "value"]
 - ["3vkk16ComponentSwizzleO", "zero"]
-- ["3vkk8CullModeV", "=="]
-- ["3vkk8CullModeV", "ArrayLiteralElement"]
-- ["3vkk8CullModeV", "CullMode"]
-- ["3vkk8CullModeV", "Element"]
-- ["3vkk8CullModeV", "Int32"]
-- ["3vkk8CullModeV", "RawValue"]
-- ["3vkk8CullModeV", "_Default_ArrayLiteralElement"]
-- ["3vkk8CullModeV", "_Default_Element"]
-- ["3vkk8CullModeV", "_Default_RawValue"]
-- ["3vkk8CullModeV", "backBit"]
-- ["3vkk8CullModeV", "contains"]
-- ["3vkk8CullModeV", "deinit"]
-- ["3vkk8CullModeV", "formIntersection"]
-- ["3vkk8CullModeV", "formSymmetricDifference"]
-- ["3vkk8CullModeV", "formUnion"]
-- ["3vkk8CullModeV", "frontAndBack"]
-- ["3vkk8CullModeV", "frontBit"]
-- ["3vkk8CullModeV", "init"]
-- ["3vkk8CullModeV", "insert"]
-- ["3vkk8CullModeV", "intersection"]
-- ["3vkk8CullModeV", "isDisjoint"]
-- ["3vkk8CullModeV", "isEmpty"]
-- ["3vkk8CullModeV", "isSubset"]
-- ["3vkk8CullModeV", "isSuperset"]
-- ["3vkk8CullModeV", "none"]
-- ["3vkk8CullModeV", "rawValue"]
-- ["3vkk8CullModeV", "remove"]
-- ["3vkk8CullModeV", "subtract"]
-- ["3vkk8CullModeV", "subtracting"]
-- ["3vkk8CullModeV", "symmetricDifference"]
-- ["3vkk8CullModeV", "union"]
-- ["3vkk8CullModeV", "update"]
+- ["3vkk8CullModeO", "=="]
+- ["3vkk8CullModeO", "RawValue"]
+- ["3vkk8CullModeO", "_Default_RawValue"]
+- ["3vkk8CullModeO", "_rawHashValue"]
+- ["3vkk8CullModeO", "backBit"]
+- ["3vkk8CullModeO", "deinit"]
+- ["3vkk8CullModeO", "frontAndBack"]
+- ["3vkk8CullModeO", "frontBit"]
+- ["3vkk8CullModeO", "hash"]
+- ["3vkk8CullModeO", "hashValue"]
+- ["3vkk8CullModeO", "init"]
+- ["3vkk8CullModeO", "none"]
+- ["3vkk8CullModeO", "rawValue"]
 - ["3vkk10DependencyV", "=="]
 - ["3vkk10DependencyV", "ArrayLiteralElement"]
 - ["3vkk10DependencyV", "Dependency"]
 - ["3vkk10DependencyV", "Element"]
-- ["3vkk10DependencyV", "Int32"]
 - ["3vkk10DependencyV", "RawValue"]
 - ["3vkk10DependencyV", "ViewLocalBitKhr"]
+- ["3vkk10DependencyV", "VkDependencyFlags"]
 - ["3vkk10DependencyV", "_Default_ArrayLiteralElement"]
 - ["3vkk10DependencyV", "_Default_Element"]
 - ["3vkk10DependencyV", "_Default_RawValue"]
@@ -901,8 +958,8 @@ depends-member:
 - ["3vkk20DescriptorPoolCreateV", "ArrayLiteralElement"]
 - ["3vkk20DescriptorPoolCreateV", "DescriptorPoolCreate"]
 - ["3vkk20DescriptorPoolCreateV", "Element"]
-- ["3vkk20DescriptorPoolCreateV", "Int32"]
 - ["3vkk20DescriptorPoolCreateV", "RawValue"]
+- ["3vkk20DescriptorPoolCreateV", "VkDescriptorPoolCreateFlags"]
 - ["3vkk20DescriptorPoolCreateV", "_Default_ArrayLiteralElement"]
 - ["3vkk20DescriptorPoolCreateV", "_Default_Element"]
 - ["3vkk20DescriptorPoolCreateV", "_Default_RawValue"]
@@ -931,8 +988,8 @@ depends-member:
 - ["3vkk25DescriptorSetLayoutCreateV", "ArrayLiteralElement"]
 - ["3vkk25DescriptorSetLayoutCreateV", "DescriptorSetLayoutCreate"]
 - ["3vkk25DescriptorSetLayoutCreateV", "Element"]
-- ["3vkk25DescriptorSetLayoutCreateV", "Int32"]
 - ["3vkk25DescriptorSetLayoutCreateV", "RawValue"]
+- ["3vkk25DescriptorSetLayoutCreateV", "VkDescriptorSetLayoutCreateFlags"]
 - ["3vkk25DescriptorSetLayoutCreateV", "_Default_ArrayLiteralElement"]
 - ["3vkk25DescriptorSetLayoutCreateV", "_Default_Element"]
 - ["3vkk25DescriptorSetLayoutCreateV", "_Default_RawValue"]
@@ -959,6 +1016,7 @@ depends-member:
 - ["3vkk25DescriptorSetLayoutCreateV", "updateAfterBindPoolBitExt"]
 - ["3vkk14DescriptorTypeO", "=="]
 - ["3vkk14DescriptorTypeO", "RawValue"]
+- ["3vkk14DescriptorTypeO", "VkDescriptorType"]
 - ["3vkk14DescriptorTypeO", "_Default_RawValue"]
 - ["3vkk14DescriptorTypeO", "_rawHashValue"]
 - ["3vkk14DescriptorTypeO", "accelerationStructureNv"]
@@ -979,12 +1037,13 @@ depends-member:
 - ["3vkk14DescriptorTypeO", "uniformBuffer"]
 - ["3vkk14DescriptorTypeO", "uniformBufferDynamic"]
 - ["3vkk14DescriptorTypeO", "uniformTexelBuffer"]
+- ["3vkk14DescriptorTypeO", "value"]
 - ["3vkk17DeviceQueueCreateV", "=="]
 - ["3vkk17DeviceQueueCreateV", "ArrayLiteralElement"]
 - ["3vkk17DeviceQueueCreateV", "DeviceQueueCreate"]
 - ["3vkk17DeviceQueueCreateV", "Element"]
-- ["3vkk17DeviceQueueCreateV", "Int32"]
 - ["3vkk17DeviceQueueCreateV", "RawValue"]
+- ["3vkk17DeviceQueueCreateV", "VkDeviceQueueCreateFlags"]
 - ["3vkk17DeviceQueueCreateV", "_Default_ArrayLiteralElement"]
 - ["3vkk17DeviceQueueCreateV", "_Default_Element"]
 - ["3vkk17DeviceQueueCreateV", "_Default_RawValue"]
@@ -1043,7 +1102,6 @@ depends-member:
 - ["SQ", "CommandBufferUsage"]
 - ["SQ", "CommandPoolCreate"]
 - ["SQ", "CommandPoolReset"]
-- ["SQ", "CullMode"]
 - ["SQ", "Dependency"]
 - ["SQ", "DescriptorPoolCreate"]
 - ["SQ", "DescriptorSetLayoutCreate"]
@@ -1055,14 +1113,14 @@ depends-member:
 - ["SQ", "ImageCreate"]
 - ["SQ", "ImageUsage"]
 - ["SQ", "ImageViewCreate"]
-- ["SQ", "MemoryHeap"]
+- ["SQ", "MemoryHeapFlags"]
 - ["SQ", "MemoryProperty"]
 - ["SQ", "PipelineCreate"]
 - ["SQ", "PipelineStage"]
 - ["SQ", "QueryControl"]
 - ["SQ", "QueryPipelineStatistic"]
 - ["SQ", "QueryResult"]
-- ["SQ", "QueueBit"]
+- ["SQ", "QueueFlags"]
 - ["SQ", "RawValue"]
 - ["SQ", "SampleCount"]
 - ["SQ", "SamplerCreate"]
@@ -1071,13 +1129,42 @@ depends-member:
 - ["SQ", "SparseMemoryBind"]
 - ["SQ", "StencilFace"]
 - ["SQ", "SubpassDescription"]
+- !private ["SQ", "VkAttachmentLoadOp"]
+- !private ["SQ", "VkAttachmentStoreOp"]
+- !private ["SQ", "VkBlendFactor"]
+- !private ["SQ", "VkBlendOp"]
+- !private ["SQ", "VkBorderColor"]
+- !private ["SQ", "VkCommandBufferLevel"]
+- !private ["SQ", "VkCompareOp"]
+- !private ["SQ", "VkComponentSwizzle"]
+- !private ["SQ", "VkDescriptorType"]
+- !private ["SQ", "VkFilter"]
+- !private ["SQ", "VkFormat"]
+- !private ["SQ", "VkFrontFace"]
+- !private ["SQ", "VkImageLayout"]
+- !private ["SQ", "VkImageTiling"]
+- !private ["SQ", "VkImageType"]
+- !private ["SQ", "VkLogicOp"]
+- !private ["SQ", "VkPhysicalDeviceType"]
+- !private ["SQ", "VkPipelineBindPoint"]
+- !private ["SQ", "VkPolygonMode"]
+- !private ["SQ", "VkPrimitiveTopology"]
+- !private ["SQ", "VkQueryType"]
+- !private ["SQ", "VkSamplerAddressMode"]
+- !private ["SQ", "VkSamplerMipmapMode"]
+- !private ["SQ", "VkSharingMode"]
+- !private ["SQ", "VkStencilOp"]
 - !private ["SQ", "VkStructureType"]
+- !private ["SQ", "VkVertexInputRate"]
 - ["SQ", ""]
 - ["SQ", "_2dArrayCompatibleBit"]
 - ["SQ", "_Default_ArrayLiteralElement"]
 - ["SQ", "_Default_Element"]
 - ["SQ", "_Default_RawValue"]
+- ["SQ", "_code"]
+- ["SQ", "_domain"]
 - ["SQ", "_rawHashValue"]
+- ["SQ", "_userInfo"]
 - ["SQ", "aliasBit"]
 - ["SQ", "b10x6g10x6r10x6g10x6_422_unorm_4pack16"]
 - ["SQ", "b12x4g12x4r12x4g12x4_422_unorm_4pack16"]
@@ -1221,6 +1308,20 @@ depends-member:
 - ["SQ", "update"]
 - ["SQ", "viewIndexFromDeviceIndexBit"]
 - ["SQ", "viewLocalBit"]
+- ["s5ErrorP", "=="]
+- ["s5ErrorP", "RawValue"]
+- ["s5ErrorP", ""]
+- ["s5ErrorP", "_Default_RawValue"]
+- ["s5ErrorP", "_code"]
+- ["s5ErrorP", "_domain"]
+- ["s5ErrorP", "_rawHashValue"]
+- ["s5ErrorP", "_userInfo"]
+- ["s5ErrorP", "errorInvalidExternalHandle"]
+- ["s5ErrorP", "errorOutOfPoolMemory"]
+- ["s5ErrorP", "hash"]
+- ["s5ErrorP", "hashValue"]
+- ["s5ErrorP", "init"]
+- ["s5ErrorP", "rawValue"]
 - ["s25ExpressibleByArrayLiteralP", "=="]
 - ["s25ExpressibleByArrayLiteralP", "Access"]
 - ["s25ExpressibleByArrayLiteralP", "ArrayLiteralElement"]
@@ -1232,7 +1333,6 @@ depends-member:
 - ["s25ExpressibleByArrayLiteralP", "CommandBufferUsage"]
 - ["s25ExpressibleByArrayLiteralP", "CommandPoolCreate"]
 - ["s25ExpressibleByArrayLiteralP", "CommandPoolReset"]
-- ["s25ExpressibleByArrayLiteralP", "CullMode"]
 - ["s25ExpressibleByArrayLiteralP", "Dependency"]
 - ["s25ExpressibleByArrayLiteralP", "DescriptorPoolCreate"]
 - ["s25ExpressibleByArrayLiteralP", "DescriptorSetLayoutCreate"]
@@ -1244,14 +1344,14 @@ depends-member:
 - ["s25ExpressibleByArrayLiteralP", "ImageCreate"]
 - ["s25ExpressibleByArrayLiteralP", "ImageUsage"]
 - ["s25ExpressibleByArrayLiteralP", "ImageViewCreate"]
-- ["s25ExpressibleByArrayLiteralP", "MemoryHeap"]
+- ["s25ExpressibleByArrayLiteralP", "MemoryHeapFlags"]
 - ["s25ExpressibleByArrayLiteralP", "MemoryProperty"]
 - ["s25ExpressibleByArrayLiteralP", "PipelineCreate"]
 - ["s25ExpressibleByArrayLiteralP", "PipelineStage"]
 - ["s25ExpressibleByArrayLiteralP", "QueryControl"]
 - ["s25ExpressibleByArrayLiteralP", "QueryPipelineStatistic"]
 - ["s25ExpressibleByArrayLiteralP", "QueryResult"]
-- ["s25ExpressibleByArrayLiteralP", "QueueBit"]
+- ["s25ExpressibleByArrayLiteralP", "QueueFlags"]
 - ["s25ExpressibleByArrayLiteralP", "RawValue"]
 - ["s25ExpressibleByArrayLiteralP", "SampleCount"]
 - ["s25ExpressibleByArrayLiteralP", "SamplerCreate"]
@@ -1309,8 +1409,8 @@ depends-member:
 - ["3vkk11FenceCreateV", "ArrayLiteralElement"]
 - ["3vkk11FenceCreateV", "Element"]
 - ["3vkk11FenceCreateV", "FenceCreate"]
-- ["3vkk11FenceCreateV", "Int32"]
 - ["3vkk11FenceCreateV", "RawValue"]
+- ["3vkk11FenceCreateV", "VkFenceCreateFlags"]
 - ["3vkk11FenceCreateV", "_Default_ArrayLiteralElement"]
 - ["3vkk11FenceCreateV", "_Default_Element"]
 - ["3vkk11FenceCreateV", "_Default_RawValue"]
@@ -1336,6 +1436,7 @@ depends-member:
 - ["3vkk11FenceCreateV", "update"]
 - ["3vkk6FilterO", "=="]
 - ["3vkk6FilterO", "RawValue"]
+- ["3vkk6FilterO", "VkFilter"]
 - ["3vkk6FilterO", "_Default_RawValue"]
 - ["3vkk6FilterO", "_rawHashValue"]
 - ["3vkk6FilterO", "cubicExt"]
@@ -1347,8 +1448,10 @@ depends-member:
 - ["3vkk6FilterO", "linear"]
 - ["3vkk6FilterO", "nearest"]
 - ["3vkk6FilterO", "rawValue"]
+- ["3vkk6FilterO", "value"]
 - ["3vkk6FormatO", "=="]
 - ["3vkk6FormatO", "RawValue"]
+- ["3vkk6FormatO", "VkFormat"]
 - ["3vkk6FormatO", "_Default_RawValue"]
 - ["3vkk6FormatO", "_rawHashValue"]
 - ["3vkk6FormatO", "a1r5g5b5_unorm_pack16"]
@@ -1616,6 +1719,7 @@ depends-member:
 - ["3vkk6FormatO", "rawValue"]
 - ["3vkk6FormatO", "s8_uint"]
 - ["3vkk6FormatO", "undefined"]
+- ["3vkk6FormatO", "value"]
 - ["3vkk6FormatO", "x8_d24_unorm_pack32"]
 - ["3vkk13FormatFeatureV", "=="]
 - ["3vkk13FormatFeatureV", "ArrayLiteralElement"]
@@ -1680,8 +1784,37 @@ depends-member:
 - ["3vkk13FormatFeatureV", "union"]
 - ["3vkk13FormatFeatureV", "update"]
 - ["3vkk13FormatFeatureV", "vertexBufferBit"]
+- ["3vkk17FramebufferCreateV", "=="]
+- ["3vkk17FramebufferCreateV", "ArrayLiteralElement"]
+- ["3vkk17FramebufferCreateV", "Element"]
+- ["3vkk17FramebufferCreateV", "RawValue"]
+- ["3vkk17FramebufferCreateV", "UInt32"]
+- ["3vkk17FramebufferCreateV", "_Default_ArrayLiteralElement"]
+- ["3vkk17FramebufferCreateV", "_Default_Element"]
+- ["3vkk17FramebufferCreateV", "_Default_RawValue"]
+- ["3vkk17FramebufferCreateV", "contains"]
+- ["3vkk17FramebufferCreateV", "deinit"]
+- ["3vkk17FramebufferCreateV", "formIntersection"]
+- ["3vkk17FramebufferCreateV", "formSymmetricDifference"]
+- ["3vkk17FramebufferCreateV", "formUnion"]
+- ["3vkk17FramebufferCreateV", "imagelessBitKhr"]
+- ["3vkk17FramebufferCreateV", "init"]
+- ["3vkk17FramebufferCreateV", "insert"]
+- ["3vkk17FramebufferCreateV", "intersection"]
+- ["3vkk17FramebufferCreateV", "isDisjoint"]
+- ["3vkk17FramebufferCreateV", "isEmpty"]
+- ["3vkk17FramebufferCreateV", "isSubset"]
+- ["3vkk17FramebufferCreateV", "isSuperset"]
+- ["3vkk17FramebufferCreateV", "rawValue"]
+- ["3vkk17FramebufferCreateV", "remove"]
+- ["3vkk17FramebufferCreateV", "subtract"]
+- ["3vkk17FramebufferCreateV", "subtracting"]
+- ["3vkk17FramebufferCreateV", "symmetricDifference"]
+- ["3vkk17FramebufferCreateV", "union"]
+- ["3vkk17FramebufferCreateV", "update"]
 - ["3vkk9FrontFaceO", "=="]
 - ["3vkk9FrontFaceO", "RawValue"]
+- ["3vkk9FrontFaceO", "VkFrontFace"]
 - ["3vkk9FrontFaceO", "_Default_RawValue"]
 - ["3vkk9FrontFaceO", "_rawHashValue"]
 - ["3vkk9FrontFaceO", "clockwise"]
@@ -1691,12 +1824,42 @@ depends-member:
 - ["3vkk9FrontFaceO", "hashValue"]
 - ["3vkk9FrontFaceO", "init"]
 - ["3vkk9FrontFaceO", "rawValue"]
+- ["3vkk9FrontFaceO", "value"]
 - ["SH", "=="]
 - ["SH", "RawValue"]
+- !private ["SH", "VkAttachmentLoadOp"]
+- !private ["SH", "VkAttachmentStoreOp"]
+- !private ["SH", "VkBlendFactor"]
+- !private ["SH", "VkBlendOp"]
+- !private ["SH", "VkBorderColor"]
+- !private ["SH", "VkCommandBufferLevel"]
+- !private ["SH", "VkCompareOp"]
+- !private ["SH", "VkComponentSwizzle"]
+- !private ["SH", "VkDescriptorType"]
+- !private ["SH", "VkFilter"]
+- !private ["SH", "VkFormat"]
+- !private ["SH", "VkFrontFace"]
+- !private ["SH", "VkImageLayout"]
+- !private ["SH", "VkImageTiling"]
+- !private ["SH", "VkImageType"]
+- !private ["SH", "VkLogicOp"]
+- !private ["SH", "VkPhysicalDeviceType"]
+- !private ["SH", "VkPipelineBindPoint"]
+- !private ["SH", "VkPolygonMode"]
+- !private ["SH", "VkPrimitiveTopology"]
+- !private ["SH", "VkQueryType"]
+- !private ["SH", "VkSamplerAddressMode"]
+- !private ["SH", "VkSamplerMipmapMode"]
+- !private ["SH", "VkSharingMode"]
+- !private ["SH", "VkStencilOp"]
 - !private ["SH", "VkStructureType"]
+- !private ["SH", "VkVertexInputRate"]
 - ["SH", ""]
 - ["SH", "_Default_RawValue"]
+- ["SH", "_code"]
+- ["SH", "_domain"]
 - ["SH", "_rawHashValue"]
+- ["SH", "_userInfo"]
 - ["SH", "b10x6g10x6r10x6g10x6_422_unorm_4pack16"]
 - ["SH", "b12x4g12x4r12x4g12x4_422_unorm_4pack16"]
 - ["SH", "b16g16r16g16_422_unorm"]
@@ -1806,8 +1969,8 @@ depends-member:
 - ["3vkk11ImageAspectV", "ArrayLiteralElement"]
 - ["3vkk11ImageAspectV", "Element"]
 - ["3vkk11ImageAspectV", "ImageAspect"]
-- ["3vkk11ImageAspectV", "Int32"]
 - ["3vkk11ImageAspectV", "RawValue"]
+- ["3vkk11ImageAspectV", "VkImageAspectFlags"]
 - ["3vkk11ImageAspectV", "_Default_ArrayLiteralElement"]
 - ["3vkk11ImageAspectV", "_Default_Element"]
 - ["3vkk11ImageAspectV", "_Default_RawValue"]
@@ -1848,8 +2011,8 @@ depends-member:
 - ["3vkk11ImageCreateV", "ArrayLiteralElement"]
 - ["3vkk11ImageCreateV", "Element"]
 - ["3vkk11ImageCreateV", "ImageCreate"]
-- ["3vkk11ImageCreateV", "Int32"]
 - ["3vkk11ImageCreateV", "RawValue"]
+- ["3vkk11ImageCreateV", "VkImageCreateFlags"]
 - ["3vkk11ImageCreateV", "_2dArrayCompatibleBit"]
 - ["3vkk11ImageCreateV", "_2dArrayCompatibleBitKhr"]
 - ["3vkk11ImageCreateV", "_Default_ArrayLiteralElement"]
@@ -1895,6 +2058,7 @@ depends-member:
 - ["3vkk11ImageCreateV", "update"]
 - ["3vkk11ImageLayoutO", "=="]
 - ["3vkk11ImageLayoutO", "RawValue"]
+- ["3vkk11ImageLayoutO", "VkImageLayout"]
 - ["3vkk11ImageLayoutO", "_Default_RawValue"]
 - ["3vkk11ImageLayoutO", "_rawHashValue"]
 - ["3vkk11ImageLayoutO", "colorAttachmentOptimal"]
@@ -1919,8 +2083,10 @@ depends-member:
 - ["3vkk11ImageLayoutO", "transferDstOptimal"]
 - ["3vkk11ImageLayoutO", "transferSrcOptimal"]
 - ["3vkk11ImageLayoutO", "undefined"]
+- ["3vkk11ImageLayoutO", "value"]
 - ["3vkk11ImageTilingO", "=="]
 - ["3vkk11ImageTilingO", "RawValue"]
+- ["3vkk11ImageTilingO", "VkImageTiling"]
 - ["3vkk11ImageTilingO", "_Default_RawValue"]
 - ["3vkk11ImageTilingO", "_rawHashValue"]
 - ["3vkk11ImageTilingO", "deinit"]
@@ -1931,8 +2097,10 @@ depends-member:
 - ["3vkk11ImageTilingO", "linear"]
 - ["3vkk11ImageTilingO", "optimal"]
 - ["3vkk11ImageTilingO", "rawValue"]
+- ["3vkk11ImageTilingO", "value"]
 - ["3vkk9ImageTypeO", "=="]
 - ["3vkk9ImageTypeO", "RawValue"]
+- ["3vkk9ImageTypeO", "VkImageType"]
 - ["3vkk9ImageTypeO", "_1d"]
 - ["3vkk9ImageTypeO", "_2d"]
 - ["3vkk9ImageTypeO", "_3d"]
@@ -1943,6 +2111,7 @@ depends-member:
 - ["3vkk9ImageTypeO", "hashValue"]
 - ["3vkk9ImageTypeO", "init"]
 - ["3vkk9ImageTypeO", "rawValue"]
+- ["3vkk9ImageTypeO", "value"]
 - ["3vkk10ImageUsageV", "=="]
 - ["3vkk10ImageUsageV", "ArrayLiteralElement"]
 - ["3vkk10ImageUsageV", "Element"]
@@ -1985,8 +2154,8 @@ depends-member:
 - ["3vkk15ImageViewCreateV", "ArrayLiteralElement"]
 - ["3vkk15ImageViewCreateV", "Element"]
 - ["3vkk15ImageViewCreateV", "ImageViewCreate"]
-- ["3vkk15ImageViewCreateV", "Int32"]
 - ["3vkk15ImageViewCreateV", "RawValue"]
+- ["3vkk15ImageViewCreateV", "VkImageViewCreateFlags"]
 - ["3vkk15ImageViewCreateV", "_Default_ArrayLiteralElement"]
 - ["3vkk15ImageViewCreateV", "_Default_Element"]
 - ["3vkk15ImageViewCreateV", "_Default_RawValue"]
@@ -2050,6 +2219,7 @@ depends-member:
 - ["3vkk22InternalAllocationTypeO", "rawValue"]
 - ["3vkk7LogicOpO", "=="]
 - ["3vkk7LogicOpO", "RawValue"]
+- ["3vkk7LogicOpO", "VkLogicOp"]
 - ["3vkk7LogicOpO", "_Default_RawValue"]
 - ["3vkk7LogicOpO", "_rawHashValue"]
 - ["3vkk7LogicOpO", "and"]
@@ -2072,44 +2242,45 @@ depends-member:
 - ["3vkk7LogicOpO", "orReverse"]
 - ["3vkk7LogicOpO", "rawValue"]
 - ["3vkk7LogicOpO", "set"]
+- ["3vkk7LogicOpO", "value"]
 - ["3vkk7LogicOpO", "xor"]
-- ["3vkk10MemoryHeapV", "=="]
-- ["3vkk10MemoryHeapV", "ArrayLiteralElement"]
-- ["3vkk10MemoryHeapV", "Element"]
-- ["3vkk10MemoryHeapV", "Int32"]
-- ["3vkk10MemoryHeapV", "MemoryHeap"]
-- ["3vkk10MemoryHeapV", "RawValue"]
-- ["3vkk10MemoryHeapV", "_Default_ArrayLiteralElement"]
-- ["3vkk10MemoryHeapV", "_Default_Element"]
-- ["3vkk10MemoryHeapV", "_Default_RawValue"]
-- ["3vkk10MemoryHeapV", "contains"]
-- ["3vkk10MemoryHeapV", "deinit"]
-- ["3vkk10MemoryHeapV", "deviceLocalBit"]
-- ["3vkk10MemoryHeapV", "formIntersection"]
-- ["3vkk10MemoryHeapV", "formSymmetricDifference"]
-- ["3vkk10MemoryHeapV", "formUnion"]
-- ["3vkk10MemoryHeapV", "init"]
-- ["3vkk10MemoryHeapV", "insert"]
-- ["3vkk10MemoryHeapV", "intersection"]
-- ["3vkk10MemoryHeapV", "isDisjoint"]
-- ["3vkk10MemoryHeapV", "isEmpty"]
-- ["3vkk10MemoryHeapV", "isSubset"]
-- ["3vkk10MemoryHeapV", "isSuperset"]
-- ["3vkk10MemoryHeapV", "multiInstanceBit"]
-- ["3vkk10MemoryHeapV", "multiInstanceBitKhr"]
-- ["3vkk10MemoryHeapV", "rawValue"]
-- ["3vkk10MemoryHeapV", "remove"]
-- ["3vkk10MemoryHeapV", "subtract"]
-- ["3vkk10MemoryHeapV", "subtracting"]
-- ["3vkk10MemoryHeapV", "symmetricDifference"]
-- ["3vkk10MemoryHeapV", "union"]
-- ["3vkk10MemoryHeapV", "update"]
+- ["3vkk15MemoryHeapFlagsV", "=="]
+- ["3vkk15MemoryHeapFlagsV", "ArrayLiteralElement"]
+- ["3vkk15MemoryHeapFlagsV", "Element"]
+- ["3vkk15MemoryHeapFlagsV", "MemoryHeapFlags"]
+- ["3vkk15MemoryHeapFlagsV", "RawValue"]
+- ["3vkk15MemoryHeapFlagsV", "VkMemoryHeapFlags"]
+- ["3vkk15MemoryHeapFlagsV", "_Default_ArrayLiteralElement"]
+- ["3vkk15MemoryHeapFlagsV", "_Default_Element"]
+- ["3vkk15MemoryHeapFlagsV", "_Default_RawValue"]
+- ["3vkk15MemoryHeapFlagsV", "contains"]
+- ["3vkk15MemoryHeapFlagsV", "deinit"]
+- ["3vkk15MemoryHeapFlagsV", "deviceLocalBit"]
+- ["3vkk15MemoryHeapFlagsV", "formIntersection"]
+- ["3vkk15MemoryHeapFlagsV", "formSymmetricDifference"]
+- ["3vkk15MemoryHeapFlagsV", "formUnion"]
+- ["3vkk15MemoryHeapFlagsV", "init"]
+- ["3vkk15MemoryHeapFlagsV", "insert"]
+- ["3vkk15MemoryHeapFlagsV", "intersection"]
+- ["3vkk15MemoryHeapFlagsV", "isDisjoint"]
+- ["3vkk15MemoryHeapFlagsV", "isEmpty"]
+- ["3vkk15MemoryHeapFlagsV", "isSubset"]
+- ["3vkk15MemoryHeapFlagsV", "isSuperset"]
+- ["3vkk15MemoryHeapFlagsV", "multiInstanceBit"]
+- ["3vkk15MemoryHeapFlagsV", "multiInstanceBitKhr"]
+- ["3vkk15MemoryHeapFlagsV", "rawValue"]
+- ["3vkk15MemoryHeapFlagsV", "remove"]
+- ["3vkk15MemoryHeapFlagsV", "subtract"]
+- ["3vkk15MemoryHeapFlagsV", "subtracting"]
+- ["3vkk15MemoryHeapFlagsV", "symmetricDifference"]
+- ["3vkk15MemoryHeapFlagsV", "union"]
+- ["3vkk15MemoryHeapFlagsV", "update"]
 - ["3vkk14MemoryPropertyV", "=="]
 - ["3vkk14MemoryPropertyV", "ArrayLiteralElement"]
 - ["3vkk14MemoryPropertyV", "Element"]
-- ["3vkk14MemoryPropertyV", "Int32"]
 - ["3vkk14MemoryPropertyV", "MemoryProperty"]
 - ["3vkk14MemoryPropertyV", "RawValue"]
+- ["3vkk14MemoryPropertyV", "VkMemoryPropertyFlags"]
 - ["3vkk14MemoryPropertyV", "_Default_ArrayLiteralElement"]
 - ["3vkk14MemoryPropertyV", "_Default_Element"]
 - ["3vkk14MemoryPropertyV", "_Default_RawValue"]
@@ -2198,7 +2369,6 @@ depends-member:
 - ["s9OptionSetP", "CommandBufferUsage"]
 - ["s9OptionSetP", "CommandPoolCreate"]
 - ["s9OptionSetP", "CommandPoolReset"]
-- ["s9OptionSetP", "CullMode"]
 - ["s9OptionSetP", "Dependency"]
 - ["s9OptionSetP", "DescriptorPoolCreate"]
 - ["s9OptionSetP", "DescriptorSetLayoutCreate"]
@@ -2210,14 +2380,14 @@ depends-member:
 - ["s9OptionSetP", "ImageCreate"]
 - ["s9OptionSetP", "ImageUsage"]
 - ["s9OptionSetP", "ImageViewCreate"]
-- ["s9OptionSetP", "MemoryHeap"]
+- ["s9OptionSetP", "MemoryHeapFlags"]
 - ["s9OptionSetP", "MemoryProperty"]
 - ["s9OptionSetP", "PipelineCreate"]
 - ["s9OptionSetP", "PipelineStage"]
 - ["s9OptionSetP", "QueryControl"]
 - ["s9OptionSetP", "QueryPipelineStatistic"]
 - ["s9OptionSetP", "QueryResult"]
-- ["s9OptionSetP", "QueueBit"]
+- ["s9OptionSetP", "QueueFlags"]
 - ["s9OptionSetP", "RawValue"]
 - ["s9OptionSetP", "SampleCount"]
 - ["s9OptionSetP", "SamplerCreate"]
@@ -2273,6 +2443,7 @@ depends-member:
 - ["s9OptionSetP", "viewLocalBit"]
 - ["3vkk18PhysicalDeviceTypeO", "=="]
 - ["3vkk18PhysicalDeviceTypeO", "RawValue"]
+- ["3vkk18PhysicalDeviceTypeO", "VkPhysicalDeviceType"]
 - ["3vkk18PhysicalDeviceTypeO", "_Default_RawValue"]
 - ["3vkk18PhysicalDeviceTypeO", "_rawHashValue"]
 - ["3vkk18PhysicalDeviceTypeO", "cpu"]
@@ -2284,9 +2455,11 @@ depends-member:
 - ["3vkk18PhysicalDeviceTypeO", "integratedGpu"]
 - ["3vkk18PhysicalDeviceTypeO", "other"]
 - ["3vkk18PhysicalDeviceTypeO", "rawValue"]
+- ["3vkk18PhysicalDeviceTypeO", "value"]
 - ["3vkk18PhysicalDeviceTypeO", "virtualGpu"]
 - ["3vkk17PipelineBindPointO", "=="]
 - ["3vkk17PipelineBindPointO", "RawValue"]
+- ["3vkk17PipelineBindPointO", "VkPipelineBindPoint"]
 - ["3vkk17PipelineBindPointO", "_Default_RawValue"]
 - ["3vkk17PipelineBindPointO", "_rawHashValue"]
 - ["3vkk17PipelineBindPointO", "compute"]
@@ -2297,6 +2470,7 @@ depends-member:
 - ["3vkk17PipelineBindPointO", "init"]
 - ["3vkk17PipelineBindPointO", "rawValue"]
 - ["3vkk17PipelineBindPointO", "rayTracingNv"]
+- ["3vkk17PipelineBindPointO", "value"]
 - ["3vkk26PipelineCacheHeaderVersionO", "=="]
 - ["3vkk26PipelineCacheHeaderVersionO", "RawValue"]
 - ["3vkk26PipelineCacheHeaderVersionO", "_Default_RawValue"]
@@ -2310,9 +2484,9 @@ depends-member:
 - ["3vkk14PipelineCreateV", "=="]
 - ["3vkk14PipelineCreateV", "ArrayLiteralElement"]
 - ["3vkk14PipelineCreateV", "Element"]
-- ["3vkk14PipelineCreateV", "Int32"]
 - ["3vkk14PipelineCreateV", "PipelineCreate"]
 - ["3vkk14PipelineCreateV", "RawValue"]
+- ["3vkk14PipelineCreateV", "VkPipelineCreateFlags"]
 - ["3vkk14PipelineCreateV", "_Default_ArrayLiteralElement"]
 - ["3vkk14PipelineCreateV", "_Default_Element"]
 - ["3vkk14PipelineCreateV", "_Default_RawValue"]
@@ -2346,9 +2520,9 @@ depends-member:
 - ["3vkk13PipelineStageV", "=="]
 - ["3vkk13PipelineStageV", "ArrayLiteralElement"]
 - ["3vkk13PipelineStageV", "Element"]
-- ["3vkk13PipelineStageV", "Int32"]
 - ["3vkk13PipelineStageV", "PipelineStage"]
 - ["3vkk13PipelineStageV", "RawValue"]
+- ["3vkk13PipelineStageV", "VkPipelineStageFlags"]
 - ["3vkk13PipelineStageV", "_Default_ArrayLiteralElement"]
 - ["3vkk13PipelineStageV", "_Default_Element"]
 - ["3vkk13PipelineStageV", "_Default_RawValue"]
@@ -2399,6 +2573,7 @@ depends-member:
 - ["3vkk13PipelineStageV", "vertexShaderBit"]
 - ["3vkk11PolygonModeO", "=="]
 - ["3vkk11PolygonModeO", "RawValue"]
+- ["3vkk11PolygonModeO", "VkPolygonMode"]
 - ["3vkk11PolygonModeO", "_Default_RawValue"]
 - ["3vkk11PolygonModeO", "_rawHashValue"]
 - ["3vkk11PolygonModeO", "deinit"]
@@ -2410,8 +2585,10 @@ depends-member:
 - ["3vkk11PolygonModeO", "line"]
 - ["3vkk11PolygonModeO", "point"]
 - ["3vkk11PolygonModeO", "rawValue"]
+- ["3vkk11PolygonModeO", "value"]
 - ["3vkk17PrimitiveTopologyO", "=="]
 - ["3vkk17PrimitiveTopologyO", "RawValue"]
+- ["3vkk17PrimitiveTopologyO", "VkPrimitiveTopology"]
 - ["3vkk17PrimitiveTopologyO", "_Default_RawValue"]
 - ["3vkk17PrimitiveTopologyO", "_rawHashValue"]
 - ["3vkk17PrimitiveTopologyO", "deinit"]
@@ -2430,12 +2607,13 @@ depends-member:
 - ["3vkk17PrimitiveTopologyO", "triangleListWithAdjacency"]
 - ["3vkk17PrimitiveTopologyO", "triangleStrip"]
 - ["3vkk17PrimitiveTopologyO", "triangleStripWithAdjacency"]
+- ["3vkk17PrimitiveTopologyO", "value"]
 - ["3vkk12QueryControlV", "=="]
 - ["3vkk12QueryControlV", "ArrayLiteralElement"]
 - ["3vkk12QueryControlV", "Element"]
-- ["3vkk12QueryControlV", "Int32"]
 - ["3vkk12QueryControlV", "QueryControl"]
 - ["3vkk12QueryControlV", "RawValue"]
+- ["3vkk12QueryControlV", "VkQueryControlFlags"]
 - ["3vkk12QueryControlV", "_Default_ArrayLiteralElement"]
 - ["3vkk12QueryControlV", "_Default_Element"]
 - ["3vkk12QueryControlV", "_Default_RawValue"]
@@ -2462,9 +2640,9 @@ depends-member:
 - ["3vkk22QueryPipelineStatisticV", "=="]
 - ["3vkk22QueryPipelineStatisticV", "ArrayLiteralElement"]
 - ["3vkk22QueryPipelineStatisticV", "Element"]
-- ["3vkk22QueryPipelineStatisticV", "Int32"]
 - ["3vkk22QueryPipelineStatisticV", "QueryPipelineStatistic"]
 - ["3vkk22QueryPipelineStatisticV", "RawValue"]
+- ["3vkk22QueryPipelineStatisticV", "VkQueryPipelineStatisticFlags"]
 - ["3vkk22QueryPipelineStatisticV", "_Default_ArrayLiteralElement"]
 - ["3vkk22QueryPipelineStatisticV", "_Default_Element"]
 - ["3vkk22QueryPipelineStatisticV", "_Default_RawValue"]
@@ -2501,9 +2679,9 @@ depends-member:
 - ["3vkk11QueryResultV", "=="]
 - ["3vkk11QueryResultV", "ArrayLiteralElement"]
 - ["3vkk11QueryResultV", "Element"]
-- ["3vkk11QueryResultV", "Int32"]
 - ["3vkk11QueryResultV", "QueryResult"]
 - ["3vkk11QueryResultV", "RawValue"]
+- ["3vkk11QueryResultV", "VkQueryResultFlags"]
 - ["3vkk11QueryResultV", "_64Bit"]
 - ["3vkk11QueryResultV", "_Default_ArrayLiteralElement"]
 - ["3vkk11QueryResultV", "_Default_Element"]
@@ -2532,6 +2710,7 @@ depends-member:
 - ["3vkk11QueryResultV", "withAvailabilityBit"]
 - ["3vkk9QueryTypeO", "=="]
 - ["3vkk9QueryTypeO", "RawValue"]
+- ["3vkk9QueryTypeO", "VkQueryType"]
 - ["3vkk9QueryTypeO", "_Default_RawValue"]
 - ["3vkk9QueryTypeO", "_rawHashValue"]
 - ["3vkk9QueryTypeO", "accelerationStructureCompactedSizeNv"]
@@ -2544,39 +2723,40 @@ depends-member:
 - ["3vkk9QueryTypeO", "rawValue"]
 - ["3vkk9QueryTypeO", "timestamp"]
 - ["3vkk9QueryTypeO", "transformFeedbackStreamExt"]
-- ["3vkk8QueueBitV", "=="]
-- ["3vkk8QueueBitV", "ArrayLiteralElement"]
-- ["3vkk8QueueBitV", "Element"]
-- ["3vkk8QueueBitV", "Int32"]
-- ["3vkk8QueueBitV", "QueueBit"]
-- ["3vkk8QueueBitV", "RawValue"]
-- ["3vkk8QueueBitV", "_Default_ArrayLiteralElement"]
-- ["3vkk8QueueBitV", "_Default_Element"]
-- ["3vkk8QueueBitV", "_Default_RawValue"]
-- ["3vkk8QueueBitV", "computeBit"]
-- ["3vkk8QueueBitV", "contains"]
-- ["3vkk8QueueBitV", "deinit"]
-- ["3vkk8QueueBitV", "formIntersection"]
-- ["3vkk8QueueBitV", "formSymmetricDifference"]
-- ["3vkk8QueueBitV", "formUnion"]
-- ["3vkk8QueueBitV", "graphicsBit"]
-- ["3vkk8QueueBitV", "init"]
-- ["3vkk8QueueBitV", "insert"]
-- ["3vkk8QueueBitV", "intersection"]
-- ["3vkk8QueueBitV", "isDisjoint"]
-- ["3vkk8QueueBitV", "isEmpty"]
-- ["3vkk8QueueBitV", "isSubset"]
-- ["3vkk8QueueBitV", "isSuperset"]
-- ["3vkk8QueueBitV", "protectedBit"]
-- ["3vkk8QueueBitV", "rawValue"]
-- ["3vkk8QueueBitV", "remove"]
-- ["3vkk8QueueBitV", "sparseBindingBit"]
-- ["3vkk8QueueBitV", "subtract"]
-- ["3vkk8QueueBitV", "subtracting"]
-- ["3vkk8QueueBitV", "symmetricDifference"]
-- ["3vkk8QueueBitV", "transferBit"]
-- ["3vkk8QueueBitV", "union"]
-- ["3vkk8QueueBitV", "update"]
+- ["3vkk9QueryTypeO", "value"]
+- ["3vkk10QueueFlagsV", "=="]
+- ["3vkk10QueueFlagsV", "ArrayLiteralElement"]
+- ["3vkk10QueueFlagsV", "Element"]
+- ["3vkk10QueueFlagsV", "QueueFlags"]
+- ["3vkk10QueueFlagsV", "RawValue"]
+- ["3vkk10QueueFlagsV", "VkQueueFlags"]
+- ["3vkk10QueueFlagsV", "_Default_ArrayLiteralElement"]
+- ["3vkk10QueueFlagsV", "_Default_Element"]
+- ["3vkk10QueueFlagsV", "_Default_RawValue"]
+- ["3vkk10QueueFlagsV", "computeBit"]
+- ["3vkk10QueueFlagsV", "contains"]
+- ["3vkk10QueueFlagsV", "deinit"]
+- ["3vkk10QueueFlagsV", "formIntersection"]
+- ["3vkk10QueueFlagsV", "formSymmetricDifference"]
+- ["3vkk10QueueFlagsV", "formUnion"]
+- ["3vkk10QueueFlagsV", "graphicsBit"]
+- ["3vkk10QueueFlagsV", "init"]
+- ["3vkk10QueueFlagsV", "insert"]
+- ["3vkk10QueueFlagsV", "intersection"]
+- ["3vkk10QueueFlagsV", "isDisjoint"]
+- ["3vkk10QueueFlagsV", "isEmpty"]
+- ["3vkk10QueueFlagsV", "isSubset"]
+- ["3vkk10QueueFlagsV", "isSuperset"]
+- ["3vkk10QueueFlagsV", "protectedBit"]
+- ["3vkk10QueueFlagsV", "rawValue"]
+- ["3vkk10QueueFlagsV", "remove"]
+- ["3vkk10QueueFlagsV", "sparseBindingBit"]
+- ["3vkk10QueueFlagsV", "subtract"]
+- ["3vkk10QueueFlagsV", "subtracting"]
+- ["3vkk10QueueFlagsV", "symmetricDifference"]
+- ["3vkk10QueueFlagsV", "transferBit"]
+- ["3vkk10QueueFlagsV", "union"]
+- ["3vkk10QueueFlagsV", "update"]
 - ["SY", "=="]
 - ["SY", "Access"]
 - ["SY", "ArrayLiteralElement"]
@@ -2588,7 +2768,6 @@ depends-member:
 - ["SY", "CommandBufferUsage"]
 - ["SY", "CommandPoolCreate"]
 - ["SY", "CommandPoolReset"]
-- ["SY", "CullMode"]
 - ["SY", "Dependency"]
 - ["SY", "DescriptorPoolCreate"]
 - ["SY", "DescriptorSetLayoutCreate"]
@@ -2600,14 +2779,14 @@ depends-member:
 - ["SY", "ImageCreate"]
 - ["SY", "ImageUsage"]
 - ["SY", "ImageViewCreate"]
-- ["SY", "MemoryHeap"]
+- ["SY", "MemoryHeapFlags"]
 - ["SY", "MemoryProperty"]
 - ["SY", "PipelineCreate"]
 - ["SY", "PipelineStage"]
 - ["SY", "QueryControl"]
 - ["SY", "QueryPipelineStatistic"]
 - ["SY", "QueryResult"]
-- ["SY", "QueueBit"]
+- ["SY", "QueueFlags"]
 - ["SY", "RawValue"]
 - ["SY", "SampleCount"]
 - ["SY", "SamplerCreate"]
@@ -2616,13 +2795,42 @@ depends-member:
 - ["SY", "SparseMemoryBind"]
 - ["SY", "StencilFace"]
 - ["SY", "SubpassDescription"]
+- !private ["SY", "VkAttachmentLoadOp"]
+- !private ["SY", "VkAttachmentStoreOp"]
+- !private ["SY", "VkBlendFactor"]
+- !private ["SY", "VkBlendOp"]
+- !private ["SY", "VkBorderColor"]
+- !private ["SY", "VkCommandBufferLevel"]
+- !private ["SY", "VkCompareOp"]
+- !private ["SY", "VkComponentSwizzle"]
+- !private ["SY", "VkDescriptorType"]
+- !private ["SY", "VkFilter"]
+- !private ["SY", "VkFormat"]
+- !private ["SY", "VkFrontFace"]
+- !private ["SY", "VkImageLayout"]
+- !private ["SY", "VkImageTiling"]
+- !private ["SY", "VkImageType"]
+- !private ["SY", "VkLogicOp"]
+- !private ["SY", "VkPhysicalDeviceType"]
+- !private ["SY", "VkPipelineBindPoint"]
+- !private ["SY", "VkPolygonMode"]
+- !private ["SY", "VkPrimitiveTopology"]
+- !private ["SY", "VkQueryType"]
+- !private ["SY", "VkSamplerAddressMode"]
+- !private ["SY", "VkSamplerMipmapMode"]
+- !private ["SY", "VkSharingMode"]
+- !private ["SY", "VkStencilOp"]
 - !private ["SY", "VkStructureType"]
+- !private ["SY", "VkVertexInputRate"]
 - ["SY", ""]
 - ["SY", "_2dArrayCompatibleBit"]
 - ["SY", "_Default_ArrayLiteralElement"]
 - ["SY", "_Default_Element"]
 - ["SY", "_Default_RawValue"]
+- ["SY", "_code"]
+- ["SY", "_domain"]
 - ["SY", "_rawHashValue"]
+- ["SY", "_userInfo"]
 - ["SY", "aliasBit"]
 - ["SY", "b10x6g10x6r10x6g10x6_422_unorm_4pack16"]
 - ["SY", "b12x4g12x4r12x4g12x4_422_unorm_4pack16"]
@@ -2769,7 +2977,10 @@ depends-member:
 - ["3vkk6ResultO", "=="]
 - ["3vkk6ResultO", "RawValue"]
 - ["3vkk6ResultO", "_Default_RawValue"]
+- ["3vkk6ResultO", "_code"]
+- ["3vkk6ResultO", "_domain"]
 - ["3vkk6ResultO", "_rawHashValue"]
+- ["3vkk6ResultO", "_userInfo"]
 - ["3vkk6ResultO", "deinit"]
 - ["3vkk6ResultO", "errorDeviceLost"]
 - ["3vkk6ResultO", "errorExtensionNotPresent"]
@@ -2811,9 +3022,9 @@ depends-member:
 - ["3vkk11SampleCountV", "=="]
 - ["3vkk11SampleCountV", "ArrayLiteralElement"]
 - ["3vkk11SampleCountV", "Element"]
-- ["3vkk11SampleCountV", "Int32"]
 - ["3vkk11SampleCountV", "RawValue"]
 - ["3vkk11SampleCountV", "SampleCount"]
+- ["3vkk11SampleCountV", "VkSampleCountFlags"]
 - ["3vkk11SampleCountV", "_16_BIT"]
 - ["3vkk11SampleCountV", "_1_BIT"]
 - ["3vkk11SampleCountV", "_2_BIT"]
@@ -2845,6 +3056,7 @@ depends-member:
 - ["3vkk11SampleCountV", "update"]
 - ["3vkk18SamplerAddressModeO", "=="]
 - ["3vkk18SamplerAddressModeO", "RawValue"]
+- ["3vkk18SamplerAddressModeO", "VkSamplerAddressMode"]
 - ["3vkk18SamplerAddressModeO", "_Default_RawValue"]
 - ["3vkk18SamplerAddressModeO", "_rawHashValue"]
 - ["3vkk18SamplerAddressModeO", "_repeat"]
@@ -2857,12 +3069,13 @@ depends-member:
 - ["3vkk18SamplerAddressModeO", "mirrorClampToEdge"]
 - ["3vkk18SamplerAddressModeO", "mirroredRepeat"]
 - ["3vkk18SamplerAddressModeO", "rawValue"]
+- ["3vkk18SamplerAddressModeO", "value"]
 - ["3vkk13SamplerCreateV", "=="]
 - ["3vkk13SamplerCreateV", "ArrayLiteralElement"]
 - ["3vkk13SamplerCreateV", "Element"]
-- ["3vkk13SamplerCreateV", "Int32"]
 - ["3vkk13SamplerCreateV", "RawValue"]
 - ["3vkk13SamplerCreateV", "SamplerCreate"]
+- ["3vkk13SamplerCreateV", "VkSamplerCreateFlags"]
 - ["3vkk13SamplerCreateV", "_Default_ArrayLiteralElement"]
 - ["3vkk13SamplerCreateV", "_Default_Element"]
 - ["3vkk13SamplerCreateV", "_Default_RawValue"]
@@ -2889,6 +3102,7 @@ depends-member:
 - ["3vkk13SamplerCreateV", "update"]
 - ["3vkk17SamplerMipmapModeO", "=="]
 - ["3vkk17SamplerMipmapModeO", "RawValue"]
+- ["3vkk17SamplerMipmapModeO", "VkSamplerMipmapMode"]
 - ["3vkk17SamplerMipmapModeO", "_Default_RawValue"]
 - ["3vkk17SamplerMipmapModeO", "_rawHashValue"]
 - ["3vkk17SamplerMipmapModeO", "deinit"]
@@ -2898,6 +3112,7 @@ depends-member:
 - ["3vkk17SamplerMipmapModeO", "linear"]
 - ["3vkk17SamplerMipmapModeO", "nearest"]
 - ["3vkk17SamplerMipmapModeO", "rawValue"]
+- ["3vkk17SamplerMipmapModeO", "value"]
 - ["s10SetAlgebraP", "=="]
 - ["s10SetAlgebraP", "Access"]
 - ["s10SetAlgebraP", "ArrayLiteralElement"]
@@ -2909,7 +3124,6 @@ depends-member:
 - ["s10SetAlgebraP", "CommandBufferUsage"]
 - ["s10SetAlgebraP", "CommandPoolCreate"]
 - ["s10SetAlgebraP", "CommandPoolReset"]
-- ["s10SetAlgebraP", "CullMode"]
 - ["s10SetAlgebraP", "Dependency"]
 - ["s10SetAlgebraP", "DescriptorPoolCreate"]
 - ["s10SetAlgebraP", "DescriptorSetLayoutCreate"]
@@ -2921,14 +3135,14 @@ depends-member:
 - ["s10SetAlgebraP", "ImageCreate"]
 - ["s10SetAlgebraP", "ImageUsage"]
 - ["s10SetAlgebraP", "ImageViewCreate"]
-- ["s10SetAlgebraP", "MemoryHeap"]
+- ["s10SetAlgebraP", "MemoryHeapFlags"]
 - ["s10SetAlgebraP", "MemoryProperty"]
 - ["s10SetAlgebraP", "PipelineCreate"]
 - ["s10SetAlgebraP", "PipelineStage"]
 - ["s10SetAlgebraP", "QueryControl"]
 - ["s10SetAlgebraP", "QueryPipelineStatistic"]
 - ["s10SetAlgebraP", "QueryResult"]
-- ["s10SetAlgebraP", "QueueBit"]
+- ["s10SetAlgebraP", "QueueFlags"]
 - ["s10SetAlgebraP", "RawValue"]
 - ["s10SetAlgebraP", "SampleCount"]
 - ["s10SetAlgebraP", "SamplerCreate"]
@@ -2985,9 +3199,9 @@ depends-member:
 - ["3vkk11ShaderStageV", "=="]
 - ["3vkk11ShaderStageV", "ArrayLiteralElement"]
 - ["3vkk11ShaderStageV", "Element"]
-- ["3vkk11ShaderStageV", "Int32"]
 - ["3vkk11ShaderStageV", "RawValue"]
 - ["3vkk11ShaderStageV", "ShaderStage"]
+- ["3vkk11ShaderStageV", "VkShaderStageFlags"]
 - ["3vkk11ShaderStageV", "_Default_ArrayLiteralElement"]
 - ["3vkk11ShaderStageV", "_Default_Element"]
 - ["3vkk11ShaderStageV", "_Default_RawValue"]
@@ -3028,6 +3242,7 @@ depends-member:
 - ["3vkk11ShaderStageV", "vertexBit"]
 - ["3vkk11SharingModeO", "=="]
 - ["3vkk11SharingModeO", "RawValue"]
+- ["3vkk11SharingModeO", "VkSharingMode"]
 - ["3vkk11SharingModeO", "_Default_RawValue"]
 - ["3vkk11SharingModeO", "_rawHashValue"]
 - ["3vkk11SharingModeO", "concurrent"]
@@ -3037,15 +3252,16 @@ depends-member:
 - ["3vkk11SharingModeO", "hashValue"]
 - ["3vkk11SharingModeO", "init"]
 - ["3vkk11SharingModeO", "rawValue"]
+- ["3vkk11SharingModeO", "value"]
 - ["3vkk17SparseImageFormatV", "=="]
 - ["3vkk17SparseImageFormatV", "ALIGNED_MIP_SIZE_BIT"]
 - ["3vkk17SparseImageFormatV", "ArrayLiteralElement"]
 - ["3vkk17SparseImageFormatV", "Element"]
-- ["3vkk17SparseImageFormatV", "Int32"]
 - ["3vkk17SparseImageFormatV", "NONSTANDARD_BLOCK_SIZE_BIT"]
 - ["3vkk17SparseImageFormatV", "RawValue"]
 - ["3vkk17SparseImageFormatV", "SINGLE_MIPTAIL_BIT"]
 - ["3vkk17SparseImageFormatV", "SparseImageFormat"]
+- ["3vkk17SparseImageFormatV", "VkSparseImageFormatFlags"]
 - ["3vkk17SparseImageFormatV", "_Default_ArrayLiteralElement"]
 - ["3vkk17SparseImageFormatV", "_Default_Element"]
 - ["3vkk17SparseImageFormatV", "_Default_RawValue"]
@@ -3071,9 +3287,9 @@ depends-member:
 - ["3vkk16SparseMemoryBindV", "=="]
 - ["3vkk16SparseMemoryBindV", "ArrayLiteralElement"]
 - ["3vkk16SparseMemoryBindV", "Element"]
-- ["3vkk16SparseMemoryBindV", "Int32"]
 - ["3vkk16SparseMemoryBindV", "RawValue"]
 - ["3vkk16SparseMemoryBindV", "SparseMemoryBind"]
+- ["3vkk16SparseMemoryBindV", "VkSparseMemoryBindFlags"]
 - ["3vkk16SparseMemoryBindV", "_Default_ArrayLiteralElement"]
 - ["3vkk16SparseMemoryBindV", "_Default_Element"]
 - ["3vkk16SparseMemoryBindV", "_Default_RawValue"]
@@ -3100,9 +3316,9 @@ depends-member:
 - ["3vkk11StencilFaceV", "=="]
 - ["3vkk11StencilFaceV", "ArrayLiteralElement"]
 - ["3vkk11StencilFaceV", "Element"]
-- ["3vkk11StencilFaceV", "Int32"]
 - ["3vkk11StencilFaceV", "RawValue"]
 - ["3vkk11StencilFaceV", "StencilFace"]
+- ["3vkk11StencilFaceV", "VkStencilFaceFlags"]
 - ["3vkk11StencilFaceV", "_Default_ArrayLiteralElement"]
 - ["3vkk11StencilFaceV", "_Default_Element"]
 - ["3vkk11StencilFaceV", "_Default_RawValue"]
@@ -3130,6 +3346,7 @@ depends-member:
 - ["3vkk11StencilFaceV", "update"]
 - ["3vkk9StencilOpO", "=="]
 - ["3vkk9StencilOpO", "RawValue"]
+- ["3vkk9StencilOpO", "VkStencilOp"]
 - ["3vkk9StencilOpO", "_Default_RawValue"]
 - ["3vkk9StencilOpO", "_rawHashValue"]
 - ["3vkk9StencilOpO", "decrementAndClamp"]
@@ -3144,6 +3361,7 @@ depends-member:
 - ["3vkk9StencilOpO", "keep"]
 - ["3vkk9StencilOpO", "rawValue"]
 - ["3vkk9StencilOpO", "replace"]
+- ["3vkk9StencilOpO", "value"]
 - ["3vkk9StencilOpO", "zero"]
 - ["3vkk13StructureTypeO", "=="]
 - ["3vkk13StructureTypeO", "RawValue"]
@@ -3551,9 +3769,9 @@ depends-member:
 - ["3vkk18SubpassDescriptionV", "=="]
 - ["3vkk18SubpassDescriptionV", "ArrayLiteralElement"]
 - ["3vkk18SubpassDescriptionV", "Element"]
-- ["3vkk18SubpassDescriptionV", "Int32"]
 - ["3vkk18SubpassDescriptionV", "RawValue"]
 - ["3vkk18SubpassDescriptionV", "SubpassDescription"]
+- ["3vkk18SubpassDescriptionV", "VkSubpassDescriptionFlags"]
 - ["3vkk18SubpassDescriptionV", "_Default_ArrayLiteralElement"]
 - ["3vkk18SubpassDescriptionV", "_Default_Element"]
 - ["3vkk18SubpassDescriptionV", "_Default_RawValue"]
@@ -3606,6 +3824,7 @@ depends-member:
 - ["3vkk8VendorIdO", "vsi"]
 - ["3vkk15VertexInputRateO", "=="]
 - ["3vkk15VertexInputRateO", "RawValue"]
+- ["3vkk15VertexInputRateO", "VkVertexInputRate"]
 - ["3vkk15VertexInputRateO", "_Default_RawValue"]
 - ["3vkk15VertexInputRateO", "_rawHashValue"]
 - ["3vkk15VertexInputRateO", "deinit"]
@@ -3614,8 +3833,35 @@ depends-member:
 - ["3vkk15VertexInputRateO", "init"]
 - ["3vkk15VertexInputRateO", "instance"]
 - ["3vkk15VertexInputRateO", "rawValue"]
+- ["3vkk15VertexInputRateO", "value"]
 - ["3vkk15VertexInputRateO", "vertex"]
+- !private ["So18VkAttachmentLoadOpV", "init"]
+- !private ["So19VkAttachmentStoreOpV", "init"]
+- !private ["So13VkBlendFactorV", "init"]
+- !private ["So9VkBlendOpV", "init"]
+- !private ["So13VkBorderColorV", "init"]
+- !private ["So20VkCommandBufferLevelV", "init"]
+- !private ["So11VkCompareOpV", "init"]
+- !private ["So18VkComponentSwizzleV", "init"]
+- !private ["So16VkDescriptorTypeV", "init"]
+- !private ["So8VkFilterV", "init"]
+- !private ["So8VkFormatV", "init"]
+- !private ["So11VkFrontFaceV", "init"]
+- !private ["So13VkImageLayoutV", "init"]
+- !private ["So13VkImageTilingV", "init"]
+- !private ["So11VkImageTypeV", "init"]
+- !private ["So9VkLogicOpV", "init"]
+- !private ["So20VkPhysicalDeviceTypeV", "init"]
+- !private ["So19VkPipelineBindPointV", "init"]
+- !private ["So13VkPolygonModeV", "init"]
+- !private ["So19VkPrimitiveTopologyV", "init"]
+- !private ["So11VkQueryTypeV", "init"]
+- !private ["So20VkSamplerAddressModeV", "init"]
+- !private ["So19VkSamplerMipmapModeV", "init"]
+- !private ["So13VkSharingModeV", "init"]
+- !private ["So11VkStencilOpV", "init"]
 - !private ["So15VkStructureTypeV", "init"]
+- !private ["So17VkVertexInputRateV", "init"]
 depends-nominal:
 - "3vkk6AccessV"
 - "3vkk21AttachmentDescriptionV"
@@ -3634,7 +3880,7 @@ depends-nominal:
 - "3vkk16CommandPoolResetV"
 - "3vkk9CompareOpO"
 - "3vkk16ComponentSwizzleO"
-- "3vkk8CullModeV"
+- "3vkk8CullModeO"
 - "3vkk10DependencyV"
 - "3vkk20DescriptorPoolCreateV"
 - "3vkk25DescriptorSetLayoutCreateV"
@@ -3642,11 +3888,13 @@ depends-nominal:
 - "3vkk17DeviceQueueCreateV"
 - "3vkk12DynamicStateO"
 - "SQ"
+- "s5ErrorP"
 - "s25ExpressibleByArrayLiteralP"
 - "3vkk11FenceCreateV"
 - "3vkk6FilterO"
 - "3vkk6FormatO"
 - "3vkk13FormatFeatureV"
+- "3vkk17FramebufferCreateV"
 - "3vkk9FrontFaceO"
 - "SH"
 - "3vkk11ImageAspectV"
@@ -3660,7 +3908,7 @@ depends-nominal:
 - "3vkk9IndexTypeO"
 - "3vkk22InternalAllocationTypeO"
 - "3vkk7LogicOpO"
-- "3vkk10MemoryHeapV"
+- "3vkk15MemoryHeapFlagsV"
 - "3vkk14MemoryPropertyV"
 - "3vkk10ObjectTypeO"
 - "s9OptionSetP"
@@ -3675,7 +3923,7 @@ depends-nominal:
 - "3vkk22QueryPipelineStatisticV"
 - "3vkk11QueryResultV"
 - "3vkk9QueryTypeO"
-- "3vkk8QueueBitV"
+- "3vkk10QueueFlagsV"
 - "SY"
 - "3vkk6ResultO"
 - "3vkk11SampleCountV"
@@ -3695,7 +3943,33 @@ depends-nominal:
 - "3vkk21SystemAllocationScopeO"
 - "3vkk8VendorIdO"
 - "3vkk15VertexInputRateO"
+- !private "So18VkAttachmentLoadOpV"
+- !private "So19VkAttachmentStoreOpV"
+- !private "So13VkBlendFactorV"
+- !private "So9VkBlendOpV"
+- !private "So13VkBorderColorV"
+- !private "So20VkCommandBufferLevelV"
+- !private "So11VkCompareOpV"
+- !private "So18VkComponentSwizzleV"
+- !private "So16VkDescriptorTypeV"
+- !private "So8VkFilterV"
+- !private "So8VkFormatV"
+- !private "So11VkFrontFaceV"
+- !private "So13VkImageLayoutV"
+- !private "So13VkImageTilingV"
+- !private "So11VkImageTypeV"
+- !private "So9VkLogicOpV"
+- !private "So20VkPhysicalDeviceTypeV"
+- !private "So19VkPipelineBindPointV"
+- !private "So13VkPolygonModeV"
+- !private "So19VkPrimitiveTopologyV"
+- !private "So11VkQueryTypeV"
+- !private "So20VkSamplerAddressModeV"
+- !private "So19VkSamplerMipmapModeV"
+- !private "So13VkSharingModeV"
+- !private "So11VkStencilOpV"
 - !private "So15VkStructureTypeV"
+- !private "So17VkVertexInputRateV"
 depends-dynamic-lookup:
 depends-external:
 - "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
@@ -3706,4 +3980,4 @@ depends-external:
 - "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
 - "/home/elect/SwiftProjects/vkk/Sources/vulkan/module.modulemap"
-interface-hash: "be8938a23f6c49a6f92adbb6808d4c41"
+interface-hash: "2988725fc9cf34faad903c73c17981a9"

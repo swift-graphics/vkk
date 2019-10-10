@@ -1,8 +1,10 @@
 version: "Swift version 5.1 (swift-5.1-RELEASE)"
 options: "b2e6e79d4d9a8a323a54f07bb93ba08a"
-build_time: [1569947607, 301701241]
+build_time: [1570724074, 813027430]
 inputs:
-  "/home/elect/SwiftProjects/vkk/Sources/vkk/enums.swift": [1569947607, 173324770]
-  "/home/elect/SwiftProjects/vkk/Sources/vkk/structs.swift": !dirty [1569947522, 858285920]
-  "/home/elect/SwiftProjects/vkk/Sources/vkk/utils.swift": [1569935713, 62477723]
-  "/home/elect/SwiftProjects/vkk/Sources/vkk/vk.swift": [1569800031, 430850058]
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/enums.swift": [1570661233, 39280862]
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/structs.swift": [1570099427, 279002090]
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/utils.swift": [1570662059, 401286491]
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/vk ext.swift": [1570662101, 866466392]
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/vk.swift": [1570724074, 670535795]
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/vk_.swift": [1570457644, 919974808]

@@ -11,7 +11,7 @@ enum PipelineCacheHeaderVersion: Int32 {
     case one = 1
 }
 
-enum Result: Int32 {
+enum Result: Int32, Error {
     case success = 0,
          notReady = 1,
          timeout = 2,
@@ -451,7 +451,7 @@ enum InternalAllocationType: Int32 {
     case executable = 0
 }
 
-enum Format: Int32 {
+enum Format: UInt32 {
     case undefined = 0,
          r4g4_unorm_pack8 = 1,
          r4g4b4a4_unorm_pack16 = 2,
@@ -714,42 +714,66 @@ enum Format: Int32 {
             g16_b16_r16_3plane_422_unorm_khr = g16_b16_r16_3plane_422_unorm,
             g16_b16r16_2plane_422_unorm_khr = g16_b16r16_2plane_422_unorm,
             g16_b16_r16_3plane_444_unorm_khr = g16_b16_r16_3plane_444_unorm
+
+    var value: VkFormat {
+        VkFormat(rawValue)
+    }
 }
 
-enum ImageType: Int32 {
+enum ImageType: UInt32 {
     case _1d = 0,
          _2d = 1,
          _3d = 2
+
+    var value: VkImageType {
+        VkImageType(rawValue)
+    }
 }
 
-enum ImageTiling: Int32 {
+enum ImageTiling: UInt32 {
     case optimal = 0,
          linear = 1,
          drmFormatModifierExt = 1000158000
+
+    var value: VkImageTiling {
+        VkImageTiling(rawValue)
+    }
 }
 
-enum PhysicalDeviceType: Int32 {
+enum PhysicalDeviceType: UInt32 {
     case other = 0,
          integratedGpu = 1,
          discreteGpu = 2,
          virtualGpu = 3,
          cpu = 4
+
+    var value: VkPhysicalDeviceType {
+        VkPhysicalDeviceType(rawValue)
+    }
 }
 
-enum QueryType: Int32 {
+enum QueryType: UInt32 {
     case occlusion = 0,
          pipelineStatistics = 1,
          timestamp = 2,
          transformFeedbackStreamExt = 1000028004,
          accelerationStructureCompactedSizeNv = 1000165000
+
+    var value: VkQueryType {
+        VkQueryType(rawValue)
+    }
 }
 
-enum SharingMode: Int32 {
+enum SharingMode: UInt32 {
     case exclusive = 0,
          concurrent = 1
+
+    var value: VkSharingMode {
+        VkSharingMode(rawValue)
+    }
 }
 
-enum ImageLayout: Int32 {
+enum ImageLayout: UInt32 {
     case undefined = 0,
          general = 1,
          colorAttachmentOptimal = 2,
@@ -768,6 +792,10 @@ enum ImageLayout: Int32 {
     static let
             depthReadOnlyStencilAttachmentOptimalKhr = depthReadOnlyStencilAttachmentOptimal,
             depthAttachmentStencilReadOnlyOptimalKhr = depthAttachmentStencilReadOnlyOptimal
+
+    var value: VkImageLayout {
+        VkImageLayout(rawValue)
+    }
 }
 
 enum ImageViewType: Int32 {
@@ -780,7 +808,7 @@ enum ImageViewType: Int32 {
          cubeArray = 6
 }
 
-enum ComponentSwizzle: Int32 {
+enum ComponentSwizzle: UInt32 {
     case identity = 0,
          zero = 1,
          one = 2,
@@ -788,14 +816,22 @@ enum ComponentSwizzle: Int32 {
          g = 4,
          b = 5,
          a = 6
+
+    var value: VkComponentSwizzle {
+        VkComponentSwizzle(rawValue)
+    }
 }
 
-enum VertexInputRate: Int32 {
+enum VertexInputRate: UInt32 {
     case vertex = 0,
          instance = 1
+
+    var value: VkVertexInputRate {
+        VkVertexInputRate(rawValue)
+    }
 }
 
-enum PrimitiveTopology: Int32 {
+enum PrimitiveTopology: UInt32 {
     case pointList = 0,
          lineList = 1,
          lineStrip = 2,
@@ -807,21 +843,33 @@ enum PrimitiveTopology: Int32 {
          triangleListWithAdjacency = 8,
          triangleStripWithAdjacency = 9,
          patchList = 10
+
+    var value: VkPrimitiveTopology {
+        VkPrimitiveTopology(rawValue)
+    }
 }
 
-enum PolygonMode: Int32 {
+enum PolygonMode: UInt32 {
     case fill = 0,
          line = 1,
          point = 2,
          fillRectangleNv = 1000153000
+
+    var value: VkPolygonMode {
+        VkPolygonMode(rawValue)
+    }
 }
 
-enum FrontFace: Int32 {
+enum FrontFace: UInt32 {
     case counterClockwise = 0,
          clockwise = 1
+
+    var value: VkFrontFace {
+        VkFrontFace(rawValue)
+    }
 }
 
-enum CompareOp: Int32 {
+enum CompareOp: UInt32 {
     case never = 0,
          less = 1,
          equal = 2,
@@ -830,9 +878,13 @@ enum CompareOp: Int32 {
          notEqual = 5,
          greaterOrEqual = 6,
          always = 7
+
+    var value: VkCompareOp {
+        VkCompareOp(rawValue)
+    }
 }
 
-enum StencilOp: Int32 {
+enum StencilOp: UInt32 {
     case keep = 0,
          zero = 1,
          replace = 2,
@@ -841,9 +893,13 @@ enum StencilOp: Int32 {
          invert = 5,
          incrementAndWrap = 6,
          decrementAndWrap = 7
+
+    var value: VkStencilOp {
+        VkStencilOp(rawValue)
+    }
 }
 
-enum LogicOp: Int32 {
+enum LogicOp: UInt32 {
     case clear = 0,
          and = 1,
          andReverse = 2,
@@ -860,9 +916,13 @@ enum LogicOp: Int32 {
          orInverted = 13,
          nand = 14,
          set = 15
+
+    var value: VkLogicOp {
+        VkLogicOp(rawValue)
+    }
 }
 
-enum BlendFactor: Int32 {
+enum BlendFactor: UInt32 {
     case zero = 0,
          one = 1,
          srcColor = 2,
@@ -882,9 +942,13 @@ enum BlendFactor: Int32 {
          oneMinusSrc1Color = 16,
          src1Alpha = 17,
          oneMinusSrc1Alpha = 18
+
+    var value: VkBlendFactor {
+        VkBlendFactor(rawValue)
+    }
 }
 
-enum BlendOp: Int32 {
+enum BlendOp: UInt32 {
     case add = 0,
          subtract = 1,
          reverseSubtract = 2,
@@ -936,6 +1000,10 @@ enum BlendOp: Int32 {
          redExt = 1000148043,
          greenExt = 1000148044,
          blueExt = 1000148045
+
+    var value: VkBlendOp {
+        VkBlendOp(rawValue)
+    }
 }
 
 enum DynamicState: Int32 {
@@ -956,37 +1024,53 @@ enum DynamicState: Int32 {
          exclusiveScissorNv = 1000205001
 }
 
-enum Filter: Int32 {
+enum Filter: UInt32 {
     case nearest = 0,
          linear = 1,
          cubicImg = 1000015000
     static let
             cubicExt = cubicImg
+
+    var value: VkFilter {
+        VkFilter(rawValue)
+    }
 }
 
-enum SamplerMipmapMode: Int32 {
+enum SamplerMipmapMode: UInt32 {
     case nearest = 0,
          linear = 1
+
+    var value: VkSamplerMipmapMode {
+        VkSamplerMipmapMode(rawValue)
+    }
 }
 
-enum SamplerAddressMode: Int32 {
+enum SamplerAddressMode: UInt32 {
     case _repeat = 0,
          mirroredRepeat = 1,
          clampToEdge = 2,
          clampToBorder = 3,
          mirrorClampToEdge = 4
+
+    var value: VkSamplerAddressMode {
+        VkSamplerAddressMode(rawValue)
+    }
 }
 
-enum BorderColor: Int32 {
+enum BorderColor: UInt32 {
     case floatTransparentBlack = 0,
          intTransparentBlack = 1,
          floatOpaqueBlack = 2,
          intOpaqueBlack = 3,
          floatOpaqueWhite = 4,
          intOpaqueWhite = 5
+
+    var value: VkBorderColor {
+        VkBorderColor(rawValue)
+    }
 }
 
-enum DescriptorType: Int32 {
+enum DescriptorType: UInt32 {
     case sampler = 0,
          combinedImageSampler = 1,
          sampledImage = 2,
@@ -1000,28 +1084,48 @@ enum DescriptorType: Int32 {
          inputAttachment = 10,
          inlineUniformBlockExt = 1000138000,
          accelerationStructureNv = 1000165000
+
+    var value: VkDescriptorType {
+        VkDescriptorType(rawValue)
+    }
 }
 
-enum AttachmentLoadOp: Int32 {
+enum AttachmentLoadOp: UInt32 {
     case load = 0,
          clear = 1,
          dontCare = 2
+
+    var value: VkAttachmentLoadOp {
+        VkAttachmentLoadOp(rawValue)
+    }
 }
 
-enum AttachmentStoreOp: Int32 {
+enum AttachmentStoreOp: UInt32 {
     case store = 0,
          dontCare = 1
+
+    var value: VkAttachmentStoreOp {
+        VkAttachmentStoreOp(rawValue)
+    }
 }
 
-enum PipelineBindPoint: Int32 {
+enum PipelineBindPoint: UInt32 {
     case graphics = 0,
          compute = 1,
          rayTracingNv = 1000165000
+
+    var value: VkPipelineBindPoint {
+        VkPipelineBindPoint(rawValue)
+    }
 }
 
-enum CommandBufferLevel: Int32 {
+enum CommandBufferLevel: UInt32 {
     case primary = 0,
          secondary = 1
+
+    var value: VkCommandBufferLevel {
+        VkCommandBufferLevel(rawValue)
+    }
 }
 
 enum IndexType: Int32 {
@@ -1085,7 +1189,8 @@ enum VendorId: Int32 {
          kazan = 0x10003
 }
 
-typealias InstanceCreateFlags = Flags
+// useless, must be 0 https://www.khronos.org/registry/vulkan/specs/1.1-extensions/man/html/VkInstanceCreateInfo.html
+//typealias InstanceCreateFlags = Flags
 
 struct FormatFeature: OptionSet {
 
@@ -1188,16 +1293,16 @@ struct SampleCount: OptionSet {
             _64_BIT = SampleCount(rawValue: 0x00000040)
 }
 
-struct QueueBit: OptionSet {
+struct QueueFlags: OptionSet {
 
     let rawValue: VkQueueFlags
 
     static let
-            graphicsBit = QueueBit(rawValue: 0x00000001),
-            computeBit = QueueBit(rawValue: 0x00000002),
-            transferBit = QueueBit(rawValue: 0x00000004),
-            sparseBindingBit = QueueBit(rawValue: 0x00000008),
-            protectedBit = QueueBit(rawValue: 0x00000010)
+            graphicsBit = QueueFlags(rawValue: 0x00000001),
+            computeBit = QueueFlags(rawValue: 0x00000002),
+            transferBit = QueueFlags(rawValue: 0x00000004),
+            sparseBindingBit = QueueFlags(rawValue: 0x00000008),
+            protectedBit = QueueFlags(rawValue: 0x00000010)
 }
 
 struct MemoryProperty: OptionSet {
@@ -1213,13 +1318,13 @@ struct MemoryProperty: OptionSet {
             protectedBit = MemoryProperty(rawValue: 0x00000020)
 }
 
-struct MemoryHeap: OptionSet {
+struct MemoryHeapFlags: OptionSet { // TODO -Bit?
 
     let rawValue: VkMemoryHeapFlags
 
     static let
-            deviceLocalBit = MemoryHeap(rawValue: 0x00000001),
-            multiInstanceBit = MemoryHeap(rawValue: 0x00000002),
+            deviceLocalBit = MemoryHeapFlags(rawValue: 0x00000001),
+            multiInstanceBit = MemoryHeapFlags(rawValue: 0x00000002),
             multiInstanceBitKhr = multiInstanceBit
 }
 
@@ -1413,7 +1518,7 @@ typealias PipelineShaderStageCreate = Flags
 
 struct ShaderStage: OptionSet {
 
-    let rawValue: Int32
+    let rawValue: VkShaderStageFlags
 
     static let
             vertexBit = ShaderStage(rawValue: 0x00000001),
@@ -1440,15 +1545,12 @@ typealias PipelineTessellationStateCreate = Flags
 typealias PipelineViewportStateCreate = Flags
 typealias PipelineRasterizationStateCreate = Flags
 
-struct CullMode: OptionSet {
-
-    let rawValue: VkCullModeFlags
-
-    static let
-            none = CullMode(rawValue: 0),
-            frontBit = CullMode(rawValue: 0x00000001),
-            backBit = CullMode(rawValue: 0x00000002),
-            frontAndBack = CullMode(rawValue: 0x00000003)
+enum CullMode: VkCullModeFlags {
+    case
+            none = 0,
+            frontBit = 0x00000001,
+            backBit = 0x00000002,
+            frontAndBack = 0x00000003
 }
 
 typealias PipelineMultisampleStateCreate = Flags
@@ -1497,7 +1599,7 @@ struct DescriptorPoolCreate: OptionSet {
 }
 
 typealias DescriptorPoolReset = Flags
-typealias FramebufferCreate = Flags
+//typealias FramebufferCreate = Flags
 typealias RenderPassCreate = Flags
 
 struct AttachmentDescription: OptionSet {
@@ -1616,4 +1718,12 @@ struct StencilFace: OptionSet {
             faceFrontBit = StencilFace(rawValue: 0x00000001),
             faceBackBit = StencilFace(rawValue: 0x00000002),
             frontAndBack = StencilFace(rawValue: 0x00000003)
+}
+
+// TODO check. not present in original header https://www.khronos.org/registry/vulkan/specs/1.1-extensions/man/html/VkFramebufferCreateFlagBits.html
+struct FramebufferCreate: OptionSet {
+
+    let rawValue: UInt32
+
+    static let imagelessBitKhr = 0x00000001
 }

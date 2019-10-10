@@ -10,38 +10,321 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a906b46-3ef0-4106-9c86-8f3e5c90c418" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sources/vkk/vk ext.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/vkk/vk_.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/build.db" beforeDir="false" afterPath="$PROJECT_DIR$/.build/build.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/checkouts/glm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/checkouts/glm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/debug.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.build/debug.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/dependencies-state.json" beforeDir="false" afterPath="$PROJECT_DIR$/.build/dependencies-state.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/manifest.db" beforeDir="false" afterPath="$PROJECT_DIR$/.build/manifest.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/CDispatch-DXP64AQDJHPS.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/CDispatch-DXP64AQDJHPS.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/CoreFoundation-V5D3EA2EYC7I.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/CoreFoundation-V5D3EA2EYC7I.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/Dispatch-DXP64AQDJHPS.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/Dispatch-DXP64AQDJHPS.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/SwiftGlibc-1WROSH6Z4GHPO.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/SwiftGlibc-1WROSH6Z4GHPO.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/SwiftOverlayShims-1F7U2FL7ABHZ0.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/SwiftOverlayShims-1F7U2FL7ABHZ0.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/SwiftShims-1F7U2FL7ABHZ0.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/SwiftShims-1F7U2FL7ABHZ0.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/_Builtin_stddef_max_align_t-28Y4IM06LBEDV.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/_Builtin_stddef_max_align_t-28Y4IM06LBEDV.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/_SwiftDispatchOverlayShims-1F7U2FL7ABHZ0.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/_SwiftDispatchOverlayShims-1F7U2FL7ABHZ0.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/vulkan-2KC9KFMJJ3PBA.pcm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/ModuleCache/1XNFNORYTDGYU/vulkan-2KC9KFMJJ3PBA.pcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/ivec4.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/ivec4.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/ivec4.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/ivec4.swift.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/ivec4.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/ivec4.swiftdeps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps~moduleonly" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/output-file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/output-file-map.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.swift.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.swiftdeps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/02/enums.swift-556F1SETZO02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/03/extensions.swift-2RQCUK61FH903" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/09/vkkTests.swift-2RMMI3P9SP409" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/0E/extensions.swift-38P02NIYC2F0E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/0U/vkkTests.swift-9VCKZL16JE0U" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/11/enums.swift-XLN0U0OSG811" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/11/vkkTests.swift-7C0LHKHQA811" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/1F/extensions.swift-X21AJTDEC1F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/25/extensions.swift-5Q5QT148ZR25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/2A/extensions.swift-2GOAAZ9CF32A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/2A/vk.swift-4FIHN3JIB62A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/2B/extensions.swift-2B4CQ08WZIW2B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/2C/extensions.swift-25LFK4B3GGI2C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/2Q/extensions.swift-145AH9BTSCZ2Q" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/2Q/extensions.swift-5131IEHVE22Q" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/2Q/vk.swift-1X44YZT9ECC2Q" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/2R/enums.swift-3BS6259LX8F2R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/2U/extensions.swift-PYVXP8TQDC2U" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/35/extensions.swift-V3F3PJ7Q4335" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/36/extensions.swift-23U2A3QC1FV36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/39/extensions.swift-5FARG6V0HD39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/3A/vkkTests.swift-3AXOYZH1QST3A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/3C/extensions.swift-W2R82PLKHW3C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/3E/extensions.swift-2B9RJISEMMX3E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/3M/extensions.swift-2WQOXDX1XGP3M" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/3Y/vkkTests.swift-28JAXNNKKBW3Y" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/3Z/vkkTests.swift-3KJ3Y1ID3H93Z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/41/vkkTests.swift-3TOQQF5EA3941" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/49/vkkTests.swift-3B9H7Q07RYD49" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/4H/extensions.swift-1HCBXJQU73T4H" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/4M/extensions.swift-2AMWGHASU2J4M" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/4P/extensions.swift-1KCMK9H7KDQ4P" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/4P/extensions.swift-2TWLPIVYN224P" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/4Y/vk.swift-DI61URI5TP4Y" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/4Z/extensions.swift-3F0AL00JR6I4Z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/56/extensions.swift-3W1KENQKJEE56" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/58/extensions.swift-CO4SCAYVN258" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/5O/extensions.swift-21ZNCPVEGK15O" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/5S/extensions.swift-2PD069WK3FD5S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/5T/vkkTests.swift-3GKF0DIDAH55T" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/6E/enums.swift-40VPSQVYNK6E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/6K/enums.swift-3V78XHV3TJ6K" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/6O/vkkTests.swift-ORB4I5QXQ26O" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/6R/vk.swift-7V4IPER3IW6R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/6T/extensions.swift-2H9BXGBRF7L6T" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/70/vkkTests.swift-16IOK4NH4V970" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/75/extensions.swift-14JM7H7NNQU75" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/7L/vkkTests.swift-2T9XE68AJ597L" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/7M/extensions.swift-PHZA7XQF7D7M" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/7N/extensions.swift-3TVN2BV8AMP7N" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/7X/utils.swift-34QMJ7FG5967X" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/8A/vkkTests.swift-99KPFGLFCV8A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/8K/extensions.swift-3I1Y02KVIKQ8K" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/8P/vkkTests.swift-E2ACWI8QAA8P" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/8Y/extensions.swift-2QMKWTSCI7A8Y" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/8Y/extensions.swift-WIHGL5O6138Y" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/93/extensions.swift-AEZOG0NW4R93" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/93/vkk.swift-E1IULR9PB993" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/94/vkkTests.swift-1JYB8TPFASO94" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/9B/vkkTests.swift-3HD8C2ONZQX9B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/9C/extensions.swift-35ZZCO4HB1J9C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/9G/extensions.swift-1AXNMM1748W9G" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/9P/extensions.swift-146KI9UMVQT9P" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/9X/extensions.swift-37H5ANV2F9G9X" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/9X/extensions.swift-39FIUZJUI7B9X" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/A0/vkkTests.swift-1QKTY5KJS67A0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/A2/vkkTests.swift-1KODGUWUB7XA2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/AI/extensions.swift-2BHV28ASEAKAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/AL/extensions.swift-21K6G8LPU4YAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/AN/extensions.swift-1OA3HQM14I2AN" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/AS/vkkTests.swift-1O03ZA7QUXGAS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/BH/vkkTests.swift-2DJ53HL9HR6BH" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/BJ/extensions.swift-20YZK5S6A46BJ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/BM/vkk.swift-1CZQULJN49LBM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/BT/utils.swift-3S20KZH7PHMBT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/BY/extensions.swift-2PNMCWRV12RBY" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/BZ/extensions.swift-231L5D73R7HBZ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/C7/extensions.swift-3DN9D856CDZC7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/C7/vkkTests.swift-1LDP0H4HGEEC7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/C9/extensions.swift-37AHPVCTD11C9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/CB/extensions.swift-3TDJXVJRJF1CB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/CI/extensions.swift-266I94WG3Z2CI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/CK/enums.swift-2PDT185ZEVBCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/CQ/enums.swift-1EAZYWT7IO3CQ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/D3/enums.swift-3POQ8N8596RD3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/D9/enums.swift-2GM2C839YBFD9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/DM/vk.swift-2EH36VI57FKDM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/E4/extensions.swift-1TKS4GJ01GTE4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/E6/extensions.swift-4LSWN38OBFE6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/EC/vkkTests.swift-82VXF0UY23EC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/EF/vkkTests.swift-4MP0HMWGRBEF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/EH/extensions.swift-2080039LXY4EH" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/EX/extensions.swift-ORJLWM9QSSEX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/FA/enums.swift-20NR2BPIO31FA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/FA/vkkTests.swift-1UR88D0EW3EFA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/FA/vkkTests.swift-XKAD8LOYZGFA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/FS/extensions.swift-2TN76JQHPGFFS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/FW/extensions.swift-1RDO78WVD4BFW" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/FZ/extensions.swift-2Q2G1U76UBIFZ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/GB/extensions.swift-1E4ZL5PA2T6GB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/GD/enums.swift-2KS3983D6BDGD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/GD/extensions.swift-DHDZ6ALSWKGD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/GE/vkkTests.swift-1A5YCN5HYY2GE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/GF/extensions.swift-2Z6PXB0CFESGF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/GJ/extensions.swift-BN1E5WCK6PGJ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/GL/vkkTests.swift-396HPGK9W22GL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/GM/extensions.swift-15BFT9S1FGZGM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/GP/vkkTests.swift-3559J5Q054PGP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/GY/vkkTests.swift-32HEFHQML9DGY" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/H4/vkkTests.swift-1YL0Q0ZH54YH4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/HA/extensions.swift-3KFRPJSGHB6HA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/HD/vkkTests.swift-39MZHQOCFUBHD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/HL/extensions.swift-3U4WI5GZ2PZHL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/HW/extensions.swift-3OZNVJOSVUOHW" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/I2/utils.swift-2E3ULE50YFHI2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/I4/utils.swift-TYLVSUDN8FI4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/IB/vkkTests.swift-25NOLEDRQ0MIB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/IO/extensions.swift-1HVL4H9WF2GIO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/IP/extensions.swift-14QW7BW84LBIP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/JO/vkkTests.swift-2YQ32UZR4TYJO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/JS/extensions.swift-KQEPM2FTLBJS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/K0/extensions.swift-1Y2YQEK52TNK0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/K4/extensions.swift-27YAT8NBJSIK4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/K8/extensions.swift-2WU0YCW9ZV4K8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/KD/extensions.swift-1W50NX0LQ63KD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/KM/vkkTests.swift-25Y1IE93OKCKM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/KP/extensions.swift-3PPWT6BUU9IKP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/L7/extensions.swift-19MSDPREOKKL7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/L9/extensions.swift-56DB6V3O33L9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/LB/extensions.swift-3UJ10H1J27YLB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/LI/extensions.swift-2DL6QSRNKYJLI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/LK/vkkTests.swift-3ESCZGKUC29LK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/LN/enums.swift-309Y1SYB9HWLN" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/LO/extensions.swift-2CJO3AD7YNZLO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/M6/extensions.swift-P5LSBVY7WSM6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/M6/extensions.swift-QB5EBQY3E2M6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/MG/extensions.swift-1KN5HPDRQVIMG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/MJ/extensions.swift-3P3NHC4WUV8MJ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/MT/extensions.swift-2HLSBI9V81BMT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/MW/vk.swift-1CIA3G7LW9SMW" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/N1/vkkTests.swift-7XT05N054N1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/NF/extensions.swift-3V2VPLUQ58SNF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/OI/enums.swift-IEI7TGPD7OI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/OK/vk.swift-3GHRG7GH7A0OK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/OM/extensions.swift-1UHUEZDV78EOM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/OV/extensions.swift-3AZ3LOZODMUOV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/P4/extensions.swift-5WYYDK11FEP4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/PC/extensions.swift-1Z835GPW2JWPC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/PF/extensions.swift-7FKRLKFE09PF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/PM/extensions.swift-RDTJ5IEE1VPM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/PT/extensions.swift-3FSL2W9MDT1PT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/PW/vkkTests.swift-2EE1JKQNSZVPW" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/Q2/vk.swift-FY3CDV6NS3Q2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/Q4/extensions.swift-3KEDY7NWDWRQ4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/Q4/vkk.swift-1K9G6TBUNLQQ4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/Q9/utils.swift-1L1S2GN605ZQ9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/QE/extensions.swift-LSMX0S2EVTQE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/QI/extensions.swift-2NNI0I65DGGQI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/QL/utils.swift-152X59BVR60QL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/QL/utils.swift-3BJFGHWOHN1QL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/QU/vk.swift-ADIPP7IH5CQU" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/QZ/extensions.swift-ASER29IXZUQZ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/R5/extensions.swift-3OB1NZGKDROR5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/RM/extensions.swift-25D31JYVWZ6RM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/RR/vkkTests.swift-3EL1B0OGZDZRR" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/SD/enums.swift-2AP9X7LLPGMSD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/SE/extensions.swift-1NGZXEBO7ZKSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/SF/extensions.swift-2V2OR0N3DWUSF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/SK/extensions.swift-7FCZGW0RIFSK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/SN/extensions.swift-3OMK88KYZDASN" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/SP/extensions.swift-HW657WGL7MSP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/SS/extensions.swift-U04ZBP1OC6SS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/SU/vkkTests.swift-10NYTBIJ58CSU" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/T6/vk.swift-35F8A75WGRPT6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/T6/vk.swift-FY0BWVFYPPT6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/TD/enums.swift-1HBRW7S7SN1TD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/TG/vkkTests.swift-2EPH3UOW1KETG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/TH/extensions.swift-2BIJNYZMUL8TH" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/TJ/vkkTests.swift-1S1TX7811U3TJ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/TJ/vkkTests.swift-3LA34Z754EFTJ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/TM/extensions.swift-31RQW8E9XQ1TM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/TM/vk.swift-1NZ4S9XJP29TM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/TQ/vkk.swift-3RI88HK9AKKTQ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/TU/extensions.swift-OGW62E1EOVTU" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/U0/utils.swift-3UY7DDU4D51U0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/U3/vk.swift-1PZVODAOUKVU3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/UO/vkkTests.swift-74PP51C25SUO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/UP/enums.swift-34EWCHVQVBNUP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/UU/extensions.swift-TCP6K45IPIUU" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/UY/extensions.swift-B5IXGNKNYGUY" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/V5/extensions.swift-1UEHR5AYHTPV5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/VC/extensions.swift-2HJKYSY3GHGVC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/VI/extensions.swift-1LFM3J6PJCLVI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/VQ/vk.swift-2091TZ8E2C0VQ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/VR/utils.swift-3A1CKV9EM4UVR" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/W1/extensions.swift-J5CJCIHR4EW1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/W1/vkkTests.swift-26PL0J1STBBW1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/W4/vkkTests.swift-3IG8S7BL16QW4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/W5/enums.swift-XSOEOX88G1W5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/W9/vkkTests.swift-2AM0SGBKPTLW9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/WA/extensions.swift-35GXIBJG6RSWA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/WE/extensions.swift-1HHARU55EFEWE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/WJ/enums.swift-1Z9EUECIC3JWJ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/WO/utils.swift-XAAKEO4CEQWO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/WQ/vkkTests.swift-FZZWE8MUA8WQ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/WX/extensions.swift-8CEPIBNJJJWX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/WY/vkkTests.swift-1BVYUV7AOCBWY" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/WZ/extensions.swift-17PLMDGZ1LFWZ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/X1/extensions.swift-1K4M4MHSPIFX1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/X1/extensions.swift-39XNEOPSGJ6X1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/X8/vkkTests.swift-2GZNT5AMLHMX8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/XC/enums.swift-3UUUMYYPG74XC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/XO/extensions.swift-2SU56RI8IFDXO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/XP/vkkTests.swift-3P37XGUWAYZXP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/XQ/extensions.swift-2RD21KV7L8WXQ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/XT/vkkTests.swift-23G26M7LO4QXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/Y6/extensions.swift-1USL3W2U5E5Y6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/YE/extensions.swift-CZIGNM4PQKYE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/YJ/vkkTests.swift-3U2ZKRJKGBFYJ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/YL/extensions.swift-2DCIBEY56CZYL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/YM/extensions.swift-2INXPWRFWZYM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/YM/extensions.swift-3AYDS5B5HLPYM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/YY/extensions.swift-1JXFEW8SYHFYY" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/ZF/vkkTests.swift-18NRTBYQ6AFZF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/ZG/enums.swift-5MDNV13D1IZG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/ZO/vkkTests.swift-34WAP2EONA2ZO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/ZP/extensions.swift-2FOIYX01JWNZP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/ZS/vk.swift-6AUWN7Z61UZS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/records/ZV/extensions.swift-3GO7FDRAMN4ZV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/CDispatch-DXP64AQDJHPS.pcm-1OCDAN8F0CP5K" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/CDispatch-DXP64AQDJHPS.pcm-1OCDAN8F0CP5K" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/CoreFoundation-V5D3EA2EYC7I.pcm-3P4OIGLCXKSQ8" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/CoreFoundation-V5D3EA2EYC7I.pcm-3P4OIGLCXKSQ8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/SwiftGlibc-1WROSH6Z4GHPO.pcm-2O35RI00Z8WA6" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/SwiftGlibc-1WROSH6Z4GHPO.pcm-2O35RI00Z8WA6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/enums.swift.o-13M1VSEW64WVH" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/enums.swift.o-13M1VSEW64WVH" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/extensions.swift.o-IXJW7COL0B87" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/utils.swift.o-WUY62J84B6LG" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/utils.swift.o-WUY62J84B6LG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/vk.swift.o-3OOOSFZYXW25T" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/vk.swift.o-3OOOSFZYXW25T" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/vkk.swift.o-1DU8Y75WH50C2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/vkkTests.swift.o-26DZIBS6L4MHX" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/vkkTests.swift.o-26DZIBS6L4MHX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/vulkan-2KC9KFMJJ3PBA.pcm-2AAR4CVOPJ5YD" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/vulkan-2KC9KFMJJ3PBA.pcm-2AAR4CVOPJ5YD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/enums.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/enums.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/enums.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/enums.swift.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/enums.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/enums.swiftdeps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/enums~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/enums~partial.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/extensions.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/extensions.swift.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/extensions.swiftdeps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/extensions~partial.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/extensions~partial.swiftmodule" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/master.swiftdeps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/master.swiftdeps~moduleonly" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/output-file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/output-file-map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/utils.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/utils.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/utils.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/utils.swift.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/utils.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/utils.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/utils~partial.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/utils~partial.swiftdoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/utils~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/utils~partial.swiftmodule" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vk.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vk.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vk.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vk.swift.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vk.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vk.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vkk.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vkk.swift.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vkk.swiftdeps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vkk~partial.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vkk~partial.swiftmodule" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vk~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.build/vk~partial.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkk.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.build/LinuxMain.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.build/LinuxMain.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.build/LinuxMain.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.build/LinuxMain.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.build/master.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.build/master.swiftdeps~moduleonly" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.product/Objects.LinkFileList" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.product/Objects.LinkFileList" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.xctest" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkPackageTests.xctest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.swift.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/XCTestManifests.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/master.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/master.swiftdeps~moduleonly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.swift.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/vkkTests.build/vkkTests.swiftdeps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Package.resolved" beforeDir="false" afterPath="$PROJECT_DIR$/Package.resolved" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Package.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Package.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/vkk/enums.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/vkk/enums.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/vkk/extensions.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/vkk/structs.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/vkk/structs.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/vkk/structs.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/vkk/utils.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/vkk/utils.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/vkk/vk.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/vkk/vk.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/vkkTests/vkkTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/vkkTests/vkkTests.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +404,11 @@
       <workItem from="1569753218872" duration="1882000" />
       <workItem from="1569755108962" duration="31213000" />
       <workItem from="1569856121203" duration="195000" />
-      <workItem from="1569856365875" duration="14105000" />
+      <workItem from="1569856365875" duration="27200000" />
+      <workItem from="1570102919930" duration="8213000" />
+      <workItem from="1570140675946" duration="1579000" />
+      <workItem from="1570143533087" duration="6263000" />
+      <workItem from="1570206675794" duration="63932000" />
     </task>
     <task id="LOCAL-00001" summary="testing clion">
       <created>1569886720603</created>
@@ -130,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569886720603</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="enum raws">
+      <created>1569947937738</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569947937738</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +435,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -151,48 +447,61 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="testing clion" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing clion" />
+    <MESSAGE value="enum raws" />
+    <option name="LAST_COMMIT_MESSAGE" value="enum raws" />
   </component>
   <component name="WindowStateProjectService">
     <state x="479" y="571" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction" timestamp="1569833229011">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state x="479" y="571" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction/70.27.2490.1413@70.27.2490.1413" timestamp="1569833229011" />
-    <state width="1199" height="394" key="GridCell.Tab.0.bottom" timestamp="1569872908550">
+    <state x="375" y="470" width="624" height="533" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1570143502740">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1569872908550" />
-    <state width="1199" height="394" key="GridCell.Tab.0.center" timestamp="1569872908549">
+    <state x="375" y="470" width="624" height="533" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/70.27.2490.1413@70.27.2490.1413" timestamp="1570143502740" />
+    <state width="1199" height="394" key="GridCell.Tab.0.bottom" timestamp="1570724076433">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1569872908549" />
-    <state width="1199" height="394" key="GridCell.Tab.0.left" timestamp="1569872908549">
+    <state width="1199" height="394" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1570724076433" />
+    <state width="1199" height="394" key="GridCell.Tab.0.center" timestamp="1570724076433">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1569872908549" />
-    <state width="1199" height="394" key="GridCell.Tab.0.right" timestamp="1569872908550">
+    <state width="1199" height="394" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1570724076433" />
+    <state width="1199" height="394" key="GridCell.Tab.0.left" timestamp="1570724076433">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1569872908550" />
+    <state width="1199" height="394" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1570724076433" />
+    <state width="1199" height="394" key="GridCell.Tab.0.right" timestamp="1570724076433">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state width="1199" height="394" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1570724076433" />
     <state x="165" y="368" width="1784" height="737" key="SettingsEditor" timestamp="1569936413464">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state x="165" y="368" width="1784" height="737" key="SettingsEditor/70.27.2490.1413@70.27.2490.1413" timestamp="1569936413464" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1569761776865">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1569950620889">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/70.27.2490.1413@70.27.2490.1413" timestamp="1569761776865" />
-    <state x="256" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2" timestamp="1569886902469">
+    <state width="498" height="446" key="SwitcherDM/70.27.2490.1413@70.27.2490.1413" timestamp="1569950620889" />
+    <state x="256" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2" timestamp="1569947939519">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state x="256" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2/70.27.2490.1413@70.27.2490.1413" timestamp="1569886902469" />
-    <state x="348" y="561" key="com.intellij.ide.util.TipDialog" timestamp="1569856365673">
+    <state x="256" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2/70.27.2490.1413@70.27.2490.1413" timestamp="1569947939519" />
+    <state x="348" y="561" key="com.intellij.ide.util.TipDialog" timestamp="1570206676414">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state x="348" y="561" key="com.intellij.ide.util.TipDialog/70.27.2490.1413@70.27.2490.1413" timestamp="1569856365673" />
-    <state x="339" y="499" width="707" height="468" key="find.popup" timestamp="1569872601352">
+    <state x="348" y="561" key="com.intellij.ide.util.TipDialog/70.27.2490.1413@70.27.2490.1413" timestamp="1570206676414" />
+    <state x="342" y="351" width="690" height="771" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1570661412680">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state x="339" y="499" width="707" height="468" key="find.popup/70.27.2490.1413@70.27.2490.1413" timestamp="1569872601352" />
+    <state x="342" y="351" width="690" height="771" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/70.27.2490.1413@70.27.2490.1413" timestamp="1570661412680" />
+    <state x="405" y="631" width="565" height="212" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate" timestamp="1570457644917">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state x="405" y="631" width="565" height="212" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate/70.27.2490.1413@70.27.2490.1413" timestamp="1570457644917" />
+    <state x="339" y="499" width="707" height="468" key="find.popup" timestamp="1570657610949">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state x="339" y="499" width="707" height="468" key="find.popup/70.27.2490.1413@70.27.2490.1413" timestamp="1570657610949" />
   </component>
 </project>

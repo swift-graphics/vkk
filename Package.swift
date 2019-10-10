@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "../glm", .revision("81c77e1c955ddc6e1623f0838614003254c51905"))
+        .package(url: "../glm", .revision("fcb9efcd2b0f530ad4de6c59386d8714ee04149c"))
     ],
     targets: [
         .systemLibrary(name: "vulkan", pkgConfig: "vulkan"),

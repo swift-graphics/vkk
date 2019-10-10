@@ -20,10 +20,22 @@
     "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/utils~partial.swiftmodule",
     "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/utils.swiftdeps"
   },
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/vk ext.swift": {
+    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk ext.d",
+    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk ext.swift.o",
+    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk ext~partial.swiftmodule",
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk ext.swiftdeps"
+  },
   "/home/elect/SwiftProjects/vkk/Sources/vkk/vk.swift": {
     "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk.d",
     "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk.swift.o",
     "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk~partial.swiftmodule",
     "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk.swiftdeps"
+  },
+  "/home/elect/SwiftProjects/vkk/Sources/vkk/vk_.swift": {
+    "dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk_.d",
+    "object": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk_.swift.o",
+    "swiftmodule": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk_~partial.swiftmodule",
+    "swift-dependencies": "/home/elect/SwiftProjects/vkk/.build/x86_64-unknown-linux/debug/vkk.build/vk_.swiftdeps"
   }
 }

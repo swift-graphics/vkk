@@ -9,11 +9,18 @@ final class vkkTests: XCTestCase {
         // results.
 //        XCTAssertEqual(vkk().text, "Hello, World!")
 
-        let appInfo = VkApplicationInfo(
-                applicationName: "Hello Triangle",
-                applicationVersion: 1)
-        print("\(appInfo)")
-        print("\(String(cString: appInfo.pApplicationName))")
+        var appInfo = vk.ApplicationInfo(applicationName: "Hello Triangle", applicationVersion: 1)
+
+        var createInfo = vk.InstanceCreateInfo(applicationInfo: &appInfo)
+
+//        var instance: VkInstance = try! vk.createInstance(&createInfo)
+
+        let (err, ins) = vk.createInstance(&createInfo)
+        print(err)
+
+        let inst: VkInstance = vk.createInstance(&createInfo)
+
+        inst.destroy()
     }
 
     static var allTests = [

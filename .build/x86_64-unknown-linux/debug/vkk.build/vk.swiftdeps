@@ -1,27 +1,1344 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "vk"
-- "instance"
 provides-nominal:
 - "3vkk2vkV"
 provides-member:
 - ["3vkk2vkV", ""]
 depends-top-level:
+- !private "*"
+- !private "??"
+- "Access"
 - "AssignmentPrecedence"
+- "AttachmentDescription"
+- "AttachmentLoadOp"
+- "AttachmentStoreOp"
+- "BlendFactor"
+- "BlendOp"
+- "Bool"
+- "BooleanLiteralType"
+- "BorderColor"
+- "BufferCreate"
+- "BufferUsage"
+- !private "CHECK"
+- !private "CHECK_F"
+- "ColorComponent"
+- "CommandBufferLevel"
+- "CommandBufferUsage"
+- "CommandPoolCreate"
+- "CompareOp"
+- "ComponentSwizzle"
+- "CullMode"
+- "Dependency"
+- "DescriptorPoolCreate"
+- "DescriptorSetLayoutCreate"
+- "DescriptorType"
+- "DeviceQueueCreate"
+- "FenceCreate"
+- "Filter"
+- "Float"
+- "FloatLiteralType"
+- "Format"
+- "FormatFeature"
+- "FramebufferCreate"
+- "FrontFace"
+- "ImageAspect"
+- "ImageCreate"
+- "ImageLayout"
+- "ImageTiling"
+- "ImageType"
+- "ImageUsage"
+- "ImageViewCreate"
+- "Int"
+- "Int32"
+- "Int8"
+- "IntegerLiteralType"
+- "LogicOp"
+- "MemoryHeapFlags"
+- !private "MemoryLayout"
+- "MemoryProperty"
+- "PhysicalDeviceType"
+- "PipelineBindPoint"
+- "PipelineCreate"
+- "PipelineShaderStageCreate"
+- "PipelineStage"
+- "PolygonMode"
+- "PrimitiveTopology"
+- "QueryPipelineStatistic"
+- "QueryType"
+- "QueueFlags"
+- "Result"
+- "SampleCount"
+- "SamplerAddressMode"
+- "SamplerCreate"
+- "SamplerMipmapMode"
+- "ShaderModuleCreate"
+- "ShaderStage"
+- "SharingMode"
+- "SparseImageFormat"
+- "SparseMemoryBind"
+- "StencilOp"
+- "String"
+- "StringLiteralType"
+- "SubpassDescription"
+- "Tuple16_UInt8"
+- "UInt32"
+- "UnsafeMutablePointer"
+- "UnsafePointer"
+- "UnsafeRawPointer"
 - !private "VK_STRUCTURE_TYPE_APPLICATION_INFO"
+- !private "VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_BUFFER_MEMORY_BARRIER"
+- !private "VK_STRUCTURE_TYPE_BUFFER_VIEW_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO"
+- !private "VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO"
+- !private "VK_STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_INFO"
+- !private "VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_COMPUTE_PIPELINE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_COPY_DESCRIPTOR_SET"
+- !private "VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO"
+- !private "VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_DEVICE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_EVENT_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_FENCE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_FRAMEBUFFER_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_IMAGE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_IMAGE_MEMORY_BARRIER"
+- !private "VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_MAPPED_MEMORY_RANGE"
+- !private "VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_INFO"
+- !private "VK_STRUCTURE_TYPE_MEMORY_BARRIER"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_CACHE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_STATE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_DYNAMIC_STATE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_STATE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_STATE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_QUERY_POOL_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO"
+- !private "VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_SAMPLER_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_SEMAPHORE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO"
+- !private "VK_STRUCTURE_TYPE_SUBMIT_INFO"
+- !private "VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET"
+- "VertexInputRate"
 - "VkApplicationInfo"
+- "VkAttachmentDescription"
+- "VkAttachmentReference"
+- "VkBaseInStructure"
+- "VkBaseOutStructure"
+- !private "VkBool32"
+- "VkBuffer"
+- "VkBufferCopy"
+- "VkBufferCreateInfo"
+- "VkBufferImageCopy"
+- "VkBufferMemoryBarrier"
+- "VkBufferView"
+- "VkBufferViewCreateInfo"
+- "VkClearAttachment"
+- "VkClearColorValue"
+- "VkClearDepthStencilValue"
+- "VkClearRect"
+- "VkClearValue"
+- "VkCommandBuffer"
+- "VkCommandBufferAllocateInfo"
+- "VkCommandBufferBeginInfo"
+- "VkCommandBufferInheritanceInfo"
+- "VkCommandPool"
+- "VkCommandPoolCreateInfo"
+- "VkComponentMapping"
+- "VkComputePipelineCreateInfo"
+- "VkCopyDescriptorSet"
+- "VkDescriptorBufferInfo"
+- "VkDescriptorImageInfo"
+- "VkDescriptorPool"
+- "VkDescriptorPoolCreateInfo"
+- "VkDescriptorPoolSize"
+- "VkDescriptorSet"
+- "VkDescriptorSetAllocateInfo"
+- "VkDescriptorSetLayout"
+- "VkDescriptorSetLayoutBinding"
+- "VkDescriptorSetLayoutCreateInfo"
+- "VkDescriptorType"
+- "VkDeviceCreateInfo"
+- "VkDeviceMemory"
+- "VkDeviceQueueCreateInfo"
+- "VkDeviceSize"
+- "VkDispatchIndirectCommand"
+- "VkDrawIndexedIndirectCommand"
+- "VkDrawIndirectCommand"
+- "VkDynamicState"
+- "VkEventCreateInfo"
+- "VkExtensionProperties"
+- "VkExtent2D"
+- "VkExtent3D"
+- "VkFenceCreateInfo"
+- "VkFormat"
+- "VkFormatProperties"
+- "VkFramebuffer"
+- "VkFramebufferCreateInfo"
+- "VkGraphicsPipelineCreateInfo"
+- "VkImage"
+- "VkImageBlit"
+- "VkImageCopy"
+- "VkImageCreateInfo"
+- "VkImageFormatProperties"
+- "VkImageLayout"
+- "VkImageMemoryBarrier"
+- "VkImageResolve"
+- "VkImageSubresource"
+- "VkImageSubresourceLayers"
+- "VkImageSubresourceRange"
+- "VkImageView"
+- "VkImageViewCreateInfo"
+- "VkImageViewType"
 - "VkInstance"
-- "instance"
+- "VkInstanceCreateInfo"
+- "VkLayerProperties"
+- "VkMappedMemoryRange"
+- "VkMemoryAllocateInfo"
+- "VkMemoryBarrier"
+- "VkMemoryHeap"
+- "VkMemoryRequirements"
+- "VkMemoryType"
+- "VkOffset2D"
+- "VkOffset3D"
+- "VkPhysicalDeviceFeatures"
+- "VkPhysicalDeviceLimits"
+- "VkPhysicalDeviceMemoryProperties"
+- "VkPhysicalDeviceProperties"
+- "VkPhysicalDeviceSparseProperties"
+- "VkPipeline"
+- "VkPipelineCacheCreateInfo"
+- "VkPipelineColorBlendAttachmentState"
+- "VkPipelineColorBlendStateCreateInfo"
+- "VkPipelineDepthStencilStateCreateInfo"
+- "VkPipelineDynamicStateCreateInfo"
+- "VkPipelineInputAssemblyStateCreateInfo"
+- "VkPipelineLayout"
+- "VkPipelineLayoutCreateInfo"
+- "VkPipelineMultisampleStateCreateInfo"
+- "VkPipelineRasterizationStateCreateInfo"
+- "VkPipelineShaderStageCreateInfo"
+- !private "VkPipelineStageFlags"
+- "VkPipelineTessellationStateCreateInfo"
+- "VkPipelineVertexInputStateCreateInfo"
+- "VkPipelineViewportStateCreateInfo"
+- "VkPushConstantRange"
+- "VkQueryControlFlags"
+- "VkQueryPoolCreateInfo"
+- "VkQueueFamilyProperties"
+- "VkRect2D"
+- "VkRenderPass"
+- "VkRenderPassBeginInfo"
+- "VkRenderPassCreateInfo"
+- "VkSampleCountFlagBits"
+- "VkSampleMask"
+- "VkSampler"
+- "VkSamplerCreateInfo"
+- "VkSemaphore"
+- "VkSemaphoreCreateInfo"
+- "VkShaderModule"
+- "VkShaderModuleCreateInfo"
+- "VkShaderStageFlagBits"
+- "VkSparseBufferMemoryBindInfo"
+- "VkSparseImageFormatProperties"
+- "VkSparseImageMemoryBind"
+- "VkSparseImageMemoryBindInfo"
+- "VkSparseImageMemoryRequirements"
+- "VkSparseImageOpaqueMemoryBindInfo"
+- "VkSparseMemoryBind"
+- "VkSpecializationInfo"
+- "VkSpecializationMapEntry"
+- "VkStencilOpState"
+- "VkStructureType"
+- "VkSubmitInfo"
+- "VkSubpassDependency"
+- "VkSubpassDescription"
+- "VkSubresourceLayout"
+- "VkVertexInputAttributeDescription"
+- "VkVertexInputBindingDescription"
+- "VkViewport"
+- "VkWriteDescriptorSet"
+- "ivec2"
+- "ivec3"
+- !private "memcpy"
+- "uvec2"
+- "uvec3"
+- "vec2"
 - "vk"
+- !private "vkCreateInstance"
+- !private "vkDestroyInstance"
+- !private "withUnsafeMutableBytes"
 depends-member:
+- !private ["3vkk6AccessV", "deinit"]
+- !private ["3vkk6AccessV", "rawValue"]
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["Sa", "count"]
+- !private ["Sa", "map"]
+- !private ["3vkk21AttachmentDescriptionV", "deinit"]
+- !private ["3vkk21AttachmentDescriptionV", "rawValue"]
+- !private ["3vkk16AttachmentLoadOpO", "value"]
+- !private ["3vkk17AttachmentStoreOpO", "value"]
+- !private ["SK", "baseAddress"]
+- !private ["SK", "copyBytes"]
+- !private ["SK", "count"]
+- !private ["SK", "map"]
+- !private ["SK", "prefix"]
+- !private ["SK", "utf8"]
+- !private ["Sz", "init"]
+- !private ["3vkk11BlendFactorO", "value"]
+- !private ["3vkk7BlendOpO", "value"]
+- !private ["3vkk11BorderColorO", "value"]
+- !private ["3vkk12BufferCreateV", "deinit"]
+- !private ["3vkk12BufferCreateV", "rawValue"]
+- !private ["3vkk11BufferUsageV", "deinit"]
+- !private ["3vkk11BufferUsageV", "rawValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["Sl", "baseAddress"]
+- !private ["Sl", "copyBytes"]
+- !private ["Sl", "count"]
+- !private ["Sl", "map"]
+- !private ["Sl", "prefix"]
+- !private ["Sl", "utf8"]
+- !private ["3vkk14ColorComponentV", "deinit"]
+- !private ["3vkk14ColorComponentV", "rawValue"]
+- !private ["3vkk18CommandBufferLevelO", "value"]
+- !private ["3vkk18CommandBufferUsageV", "deinit"]
+- !private ["3vkk18CommandBufferUsageV", "rawValue"]
+- !private ["3vkk17CommandPoolCreateV", "deinit"]
+- !private ["3vkk17CommandPoolCreateV", "rawValue"]
+- !private ["SL", "init"]
+- !private ["SL", "utf8"]
+- !private ["3vkk9CompareOpO", "value"]
+- !private ["3vkk16ComponentSwizzleO", "value"]
+- !private ["10Foundation15ContiguousBytesP", "baseAddress"]
+- !private ["10Foundation15ContiguousBytesP", "copyBytes"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "map"]
+- !private ["3vkk8CullModeO", "deinit"]
+- !private ["3vkk8CullModeO", "rawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "asTuple"]
+- !private ["s28CustomDebugStringConvertibleP", "baseAddress"]
+- !private ["s28CustomDebugStringConvertibleP", "copyBytes"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "prefix"]
+- !private ["s28CustomDebugStringConvertibleP", "utf8"]
+- !private ["s28CustomDebugStringConvertibleP", "withOptionalUnsafeBufferPointer"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s28CustomDebugStringConvertibleP", "z"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "prefix"]
+- !private ["s17CustomReflectableP", "utf8"]
+- !private ["s17CustomReflectableP", "withOptionalUnsafeBufferPointer"]
+- !private ["s23CustomStringConvertibleP", "asTuple"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "prefix"]
+- !private ["s23CustomStringConvertibleP", "utf8"]
+- !private ["s23CustomStringConvertibleP", "x"]
+- !private ["s23CustomStringConvertibleP", "y"]
+- !private ["s23CustomStringConvertibleP", "z"]
+- !private ["10Foundation12DataProtocolP", "baseAddress"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "map"]
+- !private ["Se", "asTuple"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- !private ["Se", "utf8"]
+- !private ["Se", "withOptionalUnsafeBufferPointer"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
+- !private ["Se", "z"]
+- !private ["3vkk10DependencyV", "deinit"]
+- !private ["3vkk10DependencyV", "rawValue"]
+- !private ["3vkk20DescriptorPoolCreateV", "deinit"]
+- !private ["3vkk20DescriptorPoolCreateV", "rawValue"]
+- !private ["3vkk25DescriptorSetLayoutCreateV", "deinit"]
+- !private ["3vkk25DescriptorSetLayoutCreateV", "rawValue"]
+- !private ["3vkk14DescriptorTypeO", "value"]
+- !private ["3vkk17DeviceQueueCreateV", "deinit"]
+- !private ["3vkk17DeviceQueueCreateV", "rawValue"]
+- !private ["SE", "asTuple"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SE", "utf8"]
+- !private ["SE", "withOptionalUnsafeBufferPointer"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- !private ["SE", "z"]
+- !private ["SQ", "asTuple"]
+- !private ["SQ", "count"]
+- !private ["SQ", "init"]
+- !private ["SQ", "map"]
+- !private ["SQ", "other"]
+- !private ["SQ", "rawValue"]
+- !private ["SQ", "triangleList"]
+- !private ["SQ", "utf8"]
+- !private ["SQ", "value"]
+- !private ["SQ", "withOptionalUnsafeBufferPointer"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- !private ["SQ", "z"]
+- !private ["s5ErrorP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "asTuple"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "rawValue"]
+- !private ["s25ExpressibleByArrayLiteralP", "x"]
+- !private ["s25ExpressibleByArrayLiteralP", "y"]
+- !private ["s25ExpressibleByArrayLiteralP", "z"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "utf8"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "withOptionalUnsafeBufferPointer"]
+- !private ["s32ExpressibleByStringInterpolationP", "utf8"]
+- !private ["s26ExpressibleByStringLiteralP", "utf8"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "utf8"]
+- !private ["3vkk11FenceCreateV", "deinit"]
+- !private ["3vkk11FenceCreateV", "rawValue"]
+- !private ["3vkk6FilterO", "value"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["3vkk6FormatO", "value"]
+- !private ["3vkk13FormatFeatureV", "deinit"]
+- !private ["3vkk13FormatFeatureV", "rawValue"]
+- !private ["3vkk17FramebufferCreateV", "deinit"]
+- !private ["3vkk17FramebufferCreateV", "rawValue"]
+- !private ["3vkk9FrontFaceO", "value"]
+- !private ["SH", "asTuple"]
+- !private ["SH", "count"]
+- !private ["SH", "init"]
+- !private ["SH", "map"]
+- !private ["SH", "other"]
+- !private ["SH", "rawValue"]
+- !private ["SH", "triangleList"]
+- !private ["SH", "utf8"]
+- !private ["SH", "value"]
+- !private ["SH", "withOptionalUnsafeBufferPointer"]
+- !private ["SH", "x"]
+- !private ["SH", "y"]
+- !private ["SH", "z"]
+- !private ["3vkk11ImageAspectV", "deinit"]
+- !private ["3vkk11ImageAspectV", "rawValue"]
+- !private ["3vkk11ImageCreateV", "deinit"]
+- !private ["3vkk11ImageCreateV", "rawValue"]
+- !private ["3vkk11ImageLayoutO", "value"]
+- !private ["3vkk11ImageTilingO", "value"]
+- !private ["3vkk9ImageTypeO", "value"]
+- !private ["3vkk10ImageUsageV", "deinit"]
+- !private ["3vkk10ImageUsageV", "rawValue"]
+- !private ["3vkk15ImageViewCreateV", "deinit"]
+- !private ["3vkk15ImageViewCreateV", "rawValue"]
+- !private ["s5Int32V", "init"]
+- !private ["3vkk7LogicOpO", "value"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "utf8"]
+- !private ["3vkk15MemoryHeapFlagsV", "deinit"]
+- !private ["3vkk15MemoryHeapFlagsV", "rawValue"]
+- !private ["s12MemoryLayoutO", "size"]
+- !private ["3vkk14MemoryPropertyV", "deinit"]
+- !private ["3vkk14MemoryPropertyV", "rawValue"]
+- !private ["s10MirrorPathP", "utf8"]
+- !private ["SM", "copyBytes"]
+- !private ["SM", "count"]
+- !private ["SM", "map"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "map"]
+- !private ["10Foundation8NSCodingP", "utf8"]
+- !private ["10Foundation9NSCopyingP", "utf8"]
+- !private ["10Foundation16NSMutableCopyingP", "utf8"]
+- !private ["10Foundation8NSObjectC", "utf8"]
+- !private ["10Foundation16NSObjectProtocolP", "utf8"]
+- !private ["10Foundation14NSSecureCodingP", "utf8"]
+- !private ["10Foundation8NSStringC", "utf8"]
+- !private ["Sj", "init"]
+- !private ["s9OptionSetP", "rawValue"]
+- !private ["Sq", "withOptionalUnsafeBufferPointer"]
+- !private ["3vkk18PhysicalDeviceTypeO", "other"]
+- !private ["3vkk18PhysicalDeviceTypeO", "value"]
+- !private ["3vkk17PipelineBindPointO", "value"]
+- !private ["3vkk14PipelineCreateV", "deinit"]
+- !private ["3vkk14PipelineCreateV", "rawValue"]
+- !private ["3vkk13PipelineStageV", "deinit"]
+- !private ["3vkk13PipelineStageV", "rawValue"]
+- !private ["3vkk11PolygonModeO", "value"]
+- !private ["3vkk17PrimitiveTopologyO", "triangleList"]
+- !private ["3vkk17PrimitiveTopologyO", "value"]
+- !private ["3vkk22QueryPipelineStatisticV", "deinit"]
+- !private ["3vkk22QueryPipelineStatisticV", "rawValue"]
+- !private ["3vkk9QueryTypeO", "value"]
+- !private ["3vkk10QueueFlagsV", "deinit"]
+- !private ["3vkk10QueueFlagsV", "rawValue"]
+- !private ["Sk", "baseAddress"]
+- !private ["Sk", "copyBytes"]
+- !private ["Sk", "count"]
+- !private ["Sk", "map"]
+- !private ["Sm", "count"]
+- !private ["Sm", "map"]
+- !private ["Sm", "utf8"]
+- !private ["SY", "init"]
+- !private ["SY", "other"]
+- !private ["SY", "rawValue"]
+- !private ["SY", "triangleList"]
+- !private ["SY", "value"]
+- !private ["3vkk6ResultO", "deinit"]
+- !private ["3vkk6ResultO", "init"]
+- !private ["s4SIMDP", "asTuple"]
+- !private ["s4SIMDP", "init"]
+- !private ["s4SIMDP", "x"]
+- !private ["s4SIMDP", "y"]
+- !private ["s4SIMDP", "z"]
+- !private ["s5SIMD2V", "asTuple"]
+- !private ["s5SIMD2V", "init"]
+- !private ["s5SIMD2V", "x"]
+- !private ["s5SIMD2V", "y"]
+- !private ["s5SIMD3V", "asTuple"]
+- !private ["s5SIMD3V", "init"]
+- !private ["s5SIMD3V", "x"]
+- !private ["s5SIMD3V", "y"]
+- !private ["s5SIMD3V", "z"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["s11SIMDStorageP", "asTuple"]
+- !private ["s11SIMDStorageP", "init"]
+- !private ["s11SIMDStorageP", "x"]
+- !private ["s11SIMDStorageP", "y"]
+- !private ["s11SIMDStorageP", "z"]
+- !private ["3vkk11SampleCountV", "deinit"]
+- !private ["3vkk11SampleCountV", "rawValue"]
+- !private ["3vkk18SamplerAddressModeO", "value"]
+- !private ["3vkk13SamplerCreateV", "deinit"]
+- !private ["3vkk13SamplerCreateV", "rawValue"]
+- !private ["3vkk17SamplerMipmapModeO", "value"]
+- !private ["ST", "baseAddress"]
+- !private ["ST", "copyBytes"]
+- !private ["ST", "count"]
+- !private ["ST", "map"]
+- !private ["ST", "prefix"]
+- !private ["ST", "utf8"]
+- !private ["s10SetAlgebraP", "rawValue"]
+- !private ["3vkk11ShaderStageV", "deinit"]
+- !private ["3vkk11ShaderStageV", "rawValue"]
+- !private ["3vkk11SharingModeO", "value"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["3vkk17SparseImageFormatV", "deinit"]
+- !private ["3vkk17SparseImageFormatV", "rawValue"]
+- !private ["3vkk16SparseMemoryBindV", "deinit"]
+- !private ["3vkk16SparseMemoryBindV", "rawValue"]
+- !private ["3vkk9StencilOpO", "value"]
+- !private ["Sx", "init"]
+- !private ["SS", "utf8"]
+- !private ["Sy", "utf8"]
+- !private ["3vkk18SubpassDescriptionV", "deinit"]
+- !private ["3vkk18SubpassDescriptionV", "rawValue"]
+- !private ["s16TextOutputStreamP", "utf8"]
+- !private ["s20TextOutputStreamableP", "utf8"]
+- !private ["s6UInt32V", "init"]
+- !private ["SS8UTF8ViewV", "prefix"]
+- !private ["SR", "baseAddress"]
+- !private ["Sw", "copyBytes"]
+- !private ["Sw", "count"]
+- !private ["SU", "init"]
+- !private ["3vkk15VertexInputRateO", "value"]
 - !private ["So17VkApplicationInfoV", "init"]
-- !private ["So17VkApplicationInfoV", "sType"]
+- !private ["So23VkAttachmentDescriptionV", "init"]
+- !private ["So21VkAttachmentReferenceV", "init"]
+- !private ["So17VkBaseInStructureV", "init"]
+- !private ["So18VkBaseOutStructureV", "init"]
+- !private ["So12VkBufferCopyV", "init"]
+- !private ["So18VkBufferCreateInfoV", "init"]
+- !private ["So17VkBufferImageCopyV", "init"]
+- !private ["So21VkBufferMemoryBarrierV", "init"]
+- !private ["So22VkBufferViewCreateInfoV", "init"]
+- !private ["So17VkClearAttachmentV", "init"]
+- !private ["So17VkClearColorValueV", "init"]
+- !private ["So24VkClearDepthStencilValueV", "init"]
+- !private ["So11VkClearRectV", "init"]
+- !private ["So12VkClearValueV", "init"]
+- !private ["So27VkCommandBufferAllocateInfoV", "init"]
+- !private ["So24VkCommandBufferBeginInfoV", "init"]
+- !private ["So30VkCommandBufferInheritanceInfoV", "init"]
+- !private ["So23VkCommandPoolCreateInfoV", "init"]
+- !private ["So18VkComponentMappingV", "init"]
+- !private ["So27VkComputePipelineCreateInfoV", "init"]
+- !private ["So19VkCopyDescriptorSetV", "init"]
+- !private ["So22VkDescriptorBufferInfoV", "init"]
+- !private ["So21VkDescriptorImageInfoV", "init"]
+- !private ["So26VkDescriptorPoolCreateInfoV", "init"]
+- !private ["So20VkDescriptorPoolSizeV", "init"]
+- !private ["So27VkDescriptorSetAllocateInfoV", "init"]
+- !private ["So28VkDescriptorSetLayoutBindingV", "init"]
+- !private ["So31VkDescriptorSetLayoutCreateInfoV", "init"]
+- !private ["So18VkDeviceCreateInfoV", "init"]
+- !private ["So23VkDeviceQueueCreateInfoV", "init"]
+- !private ["So25VkDispatchIndirectCommandV", "init"]
+- !private ["So28VkDrawIndexedIndirectCommandV", "init"]
+- !private ["So21VkDrawIndirectCommandV", "init"]
+- !private ["So17VkEventCreateInfoV", "init"]
+- !private ["So21VkExtensionPropertiesV", "extensionName"]
+- !private ["So21VkExtensionPropertiesV", "init"]
+- !private ["So21VkExtensionPropertiesV", "specVersion"]
+- !private ["So10VkExtent2DV", "init"]
+- !private ["So10VkExtent3DV", "init"]
+- !private ["So17VkFenceCreateInfoV", "init"]
+- !private ["So18VkFormatPropertiesV", "init"]
+- !private ["So23VkFramebufferCreateInfoV", "init"]
+- !private ["So28VkGraphicsPipelineCreateInfoV", "init"]
+- !private ["So11VkImageBlitV", "init"]
+- !private ["So11VkImageCopyV", "init"]
+- !private ["So17VkImageCreateInfoV", "init"]
+- !private ["So23VkImageFormatPropertiesV", "init"]
+- !private ["So20VkImageMemoryBarrierV", "init"]
+- !private ["So14VkImageResolveV", "init"]
+- !private ["So18VkImageSubresourceV", "init"]
+- !private ["So24VkImageSubresourceLayersV", "init"]
+- !private ["So23VkImageSubresourceRangeV", "init"]
+- !private ["So21VkImageViewCreateInfoV", "init"]
+- !private ["So20VkInstanceCreateInfoV", "init"]
+- !private ["So17VkLayerPropertiesV", "description"]
+- !private ["So17VkLayerPropertiesV", "implementationVersion"]
+- !private ["So17VkLayerPropertiesV", "init"]
+- !private ["So17VkLayerPropertiesV", "layerName"]
+- !private ["So17VkLayerPropertiesV", "specVersion"]
+- !private ["So19VkMappedMemoryRangeV", "init"]
+- !private ["So20VkMemoryAllocateInfoV", "init"]
+- !private ["So15VkMemoryBarrierV", "init"]
+- !private ["So12VkMemoryHeapV", "init"]
+- !private ["So20VkMemoryRequirementsV", "init"]
+- !private ["So12VkMemoryTypeV", "init"]
+- !private ["So10VkOffset2DV", "init"]
+- !private ["So10VkOffset3DV", "init"]
+- !private ["So24VkPhysicalDeviceFeaturesV", "init"]
+- !private ["So22VkPhysicalDeviceLimitsV", "init"]
+- !private ["So32VkPhysicalDeviceMemoryPropertiesV", "init"]
+- !private ["So32VkPhysicalDeviceMemoryPropertiesV", "memoryHeapCount"]
+- !private ["So32VkPhysicalDeviceMemoryPropertiesV", "memoryHeaps"]
+- !private ["So32VkPhysicalDeviceMemoryPropertiesV", "memoryTypeCount"]
+- !private ["So32VkPhysicalDeviceMemoryPropertiesV", "memoryTypes"]
+- !private ["So26VkPhysicalDevicePropertiesV", "apiVersion"]
+- !private ["So26VkPhysicalDevicePropertiesV", "deviceID"]
+- !private ["So26VkPhysicalDevicePropertiesV", "deviceName"]
+- !private ["So26VkPhysicalDevicePropertiesV", "deviceType"]
+- !private ["So26VkPhysicalDevicePropertiesV", "driverVersion"]
+- !private ["So26VkPhysicalDevicePropertiesV", "init"]
+- !private ["So26VkPhysicalDevicePropertiesV", "limits"]
+- !private ["So26VkPhysicalDevicePropertiesV", "pipelineCacheUUID"]
+- !private ["So26VkPhysicalDevicePropertiesV", "sparseProperties"]
+- !private ["So26VkPhysicalDevicePropertiesV", "vendorID"]
+- !private ["So32VkPhysicalDeviceSparsePropertiesV", "init"]
+- !private ["So25VkPipelineCacheCreateInfoV", "init"]
+- !private ["So35VkPipelineColorBlendAttachmentStateV", "init"]
+- !private ["So35VkPipelineColorBlendStateCreateInfoV", "init"]
+- !private ["So37VkPipelineDepthStencilStateCreateInfoV", "init"]
+- !private ["So32VkPipelineDynamicStateCreateInfoV", "init"]
+- !private ["So38VkPipelineInputAssemblyStateCreateInfoV", "init"]
+- !private ["So26VkPipelineLayoutCreateInfoV", "init"]
+- !private ["So36VkPipelineMultisampleStateCreateInfoV", "init"]
+- !private ["So38VkPipelineRasterizationStateCreateInfoV", "init"]
+- !private ["So31VkPipelineShaderStageCreateInfoV", "init"]
+- !private ["So37VkPipelineTessellationStateCreateInfoV", "init"]
+- !private ["So36VkPipelineVertexInputStateCreateInfoV", "init"]
+- !private ["So33VkPipelineViewportStateCreateInfoV", "init"]
+- !private ["So19VkPushConstantRangeV", "init"]
+- !private ["So21VkQueryPoolCreateInfoV", "init"]
+- !private ["So23VkQueueFamilyPropertiesV", "init"]
+- !private ["So8VkRect2DV", "init"]
+- !private ["So21VkRenderPassBeginInfoV", "init"]
+- !private ["So22VkRenderPassCreateInfoV", "init"]
+- !private ["So8VkResultV", "rawValue"]
+- !private ["So19VkSamplerCreateInfoV", "init"]
+- !private ["So21VkSemaphoreCreateInfoV", "init"]
+- !private ["So24VkShaderModuleCreateInfoV", "init"]
+- !private ["So28VkSparseBufferMemoryBindInfoV", "init"]
+- !private ["So29VkSparseImageFormatPropertiesV", "init"]
+- !private ["So23VkSparseImageMemoryBindV", "init"]
+- !private ["So27VkSparseImageMemoryBindInfoV", "init"]
+- !private ["So31VkSparseImageMemoryRequirementsV", "init"]
+- !private ["So33VkSparseImageOpaqueMemoryBindInfoV", "init"]
+- !private ["So18VkSparseMemoryBindV", "init"]
+- !private ["So20VkSpecializationInfoV", "init"]
+- !private ["So24VkSpecializationMapEntryV", "init"]
+- !private ["So16VkStencilOpStateV", "init"]
+- !private ["So12VkSubmitInfoV", "init"]
+- !private ["So19VkSubpassDependencyV", "init"]
+- !private ["So20VkSubpassDescriptionV", "init"]
+- !private ["So19VkSubresourceLayoutV", "init"]
+- !private ["So33VkVertexInputAttributeDescriptionV", "init"]
+- !private ["So31VkVertexInputBindingDescriptionV", "init"]
+- !private ["So10VkViewportV", "init"]
+- !private ["So20VkWriteDescriptorSetV", "init"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["10Foundation13_CFBridgeableP", "count"]
+- !private ["10Foundation13_CFBridgeableP", "map"]
+- !private ["10Foundation13_CFBridgeableP", "utf8"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "prefix"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "utf8"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "utf8"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "utf8"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "utf8"]
+- !private ["s19_HasContiguousBytesP", "baseAddress"]
+- !private ["s19_HasContiguousBytesP", "copyBytes"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "map"]
+- !private ["s19_HasContiguousBytesP", "utf8"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["10Foundation13_NSBridgeableP", "count"]
+- !private ["10Foundation13_NSBridgeableP", "map"]
+- !private ["10Foundation13_NSBridgeableP", "utf8"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "utf8"]
+- !private ["10Foundation17_StructBridgeableP", "utf8"]
+- !private ["10Foundation21_StructTypeBridgeableP", "utf8"]
+- !private ["10Foundation16_SwiftBridgeableP", "utf8"]
+- !private ["s12_UnwrappableP", "withOptionalUnsafeBufferPointer"]
+- ["3vkk2vkV", "Access"]
 - ["3vkk2vkV", "ApplicationInfo"]
+- ["3vkk2vkV", "AttachmentDescription"]
+- ["3vkk2vkV", "AttachmentLoadOp"]
+- ["3vkk2vkV", "AttachmentReference"]
+- ["3vkk2vkV", "AttachmentStoreOp"]
+- ["3vkk2vkV", "BaseInStructure"]
+- ["3vkk2vkV", "BaseOutStructure"]
+- ["3vkk2vkV", "BlendFactor"]
+- ["3vkk2vkV", "BlendOp"]
+- ["3vkk2vkV", "Bool"]
+- ["3vkk2vkV", "BorderColor"]
+- ["3vkk2vkV", "BufferCopy"]
+- ["3vkk2vkV", "BufferCreate"]
+- ["3vkk2vkV", "BufferCreateInfo"]
+- ["3vkk2vkV", "BufferImageCopy"]
+- ["3vkk2vkV", "BufferMemoryBarrier"]
+- ["3vkk2vkV", "BufferUsage"]
+- ["3vkk2vkV", "BufferViewCreateInfo"]
+- !private ["3vkk2vkV", "CHECK"]
+- !private ["3vkk2vkV", "CHECK_F"]
+- ["3vkk2vkV", "ClearAttachment"]
+- ["3vkk2vkV", "ClearColorValue"]
+- ["3vkk2vkV", "ClearDepthStencilValue"]
+- ["3vkk2vkV", "ClearRect"]
+- ["3vkk2vkV", "ClearValue"]
+- ["3vkk2vkV", "ColorComponent"]
+- ["3vkk2vkV", "CommandBufferAllocateInfo"]
+- ["3vkk2vkV", "CommandBufferBeginInfo"]
+- ["3vkk2vkV", "CommandBufferInheritanceInfo"]
+- ["3vkk2vkV", "CommandBufferLevel"]
+- ["3vkk2vkV", "CommandBufferUsage"]
+- ["3vkk2vkV", "CommandPoolCreate"]
+- ["3vkk2vkV", "CommandPoolCreateInfo"]
+- ["3vkk2vkV", "CompareOp"]
+- ["3vkk2vkV", "ComponentMapping"]
+- ["3vkk2vkV", "ComponentSwizzle"]
+- ["3vkk2vkV", "ComputePipelineCreateInfo"]
+- ["3vkk2vkV", "CopyDescriptorSet"]
+- ["3vkk2vkV", "CullMode"]
+- ["3vkk2vkV", "Dependency"]
+- ["3vkk2vkV", "DescriptorBufferInfo"]
+- ["3vkk2vkV", "DescriptorImageInfo"]
+- ["3vkk2vkV", "DescriptorPoolCreate"]
+- ["3vkk2vkV", "DescriptorPoolCreateInfo"]
+- ["3vkk2vkV", "DescriptorPoolSize"]
+- ["3vkk2vkV", "DescriptorSetAllocateInfo"]
+- ["3vkk2vkV", "DescriptorSetLayoutBinding"]
+- ["3vkk2vkV", "DescriptorSetLayoutCreate"]
+- ["3vkk2vkV", "DescriptorSetLayoutCreateInfo"]
+- ["3vkk2vkV", "DescriptorType"]
+- ["3vkk2vkV", "DeviceCreateInfo"]
+- ["3vkk2vkV", "DeviceQueueCreate"]
+- ["3vkk2vkV", "DeviceQueueCreateInfo"]
+- ["3vkk2vkV", "DispatchIndirectCommand"]
+- ["3vkk2vkV", "DrawIndexedIndirectCommand"]
+- ["3vkk2vkV", "DrawIndirectCommand"]
+- ["3vkk2vkV", "EventCreateInfo"]
+- ["3vkk2vkV", "ExtensionProperties"]
+- ["3vkk2vkV", "Extent2D"]
+- ["3vkk2vkV", "Extent3D"]
+- ["3vkk2vkV", "FenceCreate"]
+- ["3vkk2vkV", "FenceCreateInfo"]
+- ["3vkk2vkV", "Filter"]
+- ["3vkk2vkV", "Float"]
+- ["3vkk2vkV", "Format"]
+- ["3vkk2vkV", "FormatFeature"]
+- ["3vkk2vkV", "FormatProperties"]
+- ["3vkk2vkV", "FramebufferCreate"]
+- ["3vkk2vkV", "FramebufferCreateInfo"]
+- ["3vkk2vkV", "FrontFace"]
+- ["3vkk2vkV", "GraphicsPipelineCreateInfo"]
+- ["3vkk2vkV", "ImageAspect"]
+- ["3vkk2vkV", "ImageBlit"]
+- ["3vkk2vkV", "ImageCopy"]
+- ["3vkk2vkV", "ImageCreate"]
+- ["3vkk2vkV", "ImageCreateInfo"]
+- ["3vkk2vkV", "ImageFormatProperties"]
+- ["3vkk2vkV", "ImageLayout"]
+- ["3vkk2vkV", "ImageMemoryBarrier"]
+- ["3vkk2vkV", "ImageResolve"]
+- ["3vkk2vkV", "ImageSubresource"]
+- ["3vkk2vkV", "ImageSubresourceLayers"]
+- ["3vkk2vkV", "ImageSubresourceRange"]
+- ["3vkk2vkV", "ImageTiling"]
+- ["3vkk2vkV", "ImageType"]
+- ["3vkk2vkV", "ImageUsage"]
+- ["3vkk2vkV", "ImageViewCreate"]
+- ["3vkk2vkV", "ImageViewCreateInfo"]
+- ["3vkk2vkV", "InstanceCreateInfo"]
+- ["3vkk2vkV", "Int"]
+- ["3vkk2vkV", "Int32"]
+- ["3vkk2vkV", "Int8"]
+- ["3vkk2vkV", "LayerProperties"]
+- ["3vkk2vkV", "LogicOp"]
+- ["3vkk2vkV", "MappedMemoryRange"]
+- ["3vkk2vkV", "MemoryAllocateInfo"]
+- ["3vkk2vkV", "MemoryBarrier"]
+- ["3vkk2vkV", "MemoryHeap"]
+- ["3vkk2vkV", "MemoryHeapFlags"]
+- !private ["3vkk2vkV", "MemoryLayout"]
+- ["3vkk2vkV", "MemoryProperty"]
+- ["3vkk2vkV", "MemoryRequirements"]
+- ["3vkk2vkV", "MemoryType"]
+- ["3vkk2vkV", "Offset2D"]
+- ["3vkk2vkV", "Offset3D"]
+- ["3vkk2vkV", "PhysicalDeviceFeatures"]
+- ["3vkk2vkV", "PhysicalDeviceLimits"]
+- ["3vkk2vkV", "PhysicalDeviceMemoryProperties"]
+- ["3vkk2vkV", "PhysicalDeviceProperties"]
+- ["3vkk2vkV", "PhysicalDeviceSparseProperties"]
+- ["3vkk2vkV", "PhysicalDeviceType"]
+- ["3vkk2vkV", "PipelineBindPoint"]
+- ["3vkk2vkV", "PipelineCacheCreateInfo"]
+- ["3vkk2vkV", "PipelineColorBlendAttachmentState"]
+- ["3vkk2vkV", "PipelineColorBlendStateCreateInfo"]
+- ["3vkk2vkV", "PipelineCreate"]
+- ["3vkk2vkV", "PipelineDepthStencilStateCreateInfo"]
+- ["3vkk2vkV", "PipelineDynamicStateCreateInfo"]
+- ["3vkk2vkV", "PipelineInputAssemblyStateCreateInfo"]
+- ["3vkk2vkV", "PipelineLayoutCreateInfo"]
+- ["3vkk2vkV", "PipelineMultisampleStateCreateInfo"]
+- ["3vkk2vkV", "PipelineRasterizationStateCreateInfo"]
+- ["3vkk2vkV", "PipelineShaderStageCreate"]
+- ["3vkk2vkV", "PipelineShaderStageCreateInfo"]
+- ["3vkk2vkV", "PipelineStage"]
+- ["3vkk2vkV", "PipelineTessellationStateCreateInfo"]
+- ["3vkk2vkV", "PipelineVertexInputStateCreateInfo"]
+- ["3vkk2vkV", "PipelineViewportStateCreateInfo"]
+- ["3vkk2vkV", "PolygonMode"]
+- ["3vkk2vkV", "PrimitiveTopology"]
+- ["3vkk2vkV", "PushConstantRange"]
+- ["3vkk2vkV", "QueryPipelineStatistic"]
+- ["3vkk2vkV", "QueryPoolCreateInfo"]
+- ["3vkk2vkV", "QueryType"]
+- ["3vkk2vkV", "QueueFamilyProperties"]
+- ["3vkk2vkV", "QueueFlags"]
+- ["3vkk2vkV", "Rect2D"]
+- ["3vkk2vkV", "RenderPassBeginInfo"]
+- ["3vkk2vkV", "RenderPassCreateInfo"]
+- ["3vkk2vkV", "Result"]
+- ["3vkk2vkV", "SampleCount"]
+- ["3vkk2vkV", "SamplerAddressMode"]
+- ["3vkk2vkV", "SamplerCreate"]
+- ["3vkk2vkV", "SamplerCreateInfo"]
+- ["3vkk2vkV", "SamplerMipmapMode"]
+- ["3vkk2vkV", "SemaphoreCreateInfo"]
+- ["3vkk2vkV", "ShaderModuleCreate"]
+- ["3vkk2vkV", "ShaderModuleCreateInfo"]
+- ["3vkk2vkV", "ShaderStage"]
+- ["3vkk2vkV", "SharingMode"]
+- ["3vkk2vkV", "SparseBufferMemoryBindInfo"]
+- ["3vkk2vkV", "SparseImageFormat"]
+- ["3vkk2vkV", "SparseImageFormatProperties"]
+- ["3vkk2vkV", "SparseImageMemoryBind"]
+- ["3vkk2vkV", "SparseImageMemoryBindInfo"]
+- ["3vkk2vkV", "SparseImageMemoryRequirements"]
+- ["3vkk2vkV", "SparseImageOpaqueMemoryBindInfo"]
+- ["3vkk2vkV", "SparseMemoryBind"]
+- ["3vkk2vkV", "SpecializationInfo"]
+- ["3vkk2vkV", "SpecializationMapEntry"]
+- ["3vkk2vkV", "StencilOp"]
+- ["3vkk2vkV", "StencilOpState"]
+- ["3vkk2vkV", "String"]
+- ["3vkk2vkV", "SubmitInfo"]
+- ["3vkk2vkV", "SubpassDependency"]
+- ["3vkk2vkV", "SubpassDescription"]
+- ["3vkk2vkV", "SubresourceLayout"]
+- ["3vkk2vkV", "Tuple16_UInt8"]
+- ["3vkk2vkV", "UInt32"]
+- ["3vkk2vkV", "UnsafeMutablePointer"]
+- ["3vkk2vkV", "UnsafePointer"]
+- ["3vkk2vkV", "UnsafeRawPointer"]
 - !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_APPLICATION_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_BUFFER_MEMORY_BARRIER"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_BUFFER_VIEW_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_COMMAND_BUFFER_INHERITANCE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_COMPUTE_PIPELINE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_COPY_DESCRIPTOR_SET"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_DEVICE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_EVENT_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_FENCE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_FRAMEBUFFER_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_IMAGE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_IMAGE_MEMORY_BARRIER"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_MAPPED_MEMORY_RANGE"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_MEMORY_BARRIER"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_CACHE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_STATE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_DYNAMIC_STATE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_TESSELLATION_STATE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_STATE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_QUERY_POOL_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_SAMPLER_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_SEMAPHORE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_SUBMIT_INFO"]
+- !private ["3vkk2vkV", "VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET"]
+- ["3vkk2vkV", "VertexInputAttributeDescription"]
+- ["3vkk2vkV", "VertexInputBindingDescription"]
+- ["3vkk2vkV", "VertexInputRate"]
+- ["3vkk2vkV", "Viewport"]
 - ["3vkk2vkV", "VkApplicationInfo"]
-- !private ["3vkk2vkV", "init"]
+- ["3vkk2vkV", "VkAttachmentDescription"]
+- ["3vkk2vkV", "VkAttachmentReference"]
+- ["3vkk2vkV", "VkBaseInStructure"]
+- ["3vkk2vkV", "VkBaseOutStructure"]
+- !private ["3vkk2vkV", "VkBool32"]
+- ["3vkk2vkV", "VkBuffer"]
+- ["3vkk2vkV", "VkBufferCopy"]
+- ["3vkk2vkV", "VkBufferCreateInfo"]
+- ["3vkk2vkV", "VkBufferImageCopy"]
+- ["3vkk2vkV", "VkBufferMemoryBarrier"]
+- ["3vkk2vkV", "VkBufferView"]
+- ["3vkk2vkV", "VkBufferViewCreateInfo"]
+- ["3vkk2vkV", "VkClearAttachment"]
+- ["3vkk2vkV", "VkClearColorValue"]
+- ["3vkk2vkV", "VkClearDepthStencilValue"]
+- ["3vkk2vkV", "VkClearRect"]
+- ["3vkk2vkV", "VkClearValue"]
+- ["3vkk2vkV", "VkCommandBuffer"]
+- ["3vkk2vkV", "VkCommandBufferAllocateInfo"]
+- ["3vkk2vkV", "VkCommandBufferBeginInfo"]
+- ["3vkk2vkV", "VkCommandBufferInheritanceInfo"]
+- ["3vkk2vkV", "VkCommandPool"]
+- ["3vkk2vkV", "VkCommandPoolCreateInfo"]
+- ["3vkk2vkV", "VkComponentMapping"]
+- ["3vkk2vkV", "VkComputePipelineCreateInfo"]
+- ["3vkk2vkV", "VkCopyDescriptorSet"]
+- ["3vkk2vkV", "VkDescriptorBufferInfo"]
+- ["3vkk2vkV", "VkDescriptorImageInfo"]
+- ["3vkk2vkV", "VkDescriptorPool"]
+- ["3vkk2vkV", "VkDescriptorPoolCreateInfo"]
+- ["3vkk2vkV", "VkDescriptorPoolSize"]
+- ["3vkk2vkV", "VkDescriptorSet"]
+- ["3vkk2vkV", "VkDescriptorSetAllocateInfo"]
+- ["3vkk2vkV", "VkDescriptorSetLayout"]
+- ["3vkk2vkV", "VkDescriptorSetLayoutBinding"]
+- ["3vkk2vkV", "VkDescriptorSetLayoutCreateInfo"]
+- ["3vkk2vkV", "VkDescriptorType"]
+- ["3vkk2vkV", "VkDeviceCreateInfo"]
+- ["3vkk2vkV", "VkDeviceMemory"]
+- ["3vkk2vkV", "VkDeviceQueueCreateInfo"]
+- ["3vkk2vkV", "VkDeviceSize"]
+- ["3vkk2vkV", "VkDispatchIndirectCommand"]
+- ["3vkk2vkV", "VkDrawIndexedIndirectCommand"]
+- ["3vkk2vkV", "VkDrawIndirectCommand"]
+- ["3vkk2vkV", "VkDynamicState"]
+- ["3vkk2vkV", "VkEventCreateInfo"]
+- ["3vkk2vkV", "VkExtensionProperties"]
+- ["3vkk2vkV", "VkExtent2D"]
+- ["3vkk2vkV", "VkExtent3D"]
+- ["3vkk2vkV", "VkFenceCreateInfo"]
+- ["3vkk2vkV", "VkFormat"]
+- ["3vkk2vkV", "VkFormatProperties"]
+- ["3vkk2vkV", "VkFramebuffer"]
+- ["3vkk2vkV", "VkFramebufferCreateInfo"]
+- ["3vkk2vkV", "VkGraphicsPipelineCreateInfo"]
+- ["3vkk2vkV", "VkImage"]
+- ["3vkk2vkV", "VkImageBlit"]
+- ["3vkk2vkV", "VkImageCopy"]
+- ["3vkk2vkV", "VkImageCreateInfo"]
+- ["3vkk2vkV", "VkImageFormatProperties"]
+- ["3vkk2vkV", "VkImageLayout"]
+- ["3vkk2vkV", "VkImageMemoryBarrier"]
+- ["3vkk2vkV", "VkImageResolve"]
+- ["3vkk2vkV", "VkImageSubresource"]
+- ["3vkk2vkV", "VkImageSubresourceLayers"]
+- ["3vkk2vkV", "VkImageSubresourceRange"]
+- ["3vkk2vkV", "VkImageView"]
+- ["3vkk2vkV", "VkImageViewCreateInfo"]
+- ["3vkk2vkV", "VkImageViewType"]
+- ["3vkk2vkV", "VkInstance"]
+- ["3vkk2vkV", "VkInstanceCreateInfo"]
+- ["3vkk2vkV", "VkLayerProperties"]
+- ["3vkk2vkV", "VkMappedMemoryRange"]
+- ["3vkk2vkV", "VkMemoryAllocateInfo"]
+- ["3vkk2vkV", "VkMemoryBarrier"]
+- ["3vkk2vkV", "VkMemoryHeap"]
+- ["3vkk2vkV", "VkMemoryRequirements"]
+- ["3vkk2vkV", "VkMemoryType"]
+- ["3vkk2vkV", "VkOffset2D"]
+- ["3vkk2vkV", "VkOffset3D"]
+- ["3vkk2vkV", "VkPhysicalDeviceFeatures"]
+- ["3vkk2vkV", "VkPhysicalDeviceLimits"]
+- ["3vkk2vkV", "VkPhysicalDeviceMemoryProperties"]
+- ["3vkk2vkV", "VkPhysicalDeviceProperties"]
+- ["3vkk2vkV", "VkPhysicalDeviceSparseProperties"]
+- ["3vkk2vkV", "VkPipeline"]
+- ["3vkk2vkV", "VkPipelineCacheCreateInfo"]
+- ["3vkk2vkV", "VkPipelineColorBlendAttachmentState"]
+- ["3vkk2vkV", "VkPipelineColorBlendStateCreateInfo"]
+- ["3vkk2vkV", "VkPipelineDepthStencilStateCreateInfo"]
+- ["3vkk2vkV", "VkPipelineDynamicStateCreateInfo"]
+- ["3vkk2vkV", "VkPipelineInputAssemblyStateCreateInfo"]
+- ["3vkk2vkV", "VkPipelineLayout"]
+- ["3vkk2vkV", "VkPipelineLayoutCreateInfo"]
+- ["3vkk2vkV", "VkPipelineMultisampleStateCreateInfo"]
+- ["3vkk2vkV", "VkPipelineRasterizationStateCreateInfo"]
+- ["3vkk2vkV", "VkPipelineShaderStageCreateInfo"]
+- !private ["3vkk2vkV", "VkPipelineStageFlags"]
+- ["3vkk2vkV", "VkPipelineTessellationStateCreateInfo"]
+- ["3vkk2vkV", "VkPipelineVertexInputStateCreateInfo"]
+- ["3vkk2vkV", "VkPipelineViewportStateCreateInfo"]
+- ["3vkk2vkV", "VkPushConstantRange"]
+- ["3vkk2vkV", "VkQueryControlFlags"]
+- ["3vkk2vkV", "VkQueryPoolCreateInfo"]
+- ["3vkk2vkV", "VkQueueFamilyProperties"]
+- ["3vkk2vkV", "VkRect2D"]
+- ["3vkk2vkV", "VkRenderPass"]
+- ["3vkk2vkV", "VkRenderPassBeginInfo"]
+- ["3vkk2vkV", "VkRenderPassCreateInfo"]
+- ["3vkk2vkV", "VkSampleCountFlagBits"]
+- ["3vkk2vkV", "VkSampleMask"]
+- ["3vkk2vkV", "VkSampler"]
+- ["3vkk2vkV", "VkSamplerCreateInfo"]
+- ["3vkk2vkV", "VkSemaphore"]
+- ["3vkk2vkV", "VkSemaphoreCreateInfo"]
+- ["3vkk2vkV", "VkShaderModule"]
+- ["3vkk2vkV", "VkShaderModuleCreateInfo"]
+- ["3vkk2vkV", "VkShaderStageFlagBits"]
+- ["3vkk2vkV", "VkSparseBufferMemoryBindInfo"]
+- ["3vkk2vkV", "VkSparseImageFormatProperties"]
+- ["3vkk2vkV", "VkSparseImageMemoryBind"]
+- ["3vkk2vkV", "VkSparseImageMemoryBindInfo"]
+- ["3vkk2vkV", "VkSparseImageMemoryRequirements"]
+- ["3vkk2vkV", "VkSparseImageOpaqueMemoryBindInfo"]
+- ["3vkk2vkV", "VkSparseMemoryBind"]
+- ["3vkk2vkV", "VkSpecializationInfo"]
+- ["3vkk2vkV", "VkSpecializationMapEntry"]
+- ["3vkk2vkV", "VkStencilOpState"]
+- ["3vkk2vkV", "VkStructureType"]
+- ["3vkk2vkV", "VkSubmitInfo"]
+- ["3vkk2vkV", "VkSubpassDependency"]
+- ["3vkk2vkV", "VkSubpassDescription"]
+- ["3vkk2vkV", "VkSubresourceLayout"]
+- ["3vkk2vkV", "VkVertexInputAttributeDescription"]
+- ["3vkk2vkV", "VkVertexInputBindingDescription"]
+- ["3vkk2vkV", "VkViewport"]
+- ["3vkk2vkV", "VkWriteDescriptorSet"]
+- ["3vkk2vkV", "WriteDescriptorSet"]
+- ["3vkk2vkV", "createInstance"]
+- ["3vkk2vkV", "destroyInstance"]
+- ["3vkk2vkV", "init"]
+- ["3vkk2vkV", "ivec2"]
+- ["3vkk2vkV", "ivec3"]
+- !private ["3vkk2vkV", "memcpy"]
+- ["3vkk2vkV", "uvec2"]
+- ["3vkk2vkV", "uvec3"]
+- ["3vkk2vkV", "vec2"]
+- !private ["3vkk2vkV", "vkCreateInstance"]
+- !private ["3vkk2vkV", "vkDestroyInstance"]
+- !private ["3vkk2vkV", "withUnsafeMutableBytes"]
 depends-nominal:
+- !private "3vkk6AccessV"
+- !private "s18AdditiveArithmeticP"
+- !private "Sa"
+- !private "3vkk21AttachmentDescriptionV"
+- !private "3vkk16AttachmentLoadOpO"
+- !private "3vkk17AttachmentStoreOpO"
+- !private "SK"
+- !private "Sz"
+- !private "3vkk11BlendFactorO"
+- !private "3vkk7BlendOpO"
+- !private "3vkk11BorderColorO"
+- !private "3vkk12BufferCreateV"
+- !private "3vkk11BufferUsageV"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "3vkk14ColorComponentV"
+- !private "3vkk18CommandBufferLevelO"
+- !private "3vkk18CommandBufferUsageV"
+- !private "3vkk17CommandPoolCreateV"
+- !private "SL"
+- !private "3vkk9CompareOpO"
+- !private "3vkk16ComponentSwizzleO"
+- !private "10Foundation15ContiguousBytesP"
+- !private "3vkk8CullModeO"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "3vkk10DependencyV"
+- !private "3vkk20DescriptorPoolCreateV"
+- !private "3vkk25DescriptorSetLayoutCreateV"
+- !private "3vkk14DescriptorTypeO"
+- !private "3vkk17DeviceQueueCreateV"
+- !private "SE"
+- !private "SQ"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "3vkk11FenceCreateV"
+- !private "3vkk6FilterO"
+- !private "s17FixedWidthIntegerP"
+- !private "3vkk6FormatO"
+- !private "3vkk13FormatFeatureV"
+- !private "3vkk17FramebufferCreateV"
+- !private "3vkk9FrontFaceO"
+- !private "SH"
+- !private "3vkk11ImageAspectV"
+- !private "3vkk11ImageCreateV"
+- !private "3vkk11ImageLayoutO"
+- !private "3vkk11ImageTilingO"
+- !private "3vkk9ImageTypeO"
+- !private "3vkk10ImageUsageV"
+- !private "3vkk15ImageViewCreateV"
+- !private "s5Int32V"
+- !private "3vkk7LogicOpO"
+- !private "s25LosslessStringConvertibleP"
+- !private "3vkk15MemoryHeapFlagsV"
+- !private "s12MemoryLayoutO"
+- !private "3vkk14MemoryPropertyV"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "10Foundation8NSCodingP"
+- !private "10Foundation9NSCopyingP"
+- !private "10Foundation16NSMutableCopyingP"
+- !private "10Foundation8NSObjectC"
+- !private "10Foundation16NSObjectProtocolP"
+- !private "10Foundation14NSSecureCodingP"
+- !private "10Foundation8NSStringC"
+- !private "Sj"
+- !private "s9OptionSetP"
+- !private "Sq"
+- !private "3vkk18PhysicalDeviceTypeO"
+- !private "3vkk17PipelineBindPointO"
+- !private "3vkk14PipelineCreateV"
+- !private "3vkk13PipelineStageV"
+- !private "3vkk11PolygonModeO"
+- !private "3vkk17PrimitiveTopologyO"
+- !private "3vkk22QueryPipelineStatisticV"
+- !private "3vkk9QueryTypeO"
+- !private "3vkk10QueueFlagsV"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "3vkk6ResultO"
+- !private "s4SIMDP"
+- !private "s5SIMD2V"
+- !private "s5SIMD3V"
+- !private "s10SIMDScalarP"
+- !private "s11SIMDStorageP"
+- !private "3vkk11SampleCountV"
+- !private "3vkk18SamplerAddressModeO"
+- !private "3vkk13SamplerCreateV"
+- !private "3vkk17SamplerMipmapModeO"
+- !private "ST"
+- !private "s10SetAlgebraP"
+- !private "3vkk11ShaderStageV"
+- !private "3vkk11SharingModeO"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "3vkk17SparseImageFormatV"
+- !private "3vkk16SparseMemoryBindV"
+- !private "3vkk9StencilOpO"
+- !private "Sx"
+- !private "SS"
+- !private "Sy"
+- !private "3vkk18SubpassDescriptionV"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s6UInt32V"
+- !private "SS8UTF8ViewV"
+- !private "SR"
+- !private "Sw"
+- !private "SU"
+- !private "3vkk15VertexInputRateO"
 - !private "So17VkApplicationInfoV"
+- !private "So23VkAttachmentDescriptionV"
+- !private "So21VkAttachmentReferenceV"
+- !private "So17VkBaseInStructureV"
+- !private "So18VkBaseOutStructureV"
+- !private "So12VkBufferCopyV"
+- !private "So18VkBufferCreateInfoV"
+- !private "So17VkBufferImageCopyV"
+- !private "So21VkBufferMemoryBarrierV"
+- !private "So22VkBufferViewCreateInfoV"
+- !private "So17VkClearAttachmentV"
+- !private "So17VkClearColorValueV"
+- !private "So24VkClearDepthStencilValueV"
+- !private "So11VkClearRectV"
+- !private "So12VkClearValueV"
+- !private "So27VkCommandBufferAllocateInfoV"
+- !private "So24VkCommandBufferBeginInfoV"
+- !private "So30VkCommandBufferInheritanceInfoV"
+- !private "So23VkCommandPoolCreateInfoV"
+- !private "So18VkComponentMappingV"
+- !private "So27VkComputePipelineCreateInfoV"
+- !private "So19VkCopyDescriptorSetV"
+- !private "So22VkDescriptorBufferInfoV"
+- !private "So21VkDescriptorImageInfoV"
+- !private "So26VkDescriptorPoolCreateInfoV"
+- !private "So20VkDescriptorPoolSizeV"
+- !private "So27VkDescriptorSetAllocateInfoV"
+- !private "So28VkDescriptorSetLayoutBindingV"
+- !private "So31VkDescriptorSetLayoutCreateInfoV"
+- !private "So18VkDeviceCreateInfoV"
+- !private "So23VkDeviceQueueCreateInfoV"
+- !private "So25VkDispatchIndirectCommandV"
+- !private "So28VkDrawIndexedIndirectCommandV"
+- !private "So21VkDrawIndirectCommandV"
+- !private "So17VkEventCreateInfoV"
+- !private "So21VkExtensionPropertiesV"
+- !private "So10VkExtent2DV"
+- !private "So10VkExtent3DV"
+- !private "So17VkFenceCreateInfoV"
+- !private "So18VkFormatPropertiesV"
+- !private "So23VkFramebufferCreateInfoV"
+- !private "So28VkGraphicsPipelineCreateInfoV"
+- !private "So11VkImageBlitV"
+- !private "So11VkImageCopyV"
+- !private "So17VkImageCreateInfoV"
+- !private "So23VkImageFormatPropertiesV"
+- !private "So20VkImageMemoryBarrierV"
+- !private "So14VkImageResolveV"
+- !private "So18VkImageSubresourceV"
+- !private "So24VkImageSubresourceLayersV"
+- !private "So23VkImageSubresourceRangeV"
+- !private "So21VkImageViewCreateInfoV"
+- !private "So20VkInstanceCreateInfoV"
+- !private "So17VkLayerPropertiesV"
+- !private "So19VkMappedMemoryRangeV"
+- !private "So20VkMemoryAllocateInfoV"
+- !private "So15VkMemoryBarrierV"
+- !private "So12VkMemoryHeapV"
+- !private "So20VkMemoryRequirementsV"
+- !private "So12VkMemoryTypeV"
+- !private "So10VkOffset2DV"
+- !private "So10VkOffset3DV"
+- !private "So24VkPhysicalDeviceFeaturesV"
+- !private "So22VkPhysicalDeviceLimitsV"
+- !private "So32VkPhysicalDeviceMemoryPropertiesV"
+- !private "So26VkPhysicalDevicePropertiesV"
+- !private "So32VkPhysicalDeviceSparsePropertiesV"
+- !private "So25VkPipelineCacheCreateInfoV"
+- !private "So35VkPipelineColorBlendAttachmentStateV"
+- !private "So35VkPipelineColorBlendStateCreateInfoV"
+- !private "So37VkPipelineDepthStencilStateCreateInfoV"
+- !private "So32VkPipelineDynamicStateCreateInfoV"
+- !private "So38VkPipelineInputAssemblyStateCreateInfoV"
+- !private "So26VkPipelineLayoutCreateInfoV"
+- !private "So36VkPipelineMultisampleStateCreateInfoV"
+- !private "So38VkPipelineRasterizationStateCreateInfoV"
+- !private "So31VkPipelineShaderStageCreateInfoV"
+- !private "So37VkPipelineTessellationStateCreateInfoV"
+- !private "So36VkPipelineVertexInputStateCreateInfoV"
+- !private "So33VkPipelineViewportStateCreateInfoV"
+- !private "So19VkPushConstantRangeV"
+- !private "So21VkQueryPoolCreateInfoV"
+- !private "So23VkQueueFamilyPropertiesV"
+- !private "So8VkRect2DV"
+- !private "So21VkRenderPassBeginInfoV"
+- !private "So22VkRenderPassCreateInfoV"
+- !private "So8VkResultV"
+- !private "So19VkSamplerCreateInfoV"
+- !private "So21VkSemaphoreCreateInfoV"
+- !private "So24VkShaderModuleCreateInfoV"
+- !private "So28VkSparseBufferMemoryBindInfoV"
+- !private "So29VkSparseImageFormatPropertiesV"
+- !private "So23VkSparseImageMemoryBindV"
+- !private "So27VkSparseImageMemoryBindInfoV"
+- !private "So31VkSparseImageMemoryRequirementsV"
+- !private "So33VkSparseImageOpaqueMemoryBindInfoV"
+- !private "So18VkSparseMemoryBindV"
+- !private "So20VkSpecializationInfoV"
+- !private "So24VkSpecializationMapEntryV"
+- !private "So16VkStencilOpStateV"
+- !private "So12VkSubmitInfoV"
+- !private "So19VkSubpassDependencyV"
+- !private "So20VkSubpassDescriptionV"
+- !private "So19VkSubresourceLayoutV"
+- !private "So33VkVertexInputAttributeDescriptionV"
+- !private "So31VkVertexInputBindingDescriptionV"
+- !private "So10VkViewportV"
+- !private "So20VkWriteDescriptorSetV"
+- !private "s14_ArrayProtocolP"
+- !private "10Foundation13_CFBridgeableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation13_NSBridgeableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "10Foundation17_StructBridgeableP"
+- !private "10Foundation21_StructTypeBridgeableP"
+- !private "10Foundation16_SwiftBridgeableP"
+- !private "s12_UnwrappableP"
 - "3vkk2vkV"
 depends-dynamic-lookup:
 depends-external:
@@ -33,4 +1350,4 @@ depends-external:
 - "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
 - "/home/elect/SwiftProjects/vkk/Sources/vulkan/module.modulemap"
-interface-hash: "d731aafc541bc66a91243c1bc9df6168"
+interface-hash: "bd8b78f80b30d357c76105a02ce6e721"
